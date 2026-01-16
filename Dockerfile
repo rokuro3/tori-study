@@ -17,6 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # アプリケーションコードをコピー
 COPY api/ ./api/
+COPY start.py ./
 
 # birdVoiceSearchディレクトリを作成（pickleファイルはオプション）
 RUN mkdir -p ./birdVoiceSearch
@@ -28,5 +29,5 @@ ENV PORT=8000
 # ポートを公開
 EXPOSE 8000
 
-# アプリケーションを起動（Pythonで環境変数を読み取る）
-CMD ["python", "-c", "import os; import subprocess; port = os.environ.get('PORT', '8000'); subprocess.run(['uvicorn', 'api.main:app', '--host', '0.0.0.0', '--port', port])"]
+# アプリケーションを起動
+CMD ["python", "start.py"]
