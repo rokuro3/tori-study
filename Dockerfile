@@ -27,5 +27,5 @@ ENV PYTHONUNBUFFERED=1
 # ポートを公開（Railwayが$PORTを設定）
 EXPOSE 8000
 
-# アプリケーションを起動（$PORTを使用）
-CMD uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}
+# アプリケーションを起動（$PORTを使用、シェル経由で環境変数を展開）
+CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
