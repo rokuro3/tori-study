@@ -23,10 +23,9 @@ RUN mkdir -p ./birdVoiceSearch
 
 # 環境変数を設定
 ENV PYTHONUNBUFFERED=1
-ENV PORT=8000
 
-# ポートを公開
+# ポートを公開（Railwayが$PORTを設定）
 EXPOSE 8000
 
-# アプリケーションを起動
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# アプリケーションを起動（$PORTを使用）
+CMD uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}
