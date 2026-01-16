@@ -23,9 +23,10 @@ RUN mkdir -p ./birdVoiceSearch
 
 # 環境変数を設定
 ENV PYTHONUNBUFFERED=1
+ENV PORT=8000
 
-# ポートを公開（Railwayが$PORTを設定）
+# ポートを公開
 EXPOSE 8000
 
-# アプリケーションを起動（$PORTを使用、シェル経由で環境変数を展開）
-CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# アプリケーションを起動（Pythonで環境変数を読み取る）
+CMD ["python", "-c", "import os; import subprocess; port = os.environ.get('PORT', '8000'); subprocess.run(['uvicorn', 'api.main:app', '--host', '0.0.0.0', '--port', port])"]
