@@ -10,7 +10,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# lib/ - コメントアウト（app/src/libを含めるため）
 lib64/
 parts/
 sdist/
