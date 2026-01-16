@@ -1,6 +1,9 @@
 # Python 3.11をベースイメージとして使用
 FROM python:3.11-slim
 
+# ビルドキャッシュ無効化用
+ARG CACHEBUST=1
+
 # 作業ディレクトリを設定
 WORKDIR /app
 
