@@ -116,15 +116,29 @@ def load_data():
     """データファイルを読み込む"""
     global mokuroku_data, mokuroku_parsed
     
+    # JSONファイルを優先的に読み込む（pickle互換性問題を回避）
+    mokuroku_parsed_json_path = DATA_DIR / "mokuroku_parsed.json"
     mokuroku_path = DATA_DIR / "mokuroku.pickle"
     mokuroku_parsed_path = DATA_DIR / "mokuroku_parsed.pickle"
     
+    # mokuroku_parsed: JSONを優先
+    if mokuroku_parsed_json_path.exists():
+        mokuroku_parsed = pd.read_json(mokuroku_parsed_json_path)
+        print(f"[Data] Loaded mokuroku_parsed.json: {len(mokuroku_parsed)} records")
+    elif mokuroku_parsed_path.exists():
+        try:
+            mokuroku_parsed = pd.read_pickle(mokuroku_parsed_path)
+            print(f"[Data] Loaded mokuroku_parsed.pickle: {len(mokuroku_parsed)} records")
+        except Exception as e:
+            print(f"[Data] Failed to load mokuroku_parsed.pickle: {e}")
+    
+    # mokuroku: pickleのみ（オプション）
     if mokuroku_path.exists():
-        mokuroku_data = pd.read_pickle(mokuroku_path)
-        print(f"[Data] Loaded mokuroku.pickle: {len(mokuroku_data)} records")
-    if mokuroku_parsed_path.exists():
-        mokuroku_parsed = pd.read_pickle(mokuroku_parsed_path)
-        print(f"[Data] Loaded mokuroku_parsed.pickle: {len(mokuroku_parsed)} records")
+        try:
+            mokuroku_data = pd.read_pickle(mokuroku_path)
+            print(f"[Data] Loaded mokuroku.pickle: {len(mokuroku_data)} records")
+        except Exception as e:
+            print(f"[Data] Failed to load mokuroku.pickle: {e}")
 
 
 @app.on_event("startup")
