@@ -17,7 +17,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # アプリケーションコードをコピー
 COPY api/ ./api/
-COPY birdVoiceSearch/*.pickle ./birdVoiceSearch/
+
+# birdVoiceSearchディレクトリを作成（pickleファイルはオプション）
+RUN mkdir -p ./birdVoiceSearch
 
 # 環境変数を設定
 ENV PYTHONUNBUFFERED=1
