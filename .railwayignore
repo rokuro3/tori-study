@@ -1,0 +1,21 @@
+# Next.js フロントエンド（別途デプロイ）
+app/
+node_modules/
+
+# ドキュメント
+docs/
+logs/
+*.md
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# テスト
+__pycache__/
+*.pyc
+.pytest_cache/

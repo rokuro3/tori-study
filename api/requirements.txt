@@ -1,0 +1,13 @@
+# FastAPI関連
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# データ処理
+pandas==2.1.4
+numpy==1.26.3
+
+# HTTP リクエスト
+requests==2.31.0
+
+# 環境変数
+python-dotenv==1.0.0
