@@ -34,6 +34,9 @@ ENV/
 # Xeno-Canto API Key (DO NOT COMMIT!)
 .xenocantoapi
 
+# Documentation (kept locally but not committed)
+docs/
+
 # IDE
 .vscode/
 .idea/
