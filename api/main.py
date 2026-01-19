@@ -67,9 +67,9 @@ mokuroku_parsed: Optional[pd.DataFrame] = None  # 新形式（科名等の情報
 class RateLimiter:
     """
     Xeno-Canto APIへのリクエストを制限するレートリミッター
-    10秒に1回のリクエストに制限
+    3秒に1回のリクエストに制限
     """
-    def __init__(self, min_interval: float = 10.0):
+    def __init__(self, min_interval: float = 3.0):
         self.min_interval = min_interval
         self.last_request_time: float = 0
         self.lock = threading.Lock()
@@ -95,8 +95,8 @@ class RateLimiter:
             return 0
 
 
-# レートリミッターインスタンス（10秒間隔）
-xeno_canto_limiter = RateLimiter(min_interval=10.0)
+# レートリミッターインスタンス（3秒間隔）
+xeno_canto_limiter = RateLimiter(min_interval=3.0)
 
 
 # ============================================
@@ -202,7 +202,7 @@ def get_xeno_canto_recordings(scientific_name: str, voice_type: Optional[str] = 
                                limit: int = 5) -> list[dict]:
     """
     Xeno-Canto API v3から日本国内の音声データを取得
-    レートリミット: 10秒に1回
+    レートリミット: 3秒に1回
     APIキーが必要（環境変数 XENO_CANTO_API_KEY）
     """
     # APIキーの確認
