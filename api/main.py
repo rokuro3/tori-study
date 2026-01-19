@@ -488,15 +488,16 @@ async def get_quiz_question(
     # ランダムに1つの音声を選択
     selected_recording = random.choice(recordings)
     
-    # 同じ科から不正解の選択肢を取得
-    similar_species = get_similar_species_by_family(family_jp, correct_species, count=3)
+    # 出題する鳥のリスト（TARGET_BIRDS）から不正解の選択肢を取得
+    available_choices = [bird for bird in TARGET_BIRDS if bird != correct_species]
+    wrong_choices = random.sample(available_choices, min(3, len(available_choices)))
     
     # 選択肢を作成（正解 + 不正解3つ）
-    choices = [correct_species] + similar_species
+    choices = [correct_species] + wrong_choices
     
-    # 選択肢が4つに満たない場合は追加
-    while len(choices) < 4:
-        additional = species_df.sample(n=1).iloc[0]["japanese_name"]
+    # 選択肢が4つに満たない場合は追加（念のため）
+    while len(choices) < 4 and len(available_choices) > len(wrong_choices):
+        additional = random.choice(available_choices)
         if additional not in choices:
             choices.append(additional)
     
