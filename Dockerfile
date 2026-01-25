@@ -25,6 +25,9 @@ COPY start.py ./
 # データファイルをコピー（JSONを使用、pickle互換性問題を回避）
 COPY birdVoiceSearch/mokuroku_parsed.json ./birdVoiceSearch/
 
+# 音声ファイルをコピー
+COPY sound/ ./sound/
+
 # 環境変数を設定
 ENV PYTHONUNBUFFERED=1
 ENV PORT=8000

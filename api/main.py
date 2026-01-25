@@ -292,7 +292,11 @@ async def get_bird_detail(species_name: str):
 
 # 静的ファイル（音声ファイル）を配信
 # 注意: StaticFilesは全てのAPIエンドポイントの後にマウントする
-app.mount("/audio", StaticFiles(directory=str(SOUND_DIR)), name="audio")
+# soundディレクトリが存在する場合のみマウント
+if SOUND_DIR.exists():
+    app.mount("/audio", StaticFiles(directory=str(SOUND_DIR)), name="audio")
+else:
+    print(f"Warning: Sound directory not found at {SOUND_DIR}")
 
 
 if __name__ == "__main__":
