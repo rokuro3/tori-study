@@ -19,7 +19,17 @@ export async function fetchQuizQuestion(): Promise<ApiQuizQuestion> {
     throw new Error(error.detail || `HTTP error: ${response.status}`)
   }
 
-  return response.json()
+  const data = await response.json()
+
+  // 音声URLを完全なURLにし、スペース等をエンコード
+  if (data.audio_url) {
+    const absoluteUrl = data.audio_url.startsWith('/')
+      ? `${API_BASE_URL}${data.audio_url}`
+      : data.audio_url
+    data.audio_url = encodeURI(absoluteUrl)
+  }
+
+  return data
 }
 
 /**

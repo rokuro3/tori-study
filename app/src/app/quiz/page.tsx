@@ -2,12 +2,25 @@
 
 import { useState, useRef, useCallback, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { useAuth } from '@/contexts/AuthContext'
 import { ApiQuizQuestion } from '@/lib/quiz/types'
 import { fetchQuizQuestion, submitQuizAnswer } from '@/lib/quiz/api'
-import { createClient } from '@/lib/supabase/client'
+import { 
+  saveSpeciesAnswer, 
+  saveQuizScore, 
+  checkAndAwardBadges,
+  BadgeType,
+  BADGES 
+} from '@/lib/score/badge'
 
 const TOTAL_QUESTIONS = 5
+
+// 回答履歴（クイズセッション内で種ごとの回答を追跡）
+type AnswerRecord = {
+  species: string
+  isCorrect: boolean
+}
 
 export default function QuizPage() {
   const router = useRouter()
@@ -24,6 +37,9 @@ export default function QuizPage() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [answerRecords, setAnswerRecords] = useState<AnswerRecord[]>([])
+  const [newBadges, setNewBadges] = useState<BadgeType[]>([])
+  const [savingScore, setSavingScore] = useState(false)
 
   // 新しい問題を取得
   const loadNewQuestion = useCallback(async () => {
@@ -71,11 +87,23 @@ export default function QuizPage() {
         user_answer: answer,
       })
       
-      setIsCorrect(result.is_correct)
+      const correct = result.is_correct
+      setIsCorrect(correct)
       setShowResult(true)
       
-      if (result.is_correct) {
+      if (correct) {
         setScore(prev => prev + 1)
+      }
+      
+      // 回答履歴を記録
+      setAnswerRecords(prev => [...prev, {
+        species: currentQuestion.correct_answer,
+        isCorrect: correct,
+      }])
+      
+      // ユーザーがログインしている場合、種ごとの回答を保存
+      if (user) {
+        await saveSpeciesAnswer(user.id, currentQuestion.correct_answer, correct)
       }
     } catch (err) {
       console.error('Failed to submit answer:', err)
@@ -86,6 +114,12 @@ export default function QuizPage() {
       if (correct) {
         setScore(prev => prev + 1)
       }
+      
+      // 回答履歴を記録
+      setAnswerRecords(prev => [...prev, {
+        species: currentQuestion.correct_answer,
+        isCorrect: correct,
+      }])
     }
   }
 
@@ -99,20 +133,25 @@ export default function QuizPage() {
     }
   }
 
-  // スコア保存
+  // スコア保存とバッジチェック
   const saveScore = async () => {
     if (!user) return
     
+    setSavingScore(true)
+    
     try {
-      const supabase = createClient()
-      await supabase.from('scores').insert({
-        user_id: user.id,
-        score: score,
-        total_questions: TOTAL_QUESTIONS,
-        correct_answers: score,
-      })
+      // クイズスコアを保存
+      await saveQuizScore(user.id, score, TOTAL_QUESTIONS)
+      
+      // バッジをチェックして付与
+      const awarded = await checkAndAwardBadges(user.id)
+      if (awarded.length > 0) {
+        setNewBadges(awarded)
+      }
     } catch (err) {
       console.error('Failed to save score:', err)
+    } finally {
+      setSavingScore(false)
     }
   }
 
@@ -121,6 +160,8 @@ export default function QuizPage() {
     setQuestionNumber(0)
     setScore(0)
     setGameFinished(false)
+    setAnswerRecords([])
+    setNewBadges([])
     loadNewQuestion()
   }
 
@@ -165,6 +206,52 @@ export default function QuizPage() {
               </div>
             </div>
             
+            {/* 新しく獲得したバッジ */}
+            {newBadges.length > 0 && (
+              <div className="mb-6 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl border-2 border-yellow-400">
+                <div className="text-lg font-bold text-yellow-700 dark:text-yellow-300 mb-2">
+                  🎊 新しいバッジを獲得！
+                </div>
+                <div className="flex justify-center gap-4">
+                  {newBadges.map(badgeType => {
+                    const badge = BADGES.find(b => b.type === badgeType)
+                    return badge ? (
+                      <div key={badgeType} className="text-center">
+                        <div className="text-4xl">{badge.emoji}</div>
+                        <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                          {badge.name}
+                        </div>
+                      </div>
+                    ) : null
+                  })}
+                </div>
+              </div>
+            )}
+            
+            {/* 回答履歴 */}
+            {answerRecords.length > 0 && (
+              <div className="mb-6 text-left">
+                <h3 className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                  今回の結果:
+                </h3>
+                <div className="space-y-1">
+                  {answerRecords.map((record, index) => (
+                    <div 
+                      key={index}
+                      className="flex items-center justify-between text-sm p-2 bg-gray-50 dark:bg-gray-700 rounded"
+                    >
+                      <span className="text-gray-800 dark:text-gray-200">
+                        {index + 1}. {record.species}
+                      </span>
+                      <span className={record.isCorrect ? 'text-green-600' : 'text-red-600'}>
+                        {record.isCorrect ? '⭕️' : '❌'}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            
             <div className="space-y-3">
               <button
                 onClick={handleRetry}
@@ -172,6 +259,12 @@ export default function QuizPage() {
               >
                 もう一度挑戦
               </button>
+              <Link
+                href="/score"
+                className="block w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors text-center"
+              >
+                📊 スコア・バッジを見る
+              </Link>
               <button
                 onClick={() => router.push('/')}
                 className="w-full py-3 px-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium rounded-lg transition-colors"

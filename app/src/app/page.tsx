@@ -94,13 +94,23 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* スタートボタン */}
-          <Link
-            href="/quiz"
-            className="inline-block py-4 px-12 bg-green-600 hover:bg-green-700 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
-          >
-            🎮 クイズを始める
-          </Link>
+          {/* ボタン */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/quiz"
+              className="inline-block py-4 px-12 bg-green-600 hover:bg-green-700 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            >
+              🎮 クイズを始める
+            </Link>
+            {user && (
+              <Link
+                href="/score"
+                className="inline-block py-4 px-12 bg-amber-500 hover:bg-amber-600 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+              >
+                🏆 スコアを見る
+              </Link>
+            )}
+          </div>
 
           {/* サブテキスト */}
           <p className="mt-6 text-sm text-gray-500 dark:text-gray-500">

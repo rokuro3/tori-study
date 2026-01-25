@@ -140,6 +140,10 @@ def get_bird_info(bird_name: str) -> Optional[Dict]:
     }
 
 
+# 静的ファイル（音声ファイル）を配信
+app.mount("/audio", StaticFiles(directory=str(SOUND_DIR)), name="audio")
+
+
 @app.get("/")
 async def root():
     """ルートエンドポイント"""
@@ -288,11 +292,6 @@ async def get_bird_detail(species_name: str):
         order=bird_info['order_jp'],
         audio_count=len(audio_files)
     )
-
-
-# 静的ファイル（音声ファイル）を配信
-# 注意: StaticFilesは全てのAPIエンドポイントの後にマウントする
-app.mount("/audio", StaticFiles(directory=str(SOUND_DIR)), name="audio")
 
 
 if __name__ == "__main__":

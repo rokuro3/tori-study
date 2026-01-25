@@ -32,11 +32,18 @@ export default function SignUpPage() {
 
     setLoading(true)
 
-    const { error } = await signUp(email, password, username)
+    const { error, autoLoggedIn } = await signUp(email, password, username)
 
     if (error) {
       setError(error.message)
       setLoading(false)
+      return
+    }
+
+    // 自動ログインに成功した場合、直接クイズページへ
+    if (autoLoggedIn) {
+      router.push('/quiz')
+      router.refresh()
       return
     }
 
@@ -49,13 +56,13 @@ export default function SignUpPage() {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-green-100 dark:from-gray-900 dark:to-gray-800 px-4">
         <div className="w-full max-w-md">
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 text-center">
-            <div className="text-5xl mb-4">✉️</div>
+            <div className="text-5xl mb-4">🎉</div>
             <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
               登録完了！
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              確認メールを送信しました。<br />
-              メール内のリンクをクリックして登録を完了してください。
+              アカウントが作成されました。<br />
+              ログインしてクイズを始めましょう！
             </p>
             <Link
               href="/login"
