@@ -21,12 +21,13 @@ export async function fetchQuizQuestion(): Promise<ApiQuizQuestion> {
 
   const data = await response.json()
 
-  // 音声URLを完全なURLにし、スペース等をエンコード
+  // 音声URLを完全なURLに変換（サーバー側で既にエンコード済み）
   if (data.audio_url) {
     const absoluteUrl = data.audio_url.startsWith('/')
       ? `${API_BASE_URL}${data.audio_url}`
       : data.audio_url
-    data.audio_url = encodeURI(absoluteUrl)
+    // サーバー側でURLエンコード済みのため、再エンコードしない
+    data.audio_url = absoluteUrl
   }
 
   return data

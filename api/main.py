@@ -16,6 +16,7 @@ import time
 import os
 from pathlib import Path
 from datetime import datetime
+from urllib.parse import quote
 
 # アプリケーション初期化
 app = FastAPI(
@@ -34,9 +35,15 @@ app.add_middleware(
 )
 
 # データファイルのパス
-BASE_DIR = Path(__file__).resolve().parent.parent
+# Docker環境では /app から実行されるため、環境変数でベースディレクトリを指定可能にする
+BASE_DIR = Path(os.environ.get("APP_BASE_DIR", Path(__file__).resolve().parent.parent))
 SOUND_DIR = BASE_DIR / "sound"
 SOUND_FILES_JSON = BASE_DIR / "api" / "sound_files.json"
+
+# デバッグ用: パス情報を出力
+print(f"[Config] BASE_DIR: {BASE_DIR}")
+print(f"[Config] SOUND_DIR: {SOUND_DIR} (exists: {SOUND_DIR.exists()})")
+print(f"[Config] SOUND_FILES_JSON: {SOUND_FILES_JSON} (exists: {SOUND_FILES_JSON.exists()})")
 
 # グローバルデータの読み込み
 sound_files_data: Optional[Dict] = None
@@ -156,11 +163,21 @@ async def root():
 async def health_check():
     """ヘルスチェック"""
     available_birds = get_available_birds()
+    
+    # 音声ディレクトリの状態を確認
+    sound_dir_exists = SOUND_DIR.exists()
+    audio_files_count = 0
+    if sound_dir_exists:
+        audio_files_count = len(list(SOUND_DIR.glob("*.mp3")))
+    
     return {
         "status": "healthy",
         "data_loaded": sound_files_data is not None,
         "available_birds_count": len(available_birds),
-        "audio_source": "local"
+        "audio_source": "local",
+        "sound_dir": str(SOUND_DIR),
+        "sound_dir_exists": sound_dir_exists,
+        "audio_files_count": audio_files_count,
     }
 
 
@@ -238,8 +255,9 @@ async def get_quiz_question():
         "created_at": datetime.now().isoformat(),
     }
     
-    # 音声ファイルのURL（相対パス）
-    audio_url = f"/audio/{selected_file['filename']}"
+    # 音声ファイルのURL（日本語ファイル名をURLエンコード）
+    encoded_filename = quote(selected_file['filename'], safe='')
+    audio_url = f"/audio/{encoded_filename}"
     
     return QuizQuestion(
         question_id=question_id,
