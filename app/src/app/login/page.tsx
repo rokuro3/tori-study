@@ -25,7 +25,7 @@ export default function LoginPage() {
       return
     }
 
-    router.push('/quiz')
+    router.push('/')
     router.refresh()
   }
 

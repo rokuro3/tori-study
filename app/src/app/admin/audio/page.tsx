@@ -11,6 +11,7 @@ import {
   updateAudioFile,
   deleteAudioFile
 } from '@/lib/supabase/admin'
+import BirdSelector, { BirdData } from '@/components/BirdSelector'
 
 export default function AudioManagementPage() {
   const { user, loading } = useAuth()
@@ -35,6 +36,7 @@ export default function AudioManagementPage() {
     genus_jp: '',
     description: ''
   })
+  const [selectedBird, setSelectedBird] = useState<BirdData | null>(null)
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
 
   useEffect(() => {
@@ -157,7 +159,24 @@ export default function AudioManagementPage() {
       genus_jp: file.genus_jp || '',
       description: file.description || ''
     })
+    // 編集モーダルでは選択状態をリセット
+    setSelectedBird(null)
     setShowEditModal(true)
+  }
+
+  // 鳥類目録から選択時に自動入力
+  function handleBirdSelect(bird: BirdData | null) {
+    setSelectedBird(bird)
+    if (bird) {
+      setFormData(prev => ({
+        ...prev,
+        bird_name: bird.japanese_name,
+        scientific_name: bird.scientific_name,
+        family_jp: bird.family_jp,
+        order_jp: bird.order_jp,
+        genus_jp: bird.genus_jp
+      }))
+    }
   }
 
   // フィルタリング
@@ -218,6 +237,7 @@ export default function AudioManagementPage() {
                 description: ''
               })
               setSelectedFile(null)
+              setSelectedBird(null)
               setShowUploadModal(true)
             }}
             className="py-2 px-6 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg"
@@ -356,68 +376,108 @@ export default function AudioManagementPage() {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    鳥の名前 *
+                    鳥の名前 * （目録から選択）
                   </label>
-                  <input
-                    type="text"
-                    value={formData.bird_name}
-                    onChange={(e) => setFormData({ ...formData, bird_name: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                    placeholder="例: スズメ"
+                  <BirdSelector
+                    onSelect={handleBirdSelect}
+                    selectedBird={selectedBird}
+                    placeholder="鳥の名前を入力して検索..."
                   />
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                    目録から選択すると学名・科・目などが自動入力されます
+                  </p>
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    学名
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.scientific_name}
-                    onChange={(e) => setFormData({ ...formData, scientific_name: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                    placeholder="例: Passer montanus"
-                  />
-                </div>
+                {/* 自動入力される情報（読み取り専用表示） */}
+                {selectedBird && (
+                  <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg border border-green-200 dark:border-green-800">
+                    <div className="text-sm text-green-800 dark:text-green-200 font-medium mb-2">
+                      ✓ 目録から自動入力
+                    </div>
+                    <div className="grid grid-cols-2 gap-2 text-sm text-gray-700 dark:text-gray-300">
+                      <div>
+                        <span className="text-gray-500 dark:text-gray-400">学名:</span>{' '}
+                        <span className="italic">{formData.scientific_name}</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-500 dark:text-gray-400">目:</span>{' '}
+                        {formData.order_jp}
+                      </div>
+                      <div>
+                        <span className="text-gray-500 dark:text-gray-400">科:</span>{' '}
+                        {formData.family_jp}
+                      </div>
+                      <div>
+                        <span className="text-gray-500 dark:text-gray-400">属:</span>{' '}
+                        {formData.genus_jp}
+                      </div>
+                    </div>
+                  </div>
+                )}
 
-                <div className="grid grid-cols-2 gap-4">
+                {/* 目録にない場合の手動入力オプション */}
+                {!selectedBird && formData.bird_name && (
+                  <div className="p-3 bg-yellow-50 dark:bg-yellow-900/30 rounded-lg border border-yellow-200 dark:border-yellow-800">
+                    <div className="text-sm text-yellow-800 dark:text-yellow-200">
+                      目録に該当する鳥が見つからない場合は、以下に手動で入力してください
+                    </div>
+                  </div>
+                )}
+
+                {/* 手動入力フィールド（目録から選択されていない場合のみ編集可能） */}
+                <div className={selectedBird ? 'hidden' : ''}>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      科（日本語）
+                      学名
                     </label>
                     <input
                       type="text"
-                      value={formData.family_jp}
-                      onChange={(e) => setFormData({ ...formData, family_jp: e.target.value })}
+                      value={formData.scientific_name}
+                      onChange={(e) => setFormData({ ...formData, scientific_name: e.target.value })}
                       className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                      placeholder="例: スズメ科"
+                      placeholder="例: Passer montanus"
                     />
                   </div>
-                  <div>
+
+                  <div className="grid grid-cols-2 gap-4 mt-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                        科（日本語）
+                      </label>
+                      <input
+                        type="text"
+                        value={formData.family_jp}
+                        onChange={(e) => setFormData({ ...formData, family_jp: e.target.value })}
+                        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
+                        placeholder="例: スズメ科"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                        目（日本語）
+                      </label>
+                      <input
+                        type="text"
+                        value={formData.order_jp}
+                        onChange={(e) => setFormData({ ...formData, order_jp: e.target.value })}
+                        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
+                        placeholder="例: スズメ目"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="mt-4">
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      目（日本語）
+                      属（日本語）
                     </label>
                     <input
                       type="text"
-                      value={formData.order_jp}
-                      onChange={(e) => setFormData({ ...formData, order_jp: e.target.value })}
+                      value={formData.genus_jp}
+                      onChange={(e) => setFormData({ ...formData, genus_jp: e.target.value })}
                       className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                      placeholder="例: スズメ目"
+                      placeholder="例: スズメ属"
                     />
                   </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    属（日本語）
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.genus_jp}
-                    onChange={(e) => setFormData({ ...formData, genus_jp: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                    placeholder="例: スズメ属"
-                  />
                 </div>
 
                 <div>
@@ -473,64 +533,98 @@ export default function AudioManagementPage() {
               <div className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    鳥の名前 *
+                    鳥の名前 *（目録から選択または手動入力）
                   </label>
-                  <input
-                    type="text"
-                    value={formData.bird_name}
-                    onChange={(e) => setFormData({ ...formData, bird_name: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
+                  <BirdSelector
+                    onSelect={handleBirdSelect}
+                    selectedBird={selectedBird}
+                    placeholder="鳥の名前を入力して検索..."
                   />
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                    目録から選択すると学名・科・目などが自動入力されます
+                  </p>
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    学名
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.scientific_name}
-                    onChange={(e) => setFormData({ ...formData, scientific_name: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                  />
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      科（日本語）
-                    </label>
-                    <input
-                      type="text"
-                      value={formData.family_jp}
-                      onChange={(e) => setFormData({ ...formData, family_jp: e.target.value })}
-                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                    />
+                {/* 自動入力された情報の表示 */}
+                {selectedBird && (
+                  <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg border border-green-200 dark:border-green-800">
+                    <div className="text-sm text-green-800 dark:text-green-200 font-medium mb-2">
+                      ✓ 目録から自動入力
+                    </div>
+                    <div className="grid grid-cols-2 gap-2 text-sm text-gray-700 dark:text-gray-300">
+                      <div>
+                        <span className="text-gray-500 dark:text-gray-400">学名:</span>{' '}
+                        <span className="italic">{formData.scientific_name}</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-500 dark:text-gray-400">目:</span>{' '}
+                        {formData.order_jp}
+                      </div>
+                      <div>
+                        <span className="text-gray-500 dark:text-gray-400">科:</span>{' '}
+                        {formData.family_jp}
+                      </div>
+                      <div>
+                        <span className="text-gray-500 dark:text-gray-400">属:</span>{' '}
+                        {formData.genus_jp}
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      目（日本語）
-                    </label>
-                    <input
-                      type="text"
-                      value={formData.order_jp}
-                      onChange={(e) => setFormData({ ...formData, order_jp: e.target.value })}
-                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                    />
-                  </div>
-                </div>
+                )}
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    属（日本語）
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.genus_jp}
-                    onChange={(e) => setFormData({ ...formData, genus_jp: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
-                  />
-                </div>
+                {/* 手動入力フィールド */}
+                {!selectedBird && (
+                  <>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                        学名
+                      </label>
+                      <input
+                        type="text"
+                        value={formData.scientific_name}
+                        onChange={(e) => setFormData({ ...formData, scientific_name: e.target.value })}
+                        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
+                      />
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                          科（日本語）
+                        </label>
+                        <input
+                          type="text"
+                          value={formData.family_jp}
+                          onChange={(e) => setFormData({ ...formData, family_jp: e.target.value })}
+                          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                          目（日本語）
+                        </label>
+                        <input
+                          type="text"
+                          value={formData.order_jp}
+                          onChange={(e) => setFormData({ ...formData, order_jp: e.target.value })}
+                          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                        属（日本語）
+                      </label>
+                      <input
+                        type="text"
+                        value={formData.genus_jp}
+                        onChange={(e) => setFormData({ ...formData, genus_jp: e.target.value })}
+                        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
+                      />
+                    </div>
+                  </>
+                )}
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -550,6 +644,7 @@ export default function AudioManagementPage() {
                   onClick={() => {
                     setShowEditModal(false)
                     setEditingFile(null)
+                    setSelectedBird(null)
                   }}
                   className="flex-1 py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
                 >
