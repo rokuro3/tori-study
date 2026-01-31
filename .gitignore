@@ -56,3 +56,6 @@ node_modules/
 # Pickle files (may be large)
 # *.pickle
 Terms of Use __ xeno-canto.html
+
+# Sound files (local only)
+sound/

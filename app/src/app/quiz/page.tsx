@@ -1,11 +1,10 @@
 'use client'
 
-import { useState, useRef, useCallback, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState, useRef, useCallback, useEffect, Suspense } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { useAuth } from '@/contexts/AuthContext'
-import { ApiQuizQuestion } from '@/lib/quiz/types'
-import { fetchQuizQuestion, submitQuizAnswer } from '@/lib/quiz/api'
+import { generateQuizQuestion, checkAnswer, QuizQuestion } from '@/lib/quiz/supabase-quiz'
 import { 
   saveSpeciesAnswer, 
   saveQuizScore, 
@@ -22,12 +21,17 @@ type AnswerRecord = {
   isCorrect: boolean
 }
 
-export default function QuizPage() {
+// メインのクイズコンポーネント
+function QuizContent() {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const questionSetId = searchParams.get('questionSetId') || undefined
+  const questionSetName = searchParams.get('name') || 'クイズ'
+  
   const { user } = useAuth()
   const audioRef = useRef<HTMLAudioElement>(null)
   
-  const [currentQuestion, setCurrentQuestion] = useState<ApiQuizQuestion | null>(null)
+  const [currentQuestion, setCurrentQuestion] = useState<QuizQuestion | null>(null)
   const [questionNumber, setQuestionNumber] = useState(0)
   const [score, setScore] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
@@ -50,7 +54,7 @@ export default function QuizPage() {
     setIsPlaying(false)
 
     try {
-      const question = await fetchQuizQuestion()
+      const question = await generateQuizQuestion(questionSetId)
       setCurrentQuestion(question)
       setQuestionNumber(prev => prev + 1)
     } catch (err) {
@@ -59,7 +63,7 @@ export default function QuizPage() {
     } finally {
       setIsLoading(false)
     }
-  }, [])
+  }, [questionSetId])
 
   // 初回問題生成
   useEffect(() => {
@@ -81,45 +85,29 @@ export default function QuizPage() {
     
     setSelectedAnswer(answer)
     
-    try {
-      const result = await submitQuizAnswer({
-        question_id: currentQuestion.question_id,
-        user_answer: answer,
-      })
-      
-      const correct = result.is_correct
-      setIsCorrect(correct)
-      setShowResult(true)
-      
-      if (correct) {
-        setScore(prev => prev + 1)
+    // フロントエンドで判定
+    const result = checkAnswer(currentQuestion, answer)
+    const correct = result.isCorrect
+    setIsCorrect(correct)
+    setShowResult(true)
+    
+    if (correct) {
+      setScore(prev => prev + 1)
+    }
+    
+    // 回答履歴を記録
+    setAnswerRecords(prev => [...prev, {
+      species: currentQuestion.correctAnswer,
+      isCorrect: correct,
+    }])
+    
+    // ユーザーがログインしている場合、種ごとの回答を保存
+    if (user) {
+      try {
+        await saveSpeciesAnswer(user.id, currentQuestion.correctAnswer, correct)
+      } catch (err) {
+        console.error('Failed to save species answer:', err)
       }
-      
-      // 回答履歴を記録
-      setAnswerRecords(prev => [...prev, {
-        species: currentQuestion.correct_answer,
-        isCorrect: correct,
-      }])
-      
-      // ユーザーがログインしている場合、種ごとの回答を保存
-      if (user) {
-        await saveSpeciesAnswer(user.id, currentQuestion.correct_answer, correct)
-      }
-    } catch (err) {
-      console.error('Failed to submit answer:', err)
-      // フォールバック: ローカルで判定
-      const correct = answer === currentQuestion.correct_answer
-      setIsCorrect(correct)
-      setShowResult(true)
-      if (correct) {
-        setScore(prev => prev + 1)
-      }
-      
-      // 回答履歴を記録
-      setAnswerRecords(prev => [...prev, {
-        species: currentQuestion.correct_answer,
-        isCorrect: correct,
-      }])
     }
   }
 
@@ -285,9 +273,6 @@ export default function QuizPage() {
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto mb-4"></div>
           <div className="text-xl text-gray-600 dark:text-gray-400">問題を取得中...</div>
-          <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">
-            ※ 初回は10秒程度かかる場合があります
-          </p>
         </div>
       </div>
     )
@@ -305,12 +290,20 @@ export default function QuizPage() {
           <p className="text-gray-600 dark:text-gray-400 mb-6">
             {error}
           </p>
-          <button
-            onClick={loadNewQuestion}
-            className="w-full py-3 px-4 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors"
-          >
-            再試行
-          </button>
+          <div className="space-y-3">
+            <button
+              onClick={loadNewQuestion}
+              className="w-full py-3 px-4 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors"
+            >
+              再試行
+            </button>
+            <Link
+              href="/quiz/select"
+              className="block w-full py-3 px-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium rounded-lg transition-colors"
+            >
+              問題集選択に戻る
+            </Link>
+          </div>
         </div>
       </div>
     )
@@ -323,6 +316,19 @@ export default function QuizPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100 dark:from-gray-900 dark:to-gray-800 px-4 py-8">
       <div className="max-w-md mx-auto">
+        {/* ヘッダー */}
+        <div className="mb-4 flex items-center justify-between">
+          <Link 
+            href="/quiz/select"
+            className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
+          >
+            ← 戻る
+          </Link>
+          <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
+            {questionSetName}
+          </span>
+        </div>
+
         {/* 進捗バー */}
         <div className="mb-6">
           <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 mb-2">
@@ -353,7 +359,7 @@ export default function QuizPage() {
             </button>
             <audio
               ref={audioRef}
-              src={currentQuestion.audio_url}
+              src={currentQuestion.audioFile.storage_url}
               onEnded={() => setIsPlaying(false)}
               onError={() => setIsPlaying(false)}
             />
@@ -369,7 +375,7 @@ export default function QuizPage() {
               let buttonStyle = 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'
               
               if (showResult) {
-                if (choice === currentQuestion.correct_answer) {
+                if (choice === currentQuestion.correctAnswer) {
                   buttonStyle = 'bg-green-500 text-white'
                 } else if (choice === selectedAnswer && !isCorrect) {
                   buttonStyle = 'bg-red-500 text-white'
@@ -400,50 +406,40 @@ export default function QuizPage() {
                 <div className="text-center">
                   <span className="text-2xl">{isCorrect ? '⭕️' : '❌'}</span>
                   <p className={`font-bold mt-2 ${isCorrect ? 'text-green-700 dark:text-green-300' : 'text-red-700 dark:text-red-300'}`}>
-                    {isCorrect ? '正解！' : `不正解... 答えは「${currentQuestion.correct_answer}」`}
+                    {isCorrect ? '正解！' : `不正解... 答えは「${currentQuestion.correctAnswer}」`}
                   </p>
-                  {currentQuestion.scientific_name && (
+                  {currentQuestion.audioFile.scientific_name && (
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      学名: {currentQuestion.scientific_name}
-                    </p>
-                  )}
-                  {currentQuestion.family && (
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      科: {currentQuestion.family}
+                      学名: {currentQuestion.audioFile.scientific_name}
                     </p>
                   )}
                 </div>
               </div>
 
-              {/* クレジット表示 (Xeno-Canto Terms of Use準拠) */}
-              <div className="mt-4 p-3 bg-gray-50 dark:bg-gray-700 rounded-lg text-xs text-gray-500 dark:text-gray-400">
-                <p className="font-medium mb-1">📢 音声クレジット</p>
-                <p>
-                  録音者: {currentQuestion.recordist || 'Unknown'}
-                  {currentQuestion.xc_id && (
-                    <> | <a 
-                      href={`https://xeno-canto.org/${currentQuestion.xc_id}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-green-600 dark:text-green-400 hover:underline"
-                    >
-                      XC{currentQuestion.xc_id}
-                    </a></>
+              {/* クレジット表示 */}
+              {(currentQuestion.audioFile.recordist || currentQuestion.audioFile.source_url) && (
+                <div className="mt-4 p-3 bg-gray-50 dark:bg-gray-700 rounded-lg text-xs text-gray-500 dark:text-gray-400">
+                  <p className="font-medium mb-1">📢 音声クレジット</p>
+                  {currentQuestion.audioFile.recordist && (
+                    <p>録音者: {currentQuestion.audioFile.recordist}</p>
                   )}
-                </p>
-                {currentQuestion.license_url && (
-                  <p>
-                    <a 
-                      href={currentQuestion.license_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-green-600 dark:text-green-400 hover:underline"
-                    >
-                      ライセンス情報
-                    </a>
-                  </p>
-                )}
-              </div>
+                  {currentQuestion.audioFile.source_url && (
+                    <p>
+                      <a 
+                        href={currentQuestion.audioFile.source_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-green-600 dark:text-green-400 hover:underline"
+                      >
+                        ソース
+                      </a>
+                    </p>
+                  )}
+                  {currentQuestion.audioFile.license && (
+                    <p>ライセンス: {currentQuestion.audioFile.license}</p>
+                  )}
+                </div>
+              )}
               
               <button
                 onClick={handleNext}
@@ -454,17 +450,28 @@ export default function QuizPage() {
             </div>
           )}
         </div>
-
-        {/* Xeno-Canto帰属表示 */}
-        <p className="mt-4 text-center text-xs text-gray-500 dark:text-gray-500">
-          Bird sounds from <a 
-            href="https://xeno-canto.org" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-green-600 dark:text-green-400 hover:underline"
-          >xeno-canto.org</a>
-        </p>
       </div>
     </div>
+  )
+}
+
+// ローディングフォールバック
+function QuizLoading() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-green-100 dark:from-gray-900 dark:to-gray-800">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto mb-4"></div>
+        <div className="text-xl text-gray-600 dark:text-gray-400">読み込み中...</div>
+      </div>
+    </div>
+  )
+}
+
+// Suspenseでラップしたエクスポート
+export default function QuizPage() {
+  return (
+    <Suspense fallback={<QuizLoading />}>
+      <QuizContent />
+    </Suspense>
   )
 }

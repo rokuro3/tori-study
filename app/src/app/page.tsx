@@ -1,13 +1,26 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useAuth } from '@/contexts/AuthContext'
 import { signOut } from '@/lib/supabase/auth'
+import { isAdmin } from '@/lib/supabase/admin'
 import { useRouter } from 'next/navigation'
 
 export default function HomePage() {
   const { user, loading } = useAuth()
   const router = useRouter()
+  const [isAdminUser, setIsAdminUser] = useState(false)
+
+  useEffect(() => {
+    async function checkAdmin() {
+      if (user) {
+        const adminStatus = await isAdmin()
+        setIsAdminUser(adminStatus)
+      }
+    }
+    checkAdmin()
+  }, [user])
 
   const handleSignOut = async () => {
     await signOut()
@@ -20,11 +33,19 @@ export default function HomePage() {
       <header className="p-4">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
           <div className="text-2xl">🐦</div>
-          <nav className="flex gap-4">
+          <nav className="flex gap-4 items-center">
             {loading ? (
               <span className="text-gray-400">...</span>
             ) : user ? (
               <div className="flex items-center gap-4">
+                {isAdminUser && (
+                  <Link
+                    href="/admin"
+                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
+                  >
+                    管理画面
+                  </Link>
+                )}
                 <span className="text-sm text-gray-600 dark:text-gray-400">
                   {user.email}
                 </span>
@@ -94,23 +115,39 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* ボタン */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* モード選択ボタン */}
+          <div className="grid sm:grid-cols-2 gap-4 mb-6">
             <Link
-              href="/quiz"
-              className="inline-block py-4 px-12 bg-green-600 hover:bg-green-700 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+              href="/quiz/select"
+              className="block py-6 px-8 bg-green-600 hover:bg-green-700 text-white text-xl font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
             >
-              🎮 クイズを始める
+              <div className="text-4xl mb-2">🎮</div>
+              クイズモード
+              <p className="text-sm font-normal mt-1 opacity-90">
+                4択クイズに挑戦
+              </p>
             </Link>
-            {user && (
-              <Link
-                href="/score"
-                className="inline-block py-4 px-12 bg-amber-500 hover:bg-amber-600 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
-              >
-                🏆 スコアを見る
-              </Link>
-            )}
+            <Link
+              href="/learn"
+              className="block py-6 px-8 bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            >
+              <div className="text-4xl mb-2">📖</div>
+              学習モード
+              <p className="text-sm font-normal mt-1 opacity-90">
+                鳴き声を覚える
+              </p>
+            </Link>
           </div>
+
+          {/* スコアボタン */}
+          {user && (
+            <Link
+              href="/score"
+              className="inline-block py-4 px-12 bg-amber-500 hover:bg-amber-600 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            >
+              🏆 スコアを見る
+            </Link>
+          )}
 
           {/* サブテキスト */}
           <p className="mt-6 text-sm text-gray-500 dark:text-gray-500">
