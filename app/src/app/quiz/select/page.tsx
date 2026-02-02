@@ -26,9 +26,12 @@ export default function QuizSelectPage() {
     setLoadingData(false)
   }
 
-  function startQuiz(setId: string | null) {
+  function startQuiz(setId: string | null, setName?: string) {
     if (setId) {
-      router.push(`/quiz?set=${setId}`)
+      const params = new URLSearchParams()
+      params.append('questionSetId', setId)
+      if (setName) params.append('name', setName)
+      router.push(`/quiz?${params.toString()}`)
     } else {
       router.push('/quiz')
     }
@@ -100,7 +103,7 @@ export default function QuizSelectPage() {
               {questionSets.map((set) => (
                 <button
                   key={set.id}
-                  onClick={() => startQuiz(set.id)}
+                  onClick={() => startQuiz(set.id, set.name)}
                   className="w-full bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow text-left"
                 >
                   <div className="flex items-center justify-between">

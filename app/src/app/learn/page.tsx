@@ -28,7 +28,6 @@ export default function LearnPage() {
   const [selectedSet, setSelectedSet] = useState<QuestionSetWithItems | null>(null)
   const [loadingData, setLoadingData] = useState(true)
   const [playingId, setPlayingId] = useState<string | null>(null)
-  const [expandedBird, setExpandedBird] = useState<string | null>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
@@ -107,7 +106,6 @@ export default function LearnPage() {
                 onClick={() => {
                   setViewMode('select')
                   setSelectedSet(null)
-                  setExpandedBird(null)
                 }}
                 className="text-2xl hover:opacity-70"
               >
@@ -149,15 +147,10 @@ export default function LearnPage() {
                   className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden"
                 >
                   {/* 鳥のヘッダー */}
-                  <button
-                    onClick={() => setExpandedBird(
-                      expandedBird === bird.bird_name ? null : bird.bird_name
-                    )}
-                    className="w-full p-6 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                  >
+                  <div className="p-6 border-b border-gray-200 dark:border-gray-700">
                     <div className="flex items-center gap-4">
                       <div className="text-4xl">🐦</div>
-                      <div className="text-left">
+                      <div className="text-left flex-1">
                         <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
                           {bird.bird_name}
                         </h2>
@@ -170,56 +163,49 @@ export default function LearnPage() {
                           )}
                         </div>
                       </div>
-                    </div>
-                    <div className="flex items-center gap-4">
                       <span className="text-sm text-gray-500 dark:text-gray-400">
                         {bird.audioFiles.length}件の音声
                       </span>
-                      <span className="text-2xl">
-                        {expandedBird === bird.bird_name ? '▲' : '▼'}
-                      </span>
                     </div>
-                  </button>
+                  </div>
 
-                  {/* 音声リスト（展開時） */}
-                  {expandedBird === bird.bird_name && (
-                    <div className="border-t border-gray-200 dark:border-gray-700 p-6 bg-gray-50 dark:bg-gray-750">
-                      <div className="space-y-3">
-                        {bird.audioFiles.map((audio, index) => (
-                          <div 
-                            key={audio.id}
-                            className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 rounded-xl shadow"
-                          >
-                            <div className="flex items-center gap-4">
-                              <span className="text-gray-400 font-mono">{index + 1}</span>
-                              <div>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">
-                                  {audio.original_filename || `音声${index + 1}`}
+                  {/* 音声リスト（常時表示） */}
+                  <div className="p-6 bg-gray-50 dark:bg-gray-750">
+                    <div className="space-y-3">
+                      {bird.audioFiles.map((audio, index) => (
+                        <div 
+                          key={audio.id}
+                          className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 rounded-xl shadow"
+                        >
+                          <div className="flex items-center gap-4 flex-1">
+                            <span className="text-gray-400 font-mono">{index + 1}</span>
+                            <div className="flex-1">
+                              <p className="text-sm text-gray-600 dark:text-gray-400">
+                                {audio.original_filename || `音声${index + 1}`}
+                              </p>
+                              {audio.description && (
+                                <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
+                                  {audio.description}
                                 </p>
-                                {audio.description && (
-                                  <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
-                                    {audio.description}
-                                  </p>
-                                )}
-                              </div>
+                              )}
                             </div>
-                            <button
-                              onClick={() => handlePlayAudio(audio)}
-                              className={`p-4 rounded-full transition-colors ${
-                                playingId === audio.id
-                                  ? 'bg-red-500 hover:bg-red-600 text-white'
-                                  : 'bg-blue-500 hover:bg-blue-600 text-white'
-                              }`}
-                            >
-                              <span className="text-2xl">
-                                {playingId === audio.id ? '⏹' : '▶'}
-                              </span>
-                            </button>
                           </div>
-                        ))}
-                      </div>
+                          <button
+                            onClick={() => handlePlayAudio(audio)}
+                            className={`p-4 rounded-full transition-colors ${
+                              playingId === audio.id
+                                ? 'bg-red-500 hover:bg-red-600 text-white'
+                                : 'bg-blue-500 hover:bg-blue-600 text-white'
+                            }`}
+                          >
+                            <span className="text-2xl">
+                              {playingId === audio.id ? '⏹' : '▶'}
+                            </span>
+                          </button>
+                        </div>
+                      ))}
                     </div>
-                  )}
+                  </div>
                 </div>
               ))}
             </div>

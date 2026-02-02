@@ -205,6 +205,101 @@ export default function QuestionSetsPage() {
     }
   }
 
+  function handleDownloadSetCSV() {
+    if (!editingSet) return
+
+    const items = editingSet.items || []
+    if (items.length === 0) {
+      alert('ダウンロードできる音声データがありません')
+      return
+    }
+
+    const headers = ['問題集名', '鳥類名', '科名', '説明']
+    const rows = items.map(item => {
+      const audioFile = item.audio_file
+      return [
+        `"${editingSet.name.replace(/"/g, '""')}"`,
+        `"${(audioFile?.bird_name || '').replace(/"/g, '""')}"`,
+        `"${(audioFile?.family_jp || '').replace(/"/g, '""')}"`,
+        `"${(audioFile?.description || '').replace(/"/g, '""')}"`
+      ]
+    })
+
+    const csv = [
+      headers.map(h => `"${h}"`).join(','),
+      ...rows.map(r => r.join(','))
+    ].join('\n')
+
+    const bom = new Uint8Array([0xEF, 0xBB, 0xBF])
+    const blob = new Blob([bom, csv], { type: 'text/csv;charset=utf-8;' })
+
+    const link = document.createElement('a')
+    const url = URL.createObjectURL(blob)
+    link.setAttribute('href', url)
+    link.setAttribute('download', `questionset_${editingSet.name}_${new Date().toISOString().split('T')[0]}.csv`)
+    link.style.visibility = 'hidden'
+
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
+  async function handleDownloadCSV() {
+    if (questionSets.length === 0) {
+      alert('ダウンロードする問題集がありません')
+      return
+    }
+
+    // CSVヘッダー（問題集内の音声情報）
+    const headers = ['問題集名', '鳥類名', '科名', '説明']
+
+    // CSVデータを生成（問題集ごとに音声を展開）
+    const rows = (
+      await Promise.all(
+        questionSets.map(async (set) => {
+          const setWithItems = await getQuestionSetWithItems(set.id)
+          const items = setWithItems?.items || []
+
+          return items.map(item => {
+            const audioFile = item.audio_file
+            return [
+              `"${set.name.replace(/"/g, '""')}"`,
+              `"${(audioFile?.bird_name || '').replace(/"/g, '""')}"`,
+              `"${(audioFile?.family_jp || '').replace(/"/g, '""')}"`,
+              `"${(audioFile?.description || '').replace(/"/g, '""')}"`
+            ]
+          })
+        })
+      )
+    ).flat()
+
+    if (rows.length === 0) {
+      alert('ダウンロードできる音声データがありません')
+      return
+    }
+
+    // CSV形式でファイルを生成
+    const csv = [
+      headers.map(h => `"${h}"`).join(','),
+      ...rows.map(r => r.join(','))
+    ].join('\n')
+
+    // BOMを追加（Excelでの文字化け対策）
+    const bom = new Uint8Array([0xEF, 0xBB, 0xBF])
+    const blob = new Blob([bom, csv], { type: 'text/csv;charset=utf-8;' })
+    
+    // ダウンロード実行
+    const link = document.createElement('a')
+    const url = URL.createObjectURL(blob)
+    link.setAttribute('href', url)
+    link.setAttribute('download', `questionsets_${new Date().toISOString().split('T')[0]}.csv`)
+    link.style.visibility = 'hidden'
+    
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   // フィルタリング（追加可能な音声）
   const filteredAudioFiles = availableAudioFiles.filter(file => {
     const alreadyAdded = editingSet?.items.some(item => item.audio_file_id === file.id)
@@ -263,6 +358,13 @@ export default function QuestionSetsPage() {
                 問題集編集: {editingSet.name}
               </h1>
             </div>
+            <button
+              onClick={handleDownloadSetCSV}
+              className="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg"
+              title="この問題集の音声一覧をCSVでダウンロード"
+            >
+              ⬇️ CSV
+            </button>
           </div>
         </header>
 
@@ -292,14 +394,16 @@ export default function QuestionSetsPage() {
                         key={item.id}
                         className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg"
                       >
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 flex-1">
                           <span className="text-gray-400 text-sm">{index + 1}</span>
-                          <div>
+                          <div className="flex-1">
                             <div className="font-medium text-gray-800 dark:text-white">
                               {item.audio_file?.bird_name || '不明'}
                             </div>
                             <div className="text-xs text-gray-500 dark:text-gray-400">
                               {item.audio_file?.family_jp}
+                              {item.audio_file?.family_jp && item.audio_file?.description && ' • '}
+                              {item.audio_file?.description}
                             </div>
                           </div>
                         </div>
@@ -352,12 +456,14 @@ export default function QuestionSetsPage() {
                         key={file.id}
                         className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg"
                       >
-                        <div>
+                        <div className="flex-1">
                           <div className="font-medium text-gray-800 dark:text-white">
                             {file.bird_name}
                           </div>
                           <div className="text-xs text-gray-500 dark:text-gray-400">
                             {file.family_jp}
+                            {file.family_jp && file.description && ' • '}
+                            {file.description}
                           </div>
                         </div>
                         <div className="flex gap-2">
@@ -398,20 +504,30 @@ export default function QuestionSetsPage() {
               問題集管理
             </h1>
           </div>
-          <button
-            onClick={() => {
-              setFormData({
-                name: '',
-                description: '',
-                difficulty_level: 1,
-                is_public: true
-              })
-              setShowCreateModal(true)
-            }}
-            className="py-2 px-6 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg"
-          >
-            ＋ 新規作成
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={handleDownloadCSV}
+              disabled={questionSets.length === 0}
+              className="py-2 px-6 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-bold rounded-lg flex items-center gap-2"
+              title="問題集の一覧をCSVでダウンロード"
+            >
+              ⬇️ CSV
+            </button>
+            <button
+              onClick={() => {
+                setFormData({
+                  name: '',
+                  description: '',
+                  difficulty_level: 1,
+                  is_public: true
+                })
+                setShowCreateModal(true)
+              }}
+              className="py-2 px-6 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg"
+            >
+              ＋ 新規作成
+            </button>
+          </div>
         </div>
       </header>
 

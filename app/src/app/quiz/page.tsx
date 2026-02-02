@@ -351,12 +351,12 @@ function QuizContent() {
 
           {/* 音声プレーヤー */}
           <div className="flex justify-center mb-4">
-            <button
-              onClick={playAudio}
-              className="w-24 h-24 bg-green-100 dark:bg-green-900 hover:bg-green-200 dark:hover:bg-green-800 rounded-full flex items-center justify-center transition-colors"
-            >
-              <span className="text-4xl">{isPlaying ? '🔊' : '🔇'}</span>
-            </button>
+              <button
+                onClick={playAudio}
+                className="w-24 h-24 bg-green-100 dark:bg-green-900 hover:bg-green-200 dark:hover:bg-green-800 rounded-full flex items-center justify-center transition-colors"
+              >
+                <span className="text-4xl">{isPlaying ? '⏹' : '▶'}</span>
+              </button>
             <audio
               ref={audioRef}
               src={currentQuestion.audioFile.storage_url}

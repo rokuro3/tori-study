@@ -284,10 +284,10 @@ export default function AudioManagementPage() {
             <table className="w-full">
               <thead className="bg-gray-50 dark:bg-gray-700">
                 <tr>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">ファイル名</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">説明</th>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">鳥の名前</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600 dark:text-gray-300 hidden md:table-cell">学名</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600 dark:text-gray-300 hidden md:table-cell">科</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600 dark:text-gray-300 hidden md:table-cell">状態</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">状態</th>
                   <th className="px-4 py-3 text-center text-sm font-semibold text-gray-600 dark:text-gray-300">操作</th>
                 </tr>
               </thead>
@@ -295,18 +295,17 @@ export default function AudioManagementPage() {
                 {filteredFiles.map((file) => (
                   <tr key={file.id} className={!file.is_active ? 'opacity-50' : ''}>
                     <td className="px-4 py-3">
-                      <div className="font-medium text-gray-800 dark:text-white">{file.bird_name}</div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400 truncate max-w-[200px]">
+                      <div className="text-sm font-medium text-gray-800 dark:text-white truncate max-w-[250px]">
                         {file.original_filename}
                       </div>
                     </td>
-                    <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hidden md:table-cell">
-                      {file.scientific_name || '-'}
+                    <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">
+                      {file.description || '-'}
                     </td>
-                    <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hidden md:table-cell">
-                      {file.family_jp || '-'}
+                    <td className="px-4 py-3 text-sm font-medium text-gray-800 dark:text-white">
+                      {file.bird_name}
                     </td>
-                    <td className="px-4 py-3 hidden md:table-cell">
+                    <td className="px-4 py-3">
                       <span className={`px-2 py-1 text-xs rounded-full ${
                         file.is_active 
                           ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'

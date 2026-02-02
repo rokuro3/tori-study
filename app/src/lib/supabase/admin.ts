@@ -190,9 +190,10 @@ export async function updateAudioFile(
 export async function deleteAudioFile(id: string): Promise<boolean> {
   const supabase = createClient()
   
+  // 物理削除
   const { error } = await supabase
     .from('audio_files')
-    .update({ is_active: false, updated_at: new Date().toISOString() })
+    .delete()
     .eq('id', id)
   
   if (error) {

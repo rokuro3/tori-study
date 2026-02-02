@@ -1,56 +1,56 @@
 # 鳥の鳴き声クイズアプリ - ローカル開発ガイド
 
-## プロジェクト概要
-鳥の鳴き声を聞いて種名を当てるクイズアプリです。
-音声データはローカルの `sound` フォルダから提供されます。
+**⚠️ このドキュメントは古い情報を含んでいます。最新の情報は [docs/local-setup-guide.md](docs/local-setup-guide.md) をご参照ください。**
 
-## 技術スタック
-- **バックエンド**: FastAPI (Python)
-- **フロントエンド**: Next.js (TypeScript, React)
-- **認証・DB**: Supabase
-- **音声データ**: ローカル音声ファイル（20種類）
+## クイックスタート
 
-## ローカル開発環境のセットアップ
-
-### 前提条件
-- Python 3.10+
-- Node.js 18+
-- npm
-
-### 1. バックエンド（FastAPI）のセットアップ
+### 1. 依存関係のインストール
 
 ```bash
-# 依存関係のインストール
-cd /root/toriStudy/api
-pip3 install -r requirements.txt
-
-# 音声ファイルのパース（初回のみ）
-python3 parse_sound_files.py
-
-# サーバーの起動
-cd /root/toriStudy
-python3 -m uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
+cd app
+npm install
 ```
 
-サーバーが起動したら、以下のURLで確認できます:
-- API ルート: http://localhost:8000
-- API ドキュメント: http://localhost:8000/docs
-- ヘルスチェック: http://localhost:8000/api/health
+### 2. 環境変数を設定
 
-### 2. フロントエンド（Next.js）のセットアップ
+`app/.env.local` ファイルを作成し、Supabase の認証情報を設定してください:
 
-別のターミナルで:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### 3. 開発サーバーを起動
 
 ```bash
-# 依存関係のインストール
-cd /root/toriStudy/app
-npm install
-
-# 開発サーバーの起動
 npm run dev
 ```
 
 ブラウザで http://localhost:3000 にアクセス
+
+---
+
+## アーキテクチャの変更
+
+**2026年1月31日** にバックエンド（FastAPI）が廃止されました。
+
+### 旧アーキテクチャ（廃止）
+```
+[ユーザー] → [Next.js] → [FastAPI] → [Supabase]
+```
+
+### 新アーキテクチャ
+```
+[ユーザー] → [Next.js + Supabase]
+```
+
+詳細は [logs/2026-01-31_backend-removal.md](../logs/2026-01-31_backend-removal.md) を参照してください。
+
+---
+
+## 詳細なセットアップガイド
+
+詳細な手順、トラブルシューティング、開発コマンド等については、[docs/local-setup-guide.md](docs/local-setup-guide.md) をご覧ください。
 
 ### 3. 環境変数の設定
 
