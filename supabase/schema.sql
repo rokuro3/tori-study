@@ -78,6 +78,7 @@ CREATE TABLE IF NOT EXISTS species_answers (
     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
     user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
     species_name TEXT NOT NULL,
+    audio_file_id UUID REFERENCES audio_files(id) ON DELETE CASCADE,
     is_correct BOOLEAN NOT NULL,
     answered_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
@@ -87,14 +88,16 @@ CREATE TABLE IF NOT EXISTS user_badges (
     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
     user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
     badge_type TEXT NOT NULL, -- 'bronze', 'silver', 'gold', 'platinum'
+    question_set_id UUID REFERENCES question_sets(id) ON DELETE CASCADE, -- NULL = 全体バッジ
     earned_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-    UNIQUE(user_id, badge_type)
+    UNIQUE(user_id, badge_type, question_set_id)
 );
 
 -- インデックスの作成
 CREATE INDEX IF NOT EXISTS idx_scores_user_id ON scores(user_id);
 CREATE INDEX IF NOT EXISTS idx_species_answers_user_id ON species_answers(user_id);
 CREATE INDEX IF NOT EXISTS idx_species_answers_species ON species_answers(species_name);
+CREATE INDEX IF NOT EXISTS idx_species_answers_audio_file ON species_answers(audio_file_id);
 CREATE INDEX IF NOT EXISTS idx_user_badges_user_id ON user_badges(user_id);
 
 -- RLS（Row Level Security）ポリシーの設定

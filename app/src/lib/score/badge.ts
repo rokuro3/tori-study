@@ -15,40 +15,67 @@ export type Badge = {
   requiredAccuracy: number // 必要な正答率（%）
 }
 
+// バッジ取得状態
+export type BadgeState = {
+  badge: Badge
+  earned: boolean
+  earnedAt?: string
+}
+
+// 問題集別統計
+export type QuestionSetStats = {
+  questionSetId: string
+  questionSetName: string
+  totalAudioFiles: number
+  correctAudioFiles: number
+  successRate: number
+  earnedBadges: BadgeType[]
+}
+
 export const BADGES: Badge[] = [
   {
     type: 'bronze',
     name: '銅バッジ',
-    description: '25%の種で正答率80%以上を達成',
+    description: '問題集の60%の音声で正解',
     emoji: '🥉',
-    threshold: 25,
-    requiredAccuracy: 80,
+    threshold: 60,
+    requiredAccuracy: 0,
   },
   {
     type: 'silver',
     name: '銀バッジ',
-    description: '50%の種で正答率80%以上を達成',
+    description: '問題集の70%の音声で正解',
     emoji: '🥈',
-    threshold: 50,
-    requiredAccuracy: 80,
+    threshold: 70,
+    requiredAccuracy: 0,
   },
   {
     type: 'gold',
     name: '金バッジ',
-    description: '75%の種で正答率80%以上を達成',
+    description: '問題集の80%の音声で正解',
     emoji: '🥇',
-    threshold: 75,
-    requiredAccuracy: 80,
+    threshold: 80,
+    requiredAccuracy: 0,
   },
   {
     type: 'platinum',
     name: 'プラチナバッジ',
-    description: '100%の種で正答率80%以上を達成',
+    description: '問題集の100%の音声で正解（全音声制覇）',
     emoji: '💎',
     threshold: 100,
-    requiredAccuracy: 80,
+    requiredAccuracy: 0,
   },
 ]
+
+// 音声ファイルデータ
+export type AudioFile = {
+  id: string
+  bird_name: string
+  file_path: string
+  storage_url: string
+  original_filename: string | null
+  description: string | null
+}
 
 // 種ごとの正答率データ
 export type SpeciesAccuracy = {
@@ -76,6 +103,7 @@ export type UserStats = {
 export async function saveSpeciesAnswer(
   userId: string,
   speciesName: string,
+  audioFileId: string,
   isCorrect: boolean
 ) {
   const supabase = createClient()
@@ -83,6 +111,7 @@ export async function saveSpeciesAnswer(
   const { error } = await supabase.from('species_answers').insert({
     user_id: userId,
     species_name: speciesName,
+    audio_file_id: audioFileId,
     is_correct: isCorrect,
   })
   
@@ -277,4 +306,214 @@ export async function getUserStats(userId: string): Promise<UserStats> {
     nextBadge,
     progressToNextBadge,
   }
+}
+/**
+ * 問題集別のバッジを取得
+ */
+export async function getQuestionSetBadges(userId: string, questionSetId: string): Promise<BadgeType[]> {
+  const supabase = createClient()
+  
+  const { data, error } = await supabase
+    .from('user_badges')
+    .select('badge_type')
+    .eq('user_id', userId)
+    .eq('question_set_id', questionSetId)
+  
+  if (error || !data) {
+    console.error('Failed to get question set badges:', error)
+    return []
+  }
+  
+  return data.map(d => d.badge_type as BadgeType)
+}
+
+/**
+ * 問題集別バッジを付与
+ */
+export async function awardQuestionSetBadge(userId: string, questionSetId: string, badgeType: BadgeType) {
+  const supabase = createClient()
+  
+  const { error } = await supabase.from('user_badges').upsert({
+    user_id: userId,
+    badge_type: badgeType,
+    question_set_id: questionSetId,
+  }, {
+    onConflict: 'user_id,badge_type,question_set_id',
+  })
+  
+  if (error) {
+    console.error('Failed to award question set badge:', error)
+  }
+  
+  return { error }
+}
+
+/**
+ * 問題集別のバッジ獲得条件をチェック
+ * 音声ファイル単位での正解実績に基づいてバッジを付与
+ */
+export async function checkAndAwardQuestionSetBadges(
+  userId: string, 
+  questionSetId: string
+): Promise<BadgeType[]> {
+  const supabase = createClient()
+  
+  // 問題集内の音声ファイルIDを取得
+  const { data: items } = await supabase
+    .from('question_set_items')
+    .select('audio_file_id')
+    .eq('question_set_id', questionSetId)
+  
+  if (!items || items.length === 0) return []
+  
+  const audioFileIds = items.map(item => item.audio_file_id)
+  const totalAudioCount = audioFileIds.length
+  
+  // ユーザーが正解した音声ファイルIDを取得（一度でも正解したもの）
+  const { data: correctAnswers } = await supabase
+    .from('species_answers')
+    .select('audio_file_id')
+    .eq('user_id', userId)
+    .eq('is_correct', true)
+    .in('audio_file_id', audioFileIds)
+  
+  // 重複を除去してユニークな正解音声数を取得
+  const uniqueCorrectAudioIds = new Set(correctAnswers?.map(a => a.audio_file_id) || [])
+  const correctCount = uniqueCorrectAudioIds.size
+  
+  // 成功率を計算
+  const successRate = (correctCount / totalAudioCount) * 100
+  
+  const earnedBadges = await getQuestionSetBadges(userId, questionSetId)
+  const newBadges: BadgeType[] = []
+  
+  // バッジ判定（60% / 70% / 80% / 100%）
+  if (successRate >= 60 && !earnedBadges.includes('bronze')) {
+    await awardQuestionSetBadge(userId, questionSetId, 'bronze')
+    newBadges.push('bronze')
+  }
+  
+  if (successRate >= 70 && !earnedBadges.includes('silver')) {
+    await awardQuestionSetBadge(userId, questionSetId, 'silver')
+    newBadges.push('silver')
+  }
+  
+  if (successRate >= 80 && !earnedBadges.includes('gold')) {
+    await awardQuestionSetBadge(userId, questionSetId, 'gold')
+    newBadges.push('gold')
+  }
+  
+  if (successRate >= 100 && !earnedBadges.includes('platinum')) {
+    await awardQuestionSetBadge(userId, questionSetId, 'platinum')
+    newBadges.push('platinum')
+  }
+  
+  return newBadges
+}
+
+/**
+ * 問題集別の統計情報を取得
+ */
+export async function getQuestionSetStats(userId: string, questionSetId: string): Promise<QuestionSetStats | null> {
+  const supabase = createClient()
+  
+  // 問題集情報を取得
+  const { data: questionSet } = await supabase
+    .from('question_sets')
+    .select('id, name')
+    .eq('id', questionSetId)
+    .single()
+  
+  if (!questionSet) return null
+  
+  // 問題集内の音声ファイルIDを取得
+  const { data: items } = await supabase
+    .from('question_set_items')
+    .select('audio_file_id')
+    .eq('question_set_id', questionSetId)
+  
+  const audioFileIds = items?.map(item => item.audio_file_id) || []
+  const totalAudioFiles = audioFileIds.length
+  
+  if (totalAudioFiles === 0) {
+    return {
+      questionSetId,
+      questionSetName: questionSet.name,
+      totalAudioFiles: 0,
+      correctAudioFiles: 0,
+      successRate: 0,
+      earnedBadges: [],
+    }
+  }
+  
+  // ユーザーが正解した音声ファイルIDを取得（一度でも正解したもの）
+  const { data: correctAnswers } = await supabase
+    .from('species_answers')
+    .select('audio_file_id')
+    .eq('user_id', userId)
+    .eq('is_correct', true)
+    .in('audio_file_id', audioFileIds)
+  
+  // 重複を除去してユニークな正解音声数を取得
+  const uniqueCorrectAudioIds = new Set(correctAnswers?.map(a => a.audio_file_id) || [])
+  const correctAudioFiles = uniqueCorrectAudioIds.size
+  
+  const successRate = Math.round((correctAudioFiles / totalAudioFiles) * 100 * 10) / 10
+  
+  const earnedBadges = await getQuestionSetBadges(userId, questionSetId)
+  
+  return {
+    questionSetId,
+    questionSetName: questionSet.name,
+    totalAudioFiles,
+    correctAudioFiles,
+    successRate,
+    earnedBadges,
+  }
+}
+
+/**
+ * 全ての問題集別統計を取得
+ */
+export async function getAllQuestionSetStats(userId: string): Promise<QuestionSetStats[]> {
+  const supabase = createClient()
+  
+  // 公開問題集一覧を取得
+  const { data: questionSets } = await supabase
+    .from('question_sets')
+    .select('id, name')
+    .eq('is_public', true)
+  
+  if (!questionSets) return []
+  
+  const stats: QuestionSetStats[] = []
+  for (const qs of questionSets) {
+    const stat = await getQuestionSetStats(userId, qs.id)
+    if (stat) {
+      stats.push(stat)
+    }
+  }
+  
+  return stats
+}
+
+/**
+ * 種ごとの音声ファイルを取得
+ */
+export async function getSpeciesAudioFiles(speciesName: string): Promise<AudioFile[]> {
+  const supabase = createClient()
+  
+  const { data, error } = await supabase
+    .from('audio_files')
+    .select('id, bird_name, file_path, storage_url, original_filename, description')
+    .eq('bird_name', speciesName)
+    .eq('is_active', true)
+    .order('file_path', { ascending: true })
+  
+  if (error || !data) {
+    console.error('Failed to get species audio files:', error)
+    return []
+  }
+  
+  return data as AudioFile[]
 }
