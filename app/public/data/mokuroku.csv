@@ -1,0 +1,1087 @@
+種番号,和名,学名,属,属（日本語）,科,科（日本語）,目,目（日本語）,亜種
+1,リュウキュウガモ,Dendrocygna javanica,DENDROCYGNA,リュウキュウガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+1-1,オオカナダガン,Branta canadensis moffitti,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+2,コクガン,Branta bernicla,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+2-1,コクガン,Branta bernicla nigricans,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+3,アオガン,Branta ruficollis,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+4,カナダガン,Branta canadensis,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+4-1,チュウカナダガン,Branta canadensis parvipes,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+5,シジュウカラガン,Branta hutchinsii,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+5-1,シジュウカラガン,Branta hutchinsii leucopareia,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+5-2,ヒメシジュウカラガン,Branta hutchinsii minima,BRANTA,コクガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+6,インドガン,Anser indicus,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+6-1,コウライキジ,Phasianus colchicus karpowi,PHASIANUS,キジ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+7,ミカドガン,Anser canagicus,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+8,ハクガン,Anser caerulescens,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+8-1,ハクガン,Anser caerulescens caerulescens,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+9,ハイイロガン,Anser anser,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+9-1,ハイイロガン,Anser anser rubrirostris,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+10,サカツラガン,Anser cygnoid,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+11,ヒシクイ,Anser fabalis,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+11-1,オオヒシクイ,Anser fabalis middendorffii,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+11-2,ヒメヒシクイ,Anser fabalis rossicus,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+11-3,ヒシクイ,Anser fabalis serrirostris,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+12,マガン,Anser albifrons,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+12-1,マガン,Anser albifrons albifrons,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+13,カリガネ,Anser erythropus,ANSER,マガン属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+14,コブハクチョウ,Cygnus olor,CYGNUS,ハクチョウ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+15,ナキハクチョウ,Cygnus buccinator,CYGNUS,ハクチョウ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+16,コハクチョウ,Cygnus columbianus,CYGNUS,ハクチョウ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+16-1,アメリカコハクチョウ,Cygnus columbianus columbianus,CYGNUS,ハクチョウ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+16-2,コハクチョウ,Cygnus columbianus bewickii,CYGNUS,ハクチョウ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+17,オオハクチョウ,Cygnus cygnus,CYGNUS,ハクチョウ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+17-1,ダルマインコ,Psittacula alexandri fasciata,PSITTACULA,ダルマインコ属,PSITTACULIDAE,インコ科（和名検討中）,PSITTACIFORMES,インコ目,亜種
+18,ツクシガモ,Tadorna tadorna,TADORNA,ツクシガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+19,アカツクシガモ,Tadorna ferruginea,TADORNA,ツクシガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+19-1,ワカケホンセイインコ,Psittacula krameri manillensis,PSITTACULA,ダルマインコ属,PSITTACULIDAE,インコ科（和名検討中）,PSITTACIFORMES,インコ目,亜種
+20,カンムリツクシガモ,Tadorna cristata,TADORNA,ツクシガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+21,オシドリ,Aix galericulata,AIX,オシドリ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+22,ナンキンオシ,Nettapus coromandelianus,NETTAPUS,ナンキンオシ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+22-1,ナンキンオシ,Nettapus coromandelianus coromandelianus,NETTAPUS,ナンキンオシ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+23,トモエガモ,Sibirionetta formosa,SIBIRIONETTA,トモエガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+24,シマアジ,Spatula querquedula,SPATULA,ハシビロガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+24-1,シチトウメジロ,Zosterops japonicus stejnegeri,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+24-2,イオウトウメジロ,Zosterops japonicus alani,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+25,ミカヅキシマアジ,Spatula discors,SPATULA,ハシビロガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+26,ハシビロガモ,Spatula clypeata,SPATULA,ハシビロガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+27,オカヨシガモ,Mareca strepera,MARECA,ヨシガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+27-1,オカヨシガモ,Mareca strepera strepera,MARECA,ヨシガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+28,ヨシガモ,Mareca falcata,MARECA,ヨシガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+29,ヒドリガモ,Mareca penelope,MARECA,ヨシガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+30,アメリカヒドリ,Mareca americana,MARECA,ヨシガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+30-1,ハッカチョウ,Acridotheres cristatellus cristatellus,ACRIDOTHERES,ハッカチョウ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,亜種
+31,アカノドカルガモ,Anas luzonica,ANAS,マガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+32,カルガモ,Anas zonorhyncha,ANAS,マガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+33,マガモ,Anas platyrhynchos,ANAS,マガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+33-1,マガモ,Anas platyrhynchos platyrhynchos,ANAS,マガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+34,オナガガモ,Anas acuta,ANAS,マガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+35,コガモ,Anas crecca,ANAS,マガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+35-1,コガモ,Anas crecca crecca,ANAS,マガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+35-2,アメリカコガモ,Anas crecca carolinensis,ANAS,マガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+36,アカハシハジロ,Netta rufina,NETTA,アカハシハジロ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+37,オオホシハジロ,Aythya valisineria,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+38,アメリカホシハジロ,Aythya americana,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+38-1,シマキンパラ,Lonchura punctulata topela,LONCHURA,キンパラ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,亜種
+39,ホシハジロ,Aythya ferina,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+40,アカハジロ,Aythya baeri,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+41,メジロガモ,Aythya nyroca,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+42,クビワキンクロ,Aythya collaris,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+43,キンクロハジロ,Aythya fuligula,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+44,スズガモ,Aythya marila,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+44-1,スズガモ,Aythya marila marila,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+45,コスズガモ,Aythya affinis,AYTHYA,スズガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+46,コケワタガモ,Polysticta stelleri,POLYSTICTA,コケワタガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+47,ケワタガモ,Somateria spectabilis,SOMATERIA,ケワタガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+48,シノリガモ,Histrionicus histrionicus,HISTRIONICUS,シノリガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+49,アラナミキンクロ,Melanitta perspicillata,MELANITTA,ビロードキンクロ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+50,アメリカビロードキンクロ,Melanitta deglandi,MELANITTA,ビロードキンクロ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+51,ビロードキンクロ,Melanitta stejnegeri,MELANITTA,ビロードキンクロ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+52,クロガモ,Melanitta americana,MELANITTA,ビロードキンクロ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+53,コオリガモ,Clangula hyemalis,CLANGULA,コオリガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+54,ヒメハジロ,Bucephala albeola,BUCEPHALA,ホオジロガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+55,ホオジロガモ,Bucephala clangula,BUCEPHALA,ホオジロガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+55-1,ホオジロガモ,Bucephala clangula clangula,BUCEPHALA,ホオジロガモ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+56,ミコアイサ,Mergellus albellus,MERGELLUS,ミコアイサ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+57,オウギアイサ,Lophodytes cucullatus,LOPHODYTES,オウギアイサ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+58,カワアイサ,Mergus merganser,MERGUS,ウミアイサ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+58-1,カワアイサ（和名検討中）,Mergus merganser merganser,MERGUS,ウミアイサ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+58-2,コカワアイサ（和名検討中）,Mergus merganser orientalis,MERGUS,ウミアイサ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,亜種
+59,ウミアイサ,Mergus serrator,MERGUS,ウミアイサ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+60,コウライアイサ,Mergus squamatus,MERGUS,ウミアイサ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+61,エゾライチョウ,Tetrastes bonasia,TETRASTES,エゾライチョウ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+61-1,エゾライチョウ,Tetrastes bonasia vicinitas,TETRASTES,エゾライチョウ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+62,ライチョウ,Lagopus muta,LAGOPUS,ライチョウ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+62-1,ライチョウ,Lagopus muta japonica,LAGOPUS,ライチョウ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+63,ヤマドリ,Syrmaticus soemmerringii,SYRMATICUS,ヤマドリ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+63-1,ヤマドリ,Syrmaticus soemmerringii scintillans,SYRMATICUS,ヤマドリ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+63-2,ウスアカヤマドリ,Syrmaticus soemmerringii subrufus,SYRMATICUS,ヤマドリ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+63-3,シコクヤマドリ,Syrmaticus soemmerringii intermedius,SYRMATICUS,ヤマドリ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+63-4,アカヤマドリ,Syrmaticus soemmerringii soemmerringii,SYRMATICUS,ヤマドリ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+63-5,コシジロヤマドリ,Syrmaticus soemmerringii ijimae,SYRMATICUS,ヤマドリ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+64,キジ,Phasianus versicolor,PHASIANUS,キジ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+64-1,キジ,Phasianus versicolor robustipes,PHASIANUS,キジ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+64-2,トウカイキジ,Phasianus versicolor tohkaidi,PHASIANUS,キジ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+64-3,シマキジ,Phasianus versicolor tanensis,PHASIANUS,キジ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+64-4,キュウシュウキジ,Phasianus versicolor versicolor,PHASIANUS,キジ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,亜種
+65,ウズラ,Coturnix japonica,COTURNIX,ウズラ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+66,ヨタカ,Caprimulgus jotaka,CAPRIMULGUS,ヨタカ属,CAPRIMULGIDAE,ヨタカ科,CAPRIMULGIFORMES,ヨタカ目,種
+66-1,ヨタカ,Caprimulgus jotaka jotaka,CAPRIMULGUS,ヨタカ属,CAPRIMULGIDAE,ヨタカ科,CAPRIMULGIFORMES,ヨタカ目,亜種
+67,ハリオアマツバメ,Hirundapus caudacutus,HIRUNDAPUS,ハリオアマツバメ属,APODIDAE,アマツバメ科,APODIFORMES,アマツバメ目,種
+67-1,ハリオアマツバメ,Hirundapus caudacutus caudacutus,HIRUNDAPUS,ハリオアマツバメ属,APODIDAE,アマツバメ科,APODIFORMES,アマツバメ目,亜種
+68,クロビタイハリオアマツバメ,Hirundapus cochinchinensis,HIRUNDAPUS,ハリオアマツバメ属,APODIDAE,アマツバメ科,APODIFORMES,アマツバメ目,種
+69,アマツバメ,Apus pacificus,APUS,アマツバメ属,APODIDAE,アマツバメ科,APODIFORMES,アマツバメ目,種
+69-1,キタアマツバメ,Apus pacificus pacificus,APUS,アマツバメ属,APODIDAE,アマツバメ科,APODIFORMES,アマツバメ目,亜種
+69-2,アマツバメ,Apus pacificus kurodae,APUS,アマツバメ属,APODIDAE,アマツバメ科,APODIFORMES,アマツバメ目,亜種
+70,ヒメアマツバメ,Apus nipalensis,APUS,アマツバメ属,APODIDAE,アマツバメ科,APODIFORMES,アマツバメ目,種
+70-1,ヒメアマツバメ,Apus nipalensis kuntzi,APUS,アマツバメ属,APODIDAE,アマツバメ科,APODIFORMES,アマツバメ目,亜種
+71,ノガン,Otis tarda,OTIS,ノガン属,OTIDIDAE,ノガン科,OTIDIFORMES,ノガン目,種
+71-1,ノガン,Otis tarda dybowskii,OTIS,ノガン属,OTIDIDAE,ノガン科,OTIDIFORMES,ノガン目,亜種
+72,ヒメノガン,Tetrax tetrax,TETRAX,ヒメノガン属,OTIDIDAE,ノガン科,OTIDIFORMES,ノガン目,種
+73,バンケン,Centropus bengalensis,CENTROPUS,バンケン属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+73-1,バンケン,Centropus bengalensis lignator,CENTROPUS,バンケン属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,亜種
+74,カンムリカッコウ,Clamator coromandus,CLAMATOR,カンムリカッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+75,オニカッコウ,Eudynamys scolopaceus,EUDYNAMYS,オニカッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+76,キジカッコウ,Urodynamis taitensis,URODYNAMIS,キジカッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+77,ヒメカッコウ,Cacomantis merulinus,CACOMANTIS,ヒメカッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+78,オウチュウカッコウ,Surniculus lugubris,SURNICULUS,オウチュウカッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+79,オオジュウイチ,Hierococcyx sparverioides,HIEROCOCCYX,ジュウイチ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+80,ジュウイチ,Hierococcyx hyperythrus,HIEROCOCCYX,ジュウイチ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+81,ホトトギス,Cuculus poliocephalus,CUCULUS,カッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+82,セグロカッコウ,Cuculus micropterus,CUCULUS,カッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+82-1,セグロカッコウ,Cuculus micropterus micropterus,CUCULUS,カッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,亜種
+83,ツツドリ,Cuculus optatus,CUCULUS,カッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+84,カッコウ,Cuculus canorus,CUCULUS,カッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,種
+84-1,カッコウ,Cuculus canorus telephonus,CUCULUS,カッコウ属,CUCULIDAE,カッコウ科,CUCULIFORMES,カッコウ目,亜種
+85,サケイ,Syrrhaptes paradoxus,SYRRHAPTES,サケイ属,PTEROCLIDAE,サケイ科,PTEROCLIFORMES,サケイ目,種
+86,ヒメモリバト,Columba oenas,COLUMBA,カワラバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+87,カラスバト,Columba janthina,COLUMBA,カワラバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+87-1,カラスバト,Columba janthina janthina,COLUMBA,カワラバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+87-2,アカガシラカラスバト,Columba janthina nitens,COLUMBA,カワラバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+87-3,ヨナグニカラスバト,Columba janthina stejnegeri,COLUMBA,カワラバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+88,オガサワラカラスバト,Columba versicolor,COLUMBA,カワラバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+89,リュウキュウカラスバト,Columba jouyi,COLUMBA,カワラバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+90,キジバト,Streptopelia orientalis,STREPTOPELIA,キジバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+90-1,キジバト,Streptopelia orientalis orientalis,STREPTOPELIA,キジバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+90-2,リュウキュウキジバト,Streptopelia orientalis stimpsoni,STREPTOPELIA,キジバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+91,シラコバト,Streptopelia decaocto,STREPTOPELIA,キジバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+92,ベニバト,Streptopelia tranquebarica,STREPTOPELIA,キジバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+92-1,ベニバト,Streptopelia tranquebarica humilis,STREPTOPELIA,キジバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+93,キンバト,Chalcophaps indica,CHALCOPHAPS,キンバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+93-1,キンバト,Chalcophaps indica yamashinai,CHALCOPHAPS,キンバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+94,アオバト,Treron sieboldii,TRERON,アオバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+94-1,アオバト,Treron sieboldii sieboldii,TRERON,アオバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+95,ズアカアオバト,Treron formosae,TRERON,アオバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+95-1,ズアカアオバト,Treron formosae permagnus,TRERON,アオバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+95-2,チュウダイズアカアオバト,Treron formosae medioximus,TRERON,アオバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+96,クロアゴヒメアオバト,Ptilinopus leclancheri,PTILINOPUS,ヒメアオバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+96-1,クロアゴヒメアオバト,Ptilinopus leclancheri taiwanus,PTILINOPUS,ヒメアオバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,亜種
+97,クイナ,Rallus indicus,RALLUS,クイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+98,ウズラクイナ,Crex crex,CREX,ウズラクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+99,ミナミクイナ,Lewinia striata,LEWINIA,ミナミクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+100,ヤンバルクイナ,Hypotaenidia okinawae,HYPOTAENIDIA,ヤンバルクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+101,バン,Gallinula chloropus,GALLINULA,バン属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+101-1,バン,Gallinula chloropus chloropus,GALLINULA,バン属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,亜種
+102,オオバン,Fulica atra,FULICA,オオバン属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+102-1,オオバン,Fulica atra atra,FULICA,オオバン属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,亜種
+103,シマクイナ,Coturnicops exquisitus,COTURNICOPS,シマクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+104,ヒクイナ,Zapornia fusca,ZAPORNIA,ヒメクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+104-1,ヒクイナ,Zapornia fusca erythrothorax,ZAPORNIA,ヒメクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,亜種
+104-2,リュウキュウヒクイナ,Zapornia fusca phaeopyga,ZAPORNIA,ヒメクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,亜種
+105,コウライクイナ,Zapornia paykullii,ZAPORNIA,ヒメクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+106,ヒメクイナ,Zapornia pusilla,ZAPORNIA,ヒメクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+106-1,ヒメクイナ,Zapornia pusilla pusilla,ZAPORNIA,ヒメクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,亜種
+107,オオクイナ,Rallina eurizonoides,RALLINA,オオクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+107-1,オオクイナ,Rallina eurizonoides sepiaria,RALLINA,オオクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,亜種
+108,マミジロクイナ,Poliolimnas cinereus,POLIOLIMNAS,マミジロクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+108-1,マミジロクイナ,Poliolimnas cinereus brevipes,POLIOLIMNAS,マミジロクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,亜種
+109,ツルクイナ,Gallicrex cinerea,GALLICREX,ツルクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+110,シロハラクイナ,Amaurornis phoenicurus,AMAURORNIS,シロハラクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,種
+110-1,シロハラクイナ,Amaurornis phoenicurus phoenicurus,AMAURORNIS,シロハラクイナ属,RALLIDAE,クイナ科,GRUIFORMES,ツル目,亜種
+111,ソデグロヅル,Leucogeranus leucogeranus,LEUCOGERANUS,ソデグロヅル属,GRUIDAE,ツル科,GRUIFORMES,ツル目,種
+112,カナダヅル,Antigone canadensis,ANTIGONE,マナヅル属,GRUIDAE,ツル科,GRUIFORMES,ツル目,種
+112-1,カナダヅル,Antigone canadensis canadensis,ANTIGONE,マナヅル属,GRUIDAE,ツル科,GRUIFORMES,ツル目,亜種
+113,マナヅル,Antigone vipio,ANTIGONE,マナヅル属,GRUIDAE,ツル科,GRUIFORMES,ツル目,種
+114,アネハヅル,Anthropoides virgo,ANTHROPOIDES,アネハヅル属,GRUIDAE,ツル科,GRUIFORMES,ツル目,種
+115,タンチョウ,Grus japonensis,GRUS,ツル属（和名検討中）,GRUIDAE,ツル科,GRUIFORMES,ツル目,種
+116,クロヅル,Grus grus,GRUS,ツル属（和名検討中）,GRUIDAE,ツル科,GRUIFORMES,ツル目,種
+116-1,クロヅル,Grus grus lilfordi,GRUS,ツル属（和名検討中）,GRUIDAE,ツル科,GRUIFORMES,ツル目,亜種
+117,ナベヅル,Grus monacha,GRUS,ツル属（和名検討中）,GRUIDAE,ツル科,GRUIFORMES,ツル目,種
+118,カイツブリ,Tachybaptus ruficollis,TACHYBAPTUS,カイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,種
+118-1,カイツブリ,Tachybaptus ruficollis poggei,TACHYBAPTUS,カイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,亜種
+118-2,ダイトウカイツブリ,Tachybaptus ruficollis kunikyonis,TACHYBAPTUS,カイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,亜種
+119,アカエリカイツブリ,Podiceps grisegena,PODICEPS,カンムリカイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,種
+119-1,アカエリカイツブリ,Podiceps grisegena holbollii,PODICEPS,カンムリカイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,亜種
+120,カンムリカイツブリ,Podiceps cristatus,PODICEPS,カンムリカイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,種
+120-1,カンムリカイツブリ,Podiceps cristatus cristatus,PODICEPS,カンムリカイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,亜種
+121,ミミカイツブリ,Podiceps auritus,PODICEPS,カンムリカイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,種
+121-1,ミミカイツブリ,Podiceps auritus auritus,PODICEPS,カンムリカイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,亜種
+122,ハジロカイツブリ,Podiceps nigricollis,PODICEPS,カンムリカイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,種
+122-1,ハジロカイツブリ,Podiceps nigricollis nigricollis,PODICEPS,カンムリカイツブリ属,PODICIPEDIDAE,カイツブリ科,PODICIPEDIFORMES,カイツブリ目,亜種
+123,ミフウズラ,Turnix suscitator,TURNIX,ミフウズラ属,TURNICIDAE,ミフウズラ科,CHARADRIIFORMES,チドリ目,種
+123-1,ミフウズラ,Turnix suscitator okinavensis,TURNIX,ミフウズラ属,TURNICIDAE,ミフウズラ科,CHARADRIIFORMES,チドリ目,亜種
+124,ミヤコドリ,Haematopus ostralegus,HAEMATOPUS,ミヤコドリ属,HAEMATOPODIDAE,ミヤコドリ科,CHARADRIIFORMES,チドリ目,種
+124-1,ミヤコドリ,Haematopus ostralegus osculans,HAEMATOPUS,ミヤコドリ属,HAEMATOPODIDAE,ミヤコドリ科,CHARADRIIFORMES,チドリ目,亜種
+125,セイタカシギ,Himantopus himantopus,HIMANTOPUS,セイタカシギ属,RECURVIROSTRIDAE,セイタカシギ科,CHARADRIIFORMES,チドリ目,種
+126,オーストラリアセイタカシギ,Himantopus leucocephalus,HIMANTOPUS,セイタカシギ属,RECURVIROSTRIDAE,セイタカシギ科,CHARADRIIFORMES,チドリ目,種
+127,ソリハシセイタカシギ,Recurvirostra avosetta,RECURVIROSTRA,ソリハシセイタカシギ属,RECURVIROSTRIDAE,セイタカシギ科,CHARADRIIFORMES,チドリ目,種
+128,タゲリ,Vanellus vanellus,VANELLUS,タゲリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+129,ケリ,Vanellus cinereus,VANELLUS,タゲリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+130,ヨーロッパムナグロ,Pluvialis apricaria,PLUVIALIS,ムナグロ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+131,ムナグロ,Pluvialis fulva,PLUVIALIS,ムナグロ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+132,ダイゼン,Pluvialis squatarola,PLUVIALIS,ムナグロ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+133,ハジロコチドリ,Charadrius hiaticula,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+133-1,ハジロコチドリ,Charadrius hiaticula tundrae,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,亜種
+134,ミズカキチドリ,Charadrius semipalmatus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+135,イカルチドリ,Charadrius placidus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+136,コチドリ,Charadrius dubius,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+136-1,コチドリ,Charadrius dubius curonicus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,亜種
+137,シロチドリ,Charadrius alexandrinus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+137-1,ハシボソシロチドリ,Charadrius alexandrinus alexandrinus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,亜種
+137-2,シロチドリ,Charadrius alexandrinus nihonensis,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,亜種
+138,オオメダイチドリ,Charadrius leschenaultii,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+139,メダイチドリ,Charadrius mongolus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+139-1,モウコメダイチドリ（和名検討中）,Charadrius mongolus mongolus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,亜種
+139-2,メダイチドリ,Charadrius mongolus stegmanni,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,亜種
+140,オオチドリ,Charadrius veredus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+141,コバシチドリ,Charadrius morinellus,CHARADRIUS,チドリ属,CHARADRIIDAE,チドリ科,CHARADRIIFORMES,チドリ目,種
+142,タマシギ,Rostratula benghalensis,ROSTRATULA,タマシギ属,ROSTRATULIDAE,タマシギ科,CHARADRIIFORMES,チドリ目,種
+143,レンカク,Hydrophasianus chirurgus,HYDROPHASIANUS,レンカク属,JACANIDAE,レンカク科,CHARADRIIFORMES,チドリ目,種
+144,ハリモモチュウシャク,Numenius tahitiensis,NUMENIUS,ダイシャクシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+145,チュウシャクシギ,Numenius phaeopus,NUMENIUS,ダイシャクシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+145-1,チュウシャクシギ,Numenius phaeopus variegatus,NUMENIUS,ダイシャクシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+146,コシャクシギ,Numenius minutus,NUMENIUS,ダイシャクシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+147,ホウロクシギ,Numenius madagascariensis,NUMENIUS,ダイシャクシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+148,シロハラチュウシャクシギ,Numenius tenuirostris,NUMENIUS,ダイシャクシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+149,ダイシャクシギ,Numenius arquata,NUMENIUS,ダイシャクシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+149-1,ダイシャクシギ,Numenius arquata orientalis,NUMENIUS,ダイシャクシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+150,オオソリハシシギ,Limosa lapponica,LIMOSA,オグロシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+150-1,コシジロオオソリハシシギ,Limosa lapponica menzbieri,LIMOSA,オグロシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+150-2,オオソリハシシギ,Limosa lapponica baueri,LIMOSA,オグロシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+151,オグロシギ,Limosa limosa,LIMOSA,オグロシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+151-1,オグロシギ,Limosa limosa melanuroides,LIMOSA,オグロシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+152,アメリカオグロシギ,Limosa haemastica,LIMOSA,オグロシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+153,キョウジョシギ,Arenaria interpres,ARENARIA,キョウジョシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+153-1,キョウジョシギ,Arenaria interpres interpres,ARENARIA,キョウジョシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+154,オバシギ,Calidris tenuirostris,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+155,コオバシギ,Calidris canutus,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+155-1,コオバシギ,Calidris canutus rogersi,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+156,エリマキシギ,Calidris pugnax,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+157,キリアイ,Calidris falcinellus,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+157-1,キリアイ,Calidris falcinellus sibirica,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+158,ウズラシギ,Calidris acuminata,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+159,アシナガシギ,Calidris himantopus,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+160,サルハマシギ,Calidris ferruginea,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+161,オジロトウネン,Calidris temminckii,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+162,ヒバリシギ,Calidris subminuta,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+163,ヘラシギ,Calidris pygmaea,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+164,トウネン,Calidris ruficollis,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+165,ミユビシギ,Calidris alba,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+166,ハマシギ,Calidris alpina,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+166-1,ハマシギ,Calidris alpina sakhalina,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+166-2,キタアラスカハマシギ,Calidris alpina arcticola,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+167,チシマシギ,Calidris ptilocnemis,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+167-1,チシマシギ,Calidris ptilocnemis quarta,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+168,ヒメウズラシギ,Calidris bairdii,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+169,ヨーロッパトウネン,Calidris minuta,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+170,コシジロウズラシギ,Calidris fuscicollis,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+171,コモンシギ,Calidris subruficollis,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+172,アメリカウズラシギ,Calidris melanotos,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+173,ヒメハマシギ,Calidris mauri,CALIDRIS,オバシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+174,シベリアオオハシシギ,Limnodromus semipalmatus,LIMNODROMUS,オオハシシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+175,オオハシシギ,Limnodromus scolopaceus,LIMNODROMUS,オオハシシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+176,アメリカオオハシシギ,Limnodromus griseus,LIMNODROMUS,オオハシシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+177,ヤマシギ,Scolopax rusticola,SCOLOPAX,ヤマシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+178,アマミヤマシギ,Scolopax mira,SCOLOPAX,ヤマシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+179,コシギ,Lymnocryptes minimus,LYMNOCRYPTES,コシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+180,アオシギ,Gallinago solitaria,GALLINAGO,タシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+180-1,アオシギ,Gallinago solitaria japonica,GALLINAGO,タシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+181,オオジシギ,Gallinago hardwickii,GALLINAGO,タシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+182,ハリオシギ,Gallinago stenura,GALLINAGO,タシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+183,チュウジシギ,Gallinago megala,GALLINAGO,タシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+184,タシギ,Gallinago gallinago,GALLINAGO,タシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+184-1,タシギ,Gallinago gallinago gallinago,GALLINAGO,タシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+185,ソリハシシギ,Xenus cinereus,XENUS,ソリハシシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+186,アメリカヒレアシシギ,Steganopus tricolor,STEGANOPUS,アメリカヒレアシシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+187,アカエリヒレアシシギ,Phalaropus lobatus,PHALAROPUS,ヒレアシシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+188,ハイイロヒレアシシギ,Phalaropus fulicarius,PHALAROPUS,ヒレアシシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+189,イソシギ,Actitis hypoleucos,ACTITIS,イソシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+190,アメリカイソシギ,Actitis macularius,ACTITIS,イソシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+191,クサシギ,Tringa ochropus,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+192,メリケンキアシシギ,Tringa incana,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+193,キアシシギ,Tringa brevipes,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+194,コキアシシギ,Tringa flavipes,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+195,アカアシシギ,Tringa totanus,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+195-1,アカアシシギ,Tringa totanus ussuriensis,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,亜種
+196,コアオアシシギ,Tringa stagnatilis,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+197,タカブシギ,Tringa glareola,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+198,ツルシギ,Tringa erythropus,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+199,アオアシシギ,Tringa nebularia,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+200,カラフトアオアシシギ,Tringa guttifer,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+201,オオキアシシギ,Tringa melanoleuca,TRINGA,クサシギ属,SCOLOPACIDAE,シギ科,CHARADRIIFORMES,チドリ目,種
+202,ツバメチドリ,Glareola maldivarum,GLAREOLA,ツバメチドリ属,GLAREOLIDAE,ツバメチドリ科,CHARADRIIFORMES,チドリ目,種
+203,クロアジサシ,Anous stolidus,ANOUS,クロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+203-1,クロアジサシ,Anous stolidus pileatus,ANOUS,クロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+203-2,リュウキュウクロアジサシ,Anous stolidus pullus,ANOUS,クロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+204,ヒメクロアジサシ,Anous minutus,ANOUS,クロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+204-1,ヒメクロアジサシ,Anous minutus marcusi,ANOUS,クロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+205,ハイイロアジサシ,Anous ceruleus,ANOUS,クロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+205-1,ハイイロアジサシ,Anous ceruleus saxatilis,ANOUS,クロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+206,シロアジサシ,Gygis alba,GYGIS,シロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+206-1,シロアジサシ,Gygis alba candida,GYGIS,シロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+207,ミツユビカモメ,Rissa tridactyla,RISSA,ミツユビカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+207-1,ミツユビカモメ,Rissa tridactyla pollicaris,RISSA,ミツユビカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+208,アカアシミツユビカモメ,Rissa brevirostris,RISSA,ミツユビカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+209,ゾウゲカモメ,Pagophila eburnea,PAGOPHILA,ゾウゲカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+210,クビワカモメ,Xema sabini,XEMA,クビワカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+211,ハシボソカモメ,Chroicocephalus genei,CHROICOCEPHALUS,ユリカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+212,ボナパルトカモメ,Chroicocephalus philadelphia,CHROICOCEPHALUS,ユリカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+213,チャガシラカモメ,Chroicocephalus brunnicephalus,CHROICOCEPHALUS,ユリカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+214,ユリカモメ,Chroicocephalus ridibundus,CHROICOCEPHALUS,ユリカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+215,ズグロカモメ,Saundersilarus saundersi,SAUNDERSILARUS,ズグロカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+216,ヒメカモメ,Hydrocoloeus minutus,HYDROCOLOEUS,ヒメカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+217,ヒメクビワカモメ,Rhodostethia rosea,RHODOSTETHIA,ヒメクビワカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+218,ワライカモメ,Leucophaeus atricilla,LEUCOPHAEUS,ワライカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+219,アメリカズグロカモメ,Leucophaeus pipixcan,LEUCOPHAEUS,ワライカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+220,ゴビズキンカモメ,Ichthyaetus relictus,ICHTHYAETUS,オオズグロカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+221,オオズグロカモメ,Ichthyaetus ichthyaetus,ICHTHYAETUS,オオズグロカモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+222,ウミネコ,Larus crassirostris,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+223,カモメ,Larus canus,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+223-1,カモメ,Larus canus kamtschatschensis,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+224,ワシカモメ,Larus glaucescens,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+225,シロカモメ,Larus hyperboreus,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+225-1,シロカモメ,Larus hyperboreus pallidissimus,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+226,アイスランドカモメ,Larus glaucoides,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+226-1,アイスランドカモメ,Larus glaucoides glaucoides,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+226-2,カナダカモメ,Larus glaucoides thayeri,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+227,セグロカモメ,Larus vegae,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+227-1,セグロカモメ,Larus vegae vegae,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+227-2,モンゴルセグロカモメ,Larus vegae mongolicus,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+228,オオセグロカモメ,Larus schistisagus,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+229,ニシセグロカモメ,Larus fuscus,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+229-1,ホイグリンカモメ,Larus fuscus heuglini,LARUS,カモメ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+230,ハシブトアジサシ,Gelochelidon nilotica,GELOCHELIDON,ハシブトアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+230-1,ハシブトアジサシ,Gelochelidon nilotica affinis,GELOCHELIDON,ハシブトアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+231,オニアジサシ,Hydroprogne caspia,HYDROPROGNE,オニアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+232,オオアジサシ,Thalasseus bergii,THALASSEUS,オオアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+232-1,オオアジサシ,Thalasseus bergii cristatus,THALASSEUS,オオアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+233,ベンガルアジサシ,Thalasseus bengalensis,THALASSEUS,オオアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+234,コアジサシ,Sternula albifrons,STERNULA,コアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+234-1,コアジサシ,Sternula albifrons sinensis,STERNULA,コアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+235,アメリカコアジサシ,Sternula antillarum,STERNULA,コアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+235-1,アメリカコアジサシ,Sternula antillarum athalassos,STERNULA,コアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+236,コシジロアジサシ,Onychoprion aleuticus,ONYCHOPRION,セグロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+237,ナンヨウマミジロアジサシ,Onychoprion lunatus,ONYCHOPRION,セグロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+238,マミジロアジサシ,Onychoprion anaethetus,ONYCHOPRION,セグロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+238-1,マミジロアジサシ,Onychoprion anaethetus anaethetus,ONYCHOPRION,セグロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+238-2,インドヨウマミジロアジサシ,Onychoprion anaethetus antarcticus,ONYCHOPRION,セグロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+239,セグロアジサシ,Onychoprion fuscatus,ONYCHOPRION,セグロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+239-1,ハワイセグロアジサシ,Onychoprion fuscatus oahuensis,ONYCHOPRION,セグロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+239-2,セグロアジサシ,Onychoprion fuscatus nubilosus,ONYCHOPRION,セグロアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+240,ベニアジサシ,Sterna dougallii,STERNA,アジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+240-1,ベニアジサシ,Sterna dougallii bangsi,STERNA,アジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+241,エリグロアジサシ,Sterna sumatrana,STERNA,アジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+242,アジサシ,Sterna hirundo,STERNA,アジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+242-1,アカアシアジサシ,Sterna hirundo minussensis,STERNA,アジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+242-2,アジサシ,Sterna hirundo longipennis,STERNA,アジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+243,キョクアジサシ,Sterna paradisaea,STERNA,アジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+244,クロハラアジサシ,Chlidonias hybrida,CHLIDONIAS,クロハラアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+244-1,クロハラアジサシ,Chlidonias hybrida hybrida,CHLIDONIAS,クロハラアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+245,ハジロクロハラアジサシ,Chlidonias leucopterus,CHLIDONIAS,クロハラアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+246,ハシグロクロハラアジサシ,Chlidonias niger,CHLIDONIAS,クロハラアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,種
+246-1,ハシグロクロハラアジサシ,Chlidonias niger niger,CHLIDONIAS,クロハラアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+246-2,アメリカハシグロクロハラアジサシ,Chlidonias niger surinamensis,CHLIDONIAS,クロハラアジサシ属,LARIDAE,カモメ科,CHARADRIIFORMES,チドリ目,亜種
+247,オオトウゾクカモメ,Stercorarius maccormicki,STERCORARIUS,トウゾクカモメ属,STERCORARIIDAE,トウゾクカモメ科,CHARADRIIFORMES,チドリ目,種
+248,トウゾクカモメ,Stercorarius pomarinus,STERCORARIUS,トウゾクカモメ属,STERCORARIIDAE,トウゾクカモメ科,CHARADRIIFORMES,チドリ目,種
+249,クロトウゾクカモメ,Stercorarius parasiticus,STERCORARIUS,トウゾクカモメ属,STERCORARIIDAE,トウゾクカモメ科,CHARADRIIFORMES,チドリ目,種
+250,シロハラトウゾクカモメ,Stercorarius longicaudus,STERCORARIUS,トウゾクカモメ属,STERCORARIIDAE,トウゾクカモメ科,CHARADRIIFORMES,チドリ目,種
+250-1,シロハラトウゾクカモメ,Stercorarius longicaudus pallescens,STERCORARIUS,トウゾクカモメ属,STERCORARIIDAE,トウゾクカモメ科,CHARADRIIFORMES,チドリ目,亜種
+251,ヒメウミスズメ,Alle alle,ALLE,ヒメウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+252,ハシブトウミガラス,Uria lomvia,URIA,ウミガラス属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+252-1,ハシブトウミガラス,Uria lomvia arra,URIA,ウミガラス属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,亜種
+253,ウミガラス,Uria aalge,URIA,ウミガラス属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+253-1,ウミガラス,Uria aalge inornata,URIA,ウミガラス属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,亜種
+254,ウミバト,Cepphus columba,CEPPHUS,ウミバト属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+254-1,ウミバト,Cepphus columba snowi,CEPPHUS,ウミバト属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,亜種
+254-2,アリューシャンウミバト,Cepphus columba kaiurka,CEPPHUS,ウミバト属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,亜種
+255,ケイマフリ,Cepphus carbo,CEPPHUS,ウミバト属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+256,マダラウミスズメ,Brachyramphus perdix,BRACHYRAMPHUS,マダラウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+257,ウミスズメ,Synthliboramphus antiquus,SYNTHLIBORAMPHUS,ウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+257-1,ウミスズメ,Synthliboramphus antiquus antiquus,SYNTHLIBORAMPHUS,ウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,亜種
+258,カンムリウミスズメ,Synthliboramphus wumizusume,SYNTHLIBORAMPHUS,ウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+259,アメリカウミスズメ,Ptychoramphus aleuticus,PTYCHORAMPHUS,アメリカウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+260,ウミオウム,Aethia psittacula,AETHIA,エトロフウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+261,コウミスズメ,Aethia pusilla,AETHIA,エトロフウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+262,シラヒゲウミスズメ,Aethia pygmaea,AETHIA,エトロフウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+263,エトロフウミスズメ,Aethia cristatella,AETHIA,エトロフウミスズメ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+264,ウトウ,Cerorhinca monocerata,CERORHINCA,ウトウ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+265,ツノメドリ,Fratercula corniculata,FRATERCULA,ツノメドリ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+266,エトピリカ,Fratercula cirrhata,FRATERCULA,ツノメドリ属,ALCIDAE,ウミスズメ科,CHARADRIIFORMES,チドリ目,種
+267,アカオネッタイチョウ,Phaethon rubricauda,PHAETHON,ネッタイチョウ属,PHAETHONTIDAE,ネッタイチョウ科,PHAETHONTIFORMES,ネッタイチョウ目,種
+267-1,アカオネッタイチョウ,Phaethon rubricauda melanorhynchos,PHAETHON,ネッタイチョウ属,PHAETHONTIDAE,ネッタイチョウ科,PHAETHONTIFORMES,ネッタイチョウ目,亜種
+268,シラオネッタイチョウ,Phaethon lepturus,PHAETHON,ネッタイチョウ属,PHAETHONTIDAE,ネッタイチョウ科,PHAETHONTIFORMES,ネッタイチョウ目,種
+268-1,シラオネッタイチョウ,Phaethon lepturus dorotheae,PHAETHON,ネッタイチョウ属,PHAETHONTIDAE,ネッタイチョウ科,PHAETHONTIFORMES,ネッタイチョウ目,亜種
+269,アビ,Gavia stellata,GAVIA,アビ属,GAVIIDAE,アビ科,GAVIIFORMES,アビ目,種
+270,オオハム,Gavia arctica,GAVIA,アビ属,GAVIIDAE,アビ科,GAVIIFORMES,アビ目,種
+270-1,オオハム,Gavia arctica viridigularis,GAVIA,アビ属,GAVIIDAE,アビ科,GAVIIFORMES,アビ目,亜種
+271,シロエリオオハム,Gavia pacifica,GAVIA,アビ属,GAVIIDAE,アビ科,GAVIIFORMES,アビ目,種
+272,ハシグロアビ,Gavia immer,GAVIA,アビ属,GAVIIDAE,アビ科,GAVIIFORMES,アビ目,種
+273,ハシジロアビ,Gavia adamsii,GAVIA,アビ属,GAVIIDAE,アビ科,GAVIIFORMES,アビ目,種
+274,アシナガウミツバメ,Oceanites oceanicus,OCEANITES,アシナガウミツバメ属,OCEANITIDAE,アシナガウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,種
+274-1,アシナガウミツバメ,Oceanites oceanicus exasperatus,OCEANITES,アシナガウミツバメ属,OCEANITIDAE,アシナガウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,亜種
+275,コアホウドリ,Phoebastria immutabilis,PHOEBASTRIA,アホウドリ属,DIOMEDEIDAE,アホウドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+276,クロアシアホウドリ,Phoebastria nigripes,PHOEBASTRIA,アホウドリ属,DIOMEDEIDAE,アホウドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+277,アホウドリ,Phoebastria albatrus,PHOEBASTRIA,アホウドリ属,DIOMEDEIDAE,アホウドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+278,ハイイロウミツバメ,Hydrobates furcatus,HYDROBATES,オーストンウミツバメ属,HYDROBATIDAE,ウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,種
+278-1,ハイイロウミツバメ,Hydrobates furcatus furcatus,HYDROBATES,オーストンウミツバメ属,HYDROBATIDAE,ウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,亜種
+279,ヒメクロウミツバメ,Hydrobates monorhis,HYDROBATES,オーストンウミツバメ属,HYDROBATIDAE,ウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,種
+280,クロウミツバメ,Hydrobates matsudairae,HYDROBATES,オーストンウミツバメ属,HYDROBATIDAE,ウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,種
+281,コシジロウミツバメ,Hydrobates leucorhous,HYDROBATES,オーストンウミツバメ属,HYDROBATIDAE,ウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,種
+281-1,コシジロウミツバメ,Hydrobates leucorhous leucorhous,HYDROBATES,オーストンウミツバメ属,HYDROBATIDAE,ウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,亜種
+282,クロコシジロウミツバメ,Hydrobates castro,HYDROBATES,オーストンウミツバメ属,HYDROBATIDAE,ウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,種
+283,オーストンウミツバメ,Hydrobates tristrami,HYDROBATES,オーストンウミツバメ属,HYDROBATIDAE,ウミツバメ科,PROCELLARIIFORMES,ミズナギドリ目,種
+284,フルマカモメ,Fulmarus glacialis,FULMARUS,フルマカモメ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+284-1,フルマカモメ,Fulmarus glacialis rodgersii,FULMARUS,フルマカモメ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,亜種
+285,ハジロミズナギドリ,Pterodroma solandri,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+286,オオシロハラミズナギドリ,Pterodroma externa,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+287,カワリシロハラミズナギドリ,Pterodroma neglecta,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+288,ハワイシロハラミズナギドリ,Pterodroma sandwichensis,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+289,マダラシロハラミズナギドリ,Pterodroma inexpectata,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+290,クビワオオシロハラミズナギドリ,Pterodroma cervicalis,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+290-1,クビワオオシロハラミズナギドリ,Pterodroma cervicalis cervicalis,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,亜種
+291,ハグロシロハラミズナギドリ,Pterodroma nigripennis,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+292,シロハラミズナギドリ,Pterodroma hypoleuca,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+293,ヒメシロハラミズナギドリ,Pterodroma longirostris,PTERODROMA,シロハラミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+294,オオミズナギドリ,Calonectris leucomelas,CALONECTRIS,オオミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+295,オナガミズナギドリ,Ardenna pacifica,ARDENNA,ハシボソミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+295-1,オナガミズナギドリ,Ardenna pacifica cuneata,ARDENNA,ハシボソミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,亜種
+296,ミナミオナガミズナギドリ,Ardenna bulleri,ARDENNA,ハシボソミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+297,ハイイロミズナギドリ,Ardenna grisea,ARDENNA,ハシボソミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+298,ハシボソミズナギドリ,Ardenna tenuirostris,ARDENNA,ハシボソミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+299,シロハラアカアシミズナギドリ,Ardenna creatopus,ARDENNA,ハシボソミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+300,アカアシミズナギドリ,Ardenna carneipes,ARDENNA,ハシボソミズナギドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+301,コミズナギドリ,Puffinus nativitatis,PUFFINUS,セグロミズナギドリ属（和名検討中）,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+302,オガサワラヒメミズナギドリ,Puffinus bryani,PUFFINUS,セグロミズナギドリ属（和名検討中）,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+303,ハワイセグロミズナギドリ,Puffinus newelli,PUFFINUS,セグロミズナギドリ属（和名検討中）,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+304,オガサワラミズナギドリ,Puffinus bannermani,PUFFINUS,セグロミズナギドリ属（和名検討中）,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+305,アナドリ,Bulweria bulwerii,BULWERIA,アナドリ属,PROCELLARIIDAE,ミズナギドリ科,PROCELLARIIFORMES,ミズナギドリ目,種
+306,ナベコウ,Ciconia nigra,CICONIA,コウノトリ属,CICONIIDAE,コウノトリ科,CICONIIFORMES,コウノトリ目,種
+307,コウノトリ,Ciconia boyciana,CICONIA,コウノトリ属,CICONIIDAE,コウノトリ科,CICONIIFORMES,コウノトリ目,種
+308,オオグンカンドリ,Fregata minor,FREGATA,グンカンドリ属,FREGATIDAE,グンカンドリ科,SULIFORMES,カツオドリ目,種
+308-1,オオグンカンドリ,Fregata minor minor,FREGATA,グンカンドリ属,FREGATIDAE,グンカンドリ科,SULIFORMES,カツオドリ目,亜種
+309,コグンカンドリ,Fregata ariel,FREGATA,グンカンドリ属,FREGATIDAE,グンカンドリ科,SULIFORMES,カツオドリ目,種
+309-1,コグンカンドリ,Fregata ariel ariel,FREGATA,グンカンドリ属,FREGATIDAE,グンカンドリ科,SULIFORMES,カツオドリ目,亜種
+310,アオツラカツオドリ,Sula dactylatra,SULA,カツオドリ属,SULIDAE,カツオドリ科,SULIFORMES,カツオドリ目,種
+310-1,アオツラカツオドリ,Sula dactylatra personata,SULA,カツオドリ属,SULIDAE,カツオドリ科,SULIFORMES,カツオドリ目,亜種
+311,アカアシカツオドリ,Sula sula,SULA,カツオドリ属,SULIDAE,カツオドリ科,SULIFORMES,カツオドリ目,種
+311-1,アカアシカツオドリ,Sula sula rubripes,SULA,カツオドリ属,SULIDAE,カツオドリ科,SULIFORMES,カツオドリ目,亜種
+312,カツオドリ,Sula leucogaster,SULA,カツオドリ属,SULIDAE,カツオドリ科,SULIFORMES,カツオドリ目,種
+312-1,カツオドリ,Sula leucogaster plotus,SULA,カツオドリ属,SULIDAE,カツオドリ科,SULIFORMES,カツオドリ目,亜種
+312-2,シロガシラカツオドリ,Sula leucogaster brewsteri,SULA,カツオドリ属,SULIDAE,カツオドリ科,SULIFORMES,カツオドリ目,亜種
+313,チシマウガラス,Urile urile,URILE,ヒメウ属,PHALACROCORACIDAE,ウ科,SULIFORMES,カツオドリ目,種
+314,ヒメウ,Urile pelagicus,URILE,ヒメウ属,PHALACROCORACIDAE,ウ科,SULIFORMES,カツオドリ目,種
+314-1,ヒメウ,Urile pelagicus pelagicus,URILE,ヒメウ属,PHALACROCORACIDAE,ウ科,SULIFORMES,カツオドリ目,亜種
+315,ウミウ,Phalacrocorax capillatus,PHALACROCORAX,ウ属,PHALACROCORACIDAE,ウ科,SULIFORMES,カツオドリ目,種
+316,カワウ,Phalacrocorax carbo,PHALACROCORAX,ウ属,PHALACROCORACIDAE,ウ科,SULIFORMES,カツオドリ目,種
+316-1,シナカワウ（和名検討中）,Phalacrocorax carbo sinensis,PHALACROCORAX,ウ属,PHALACROCORACIDAE,ウ科,SULIFORMES,カツオドリ目,亜種
+316-2,カワウ,Phalacrocorax carbo hanedae,PHALACROCORAX,ウ属,PHALACROCORACIDAE,ウ科,SULIFORMES,カツオドリ目,亜種
+317,クロトキ,Threskiornis melanocephalus,THRESKIORNIS,クロトキ属,THRESKIORNITHIDAE,トキ科,PELECANIFORMES,ペリカン目,種
+318,トキ,Nipponia nippon,NIPPONIA,トキ属,THRESKIORNITHIDAE,トキ科,PELECANIFORMES,ペリカン目,種
+319,ブロンズトキ,Plegadis falcinellus,PLEGADIS,ブロンズトキ属,THRESKIORNITHIDAE,トキ科,PELECANIFORMES,ペリカン目,種
+320,ヘラサギ,Platalea leucorodia,PLATALEA,ヘラサギ属,THRESKIORNITHIDAE,トキ科,PELECANIFORMES,ペリカン目,種
+320-1,ヘラサギ,Platalea leucorodia leucorodia,PLATALEA,ヘラサギ属,THRESKIORNITHIDAE,トキ科,PELECANIFORMES,ペリカン目,亜種
+321,クロツラヘラサギ,Platalea minor,PLATALEA,ヘラサギ属,THRESKIORNITHIDAE,トキ科,PELECANIFORMES,ペリカン目,種
+322,サンカノゴイ,Botaurus stellaris,BOTAURUS,サンカノゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+322-1,サンカノゴイ,Botaurus stellaris stellaris,BOTAURUS,サンカノゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+323,ヨシゴイ,Ixobrychus sinensis,IXOBRYCHUS,ヨシゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+323-1,ヨシゴイ,Ixobrychus sinensis sinensis,IXOBRYCHUS,ヨシゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+323-2,マリアナヨシゴイ,Ixobrychus sinensis bryani,IXOBRYCHUS,ヨシゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+324,オオヨシゴイ,Ixobrychus eurhythmus,IXOBRYCHUS,ヨシゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+325,リュウキュウヨシゴイ,Ixobrychus cinnamomeus,IXOBRYCHUS,ヨシゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+326,タカサゴクロサギ,Ixobrychus flavicollis,IXOBRYCHUS,ヨシゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+326-1,タカサゴクロサギ,Ixobrychus flavicollis flavicollis,IXOBRYCHUS,ヨシゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+327,ミゾゴイ,Gorsachius goisagi,GORSACHIUS,ミゾゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+328,ズグロミゾゴイ,Gorsachius melanolophus,GORSACHIUS,ミゾゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+328-1,ズグロミゾゴイ,Gorsachius melanolophus melanolophus,GORSACHIUS,ミゾゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+329,ゴイサギ,Nycticorax nycticorax,NYCTICORAX,ゴイサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+329-1,ゴイサギ,Nycticorax nycticorax nycticorax,NYCTICORAX,ゴイサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+330,ハシブトゴイ,Nycticorax caledonicus,NYCTICORAX,ゴイサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+330-1,ハシブトゴイ,Nycticorax caledonicus crassirostris,NYCTICORAX,ゴイサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+331,ササゴイ,Butorides striata,BUTORIDES,ササゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+331-1,ササゴイ,Butorides striata amurensis,BUTORIDES,ササゴイ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+332,アカガシラサギ,Ardeola bacchus,ARDEOLA,アカガシラサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+333,アマサギ,Bubulcus ibis,BUBULCUS,アマサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+333-1,アマサギ,Bubulcus ibis coromandus,BUBULCUS,アマサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+334,アオサギ,Ardea cinerea,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+334-1,アオサギ,Ardea cinerea jouyi,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+335,ムラサキサギ,Ardea purpurea,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+335-1,ムラサキサギ,Ardea purpurea manilensis,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+336,ダイサギ,Ardea alba,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+336-1,ダイサギ,Ardea alba alba,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+336-2,チュウダイサギ,Ardea alba modesta,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+337,チュウサギ,Ardea intermedia,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+337-1,チュウサギ,Ardea intermedia intermedia,ARDEA,アオサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+338,コサギ,Egretta garzetta,EGRETTA,コサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+338-1,コサギ,Egretta garzetta garzetta,EGRETTA,コサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+339,クロサギ,Egretta sacra,EGRETTA,コサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+339-1,クロサギ,Egretta sacra sacra,EGRETTA,コサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,亜種
+340,カラシラサギ,Egretta eulophotes,EGRETTA,コサギ属,ARDEIDAE,サギ科,PELECANIFORMES,ペリカン目,種
+341,モモイロペリカン,Pelecanus onocrotalus,PELECANUS,ペリカン属,PELECANIDAE,ペリカン科,PELECANIFORMES,ペリカン目,種
+342,ホシバシペリカン,Pelecanus philippensis,PELECANUS,ペリカン属,PELECANIDAE,ペリカン科,PELECANIFORMES,ペリカン目,種
+343,ハイイロペリカン,Pelecanus crispus,PELECANUS,ペリカン属,PELECANIDAE,ペリカン科,PELECANIFORMES,ペリカン目,種
+344,ミサゴ,Pandion haliaetus,PANDION,ミサゴ属,PANDIONIDAE,ミサゴ科,ACCIPITRIFORMES,タカ目,種
+344-1,ミサゴ,Pandion haliaetus haliaetus,PANDION,ミサゴ属,PANDIONIDAE,ミサゴ科,ACCIPITRIFORMES,タカ目,亜種
+345,ハチクマ,Pernis ptilorhynchus,PERNIS,ハチクマ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+345-1,ハチクマ,Pernis ptilorhynchus orientalis,PERNIS,ハチクマ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+346,クロハゲワシ,Aegypius monachus,AEGYPIUS,クロハゲワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+347,カンムリワシ,Spilornis cheela,SPILORNIS,カンムリワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+347-1,カンムリワシ,Spilornis cheela perplexus,SPILORNIS,カンムリワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+348,クマタカ,Nisaetus nipalensis,NISAETUS,クマタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+348-1,クマタカ,Nisaetus nipalensis orientalis,NISAETUS,クマタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+349,カラフトワシ,Clanga clanga,CLANGA,カラフトワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+350,カタシロワシ,Aquila heliaca,AQUILA,イヌワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+351,イヌワシ,Aquila chrysaetos,AQUILA,イヌワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+351-1,イヌワシ,Aquila chrysaetos japonica,AQUILA,イヌワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+352,アカハラダカ,Accipiter soloensis,ACCIPITER,ハイタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+353,ツミ,Accipiter gularis,ACCIPITER,ハイタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+353-1,ツミ,Accipiter gularis gularis,ACCIPITER,ハイタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+353-2,リュウキュウツミ,Accipiter gularis iwasakii,ACCIPITER,ハイタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+354,ハイタカ,Accipiter nisus,ACCIPITER,ハイタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+354-1,ハイタカ,Accipiter nisus nisosimilis,ACCIPITER,ハイタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+355,オオタカ,Accipiter gentilis,ACCIPITER,ハイタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+355-1,オオタカ,Accipiter gentilis fujiyamae,ACCIPITER,ハイタカ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+356,チュウヒ,Circus spilonotus,CIRCUS,チュウヒ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+357,ハイイロチュウヒ,Circus cyaneus,CIRCUS,チュウヒ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+358,アメリカハイイロチュウヒ,Circus hudsonius,CIRCUS,チュウヒ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+359,マダラチュウヒ,Circus melanoleucos,CIRCUS,チュウヒ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+360,トビ,Milvus migrans,MILVUS,トビ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+360-1,トビ,Milvus migrans lineatus,MILVUS,トビ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+361,オオワシ,Haliaeetus pelagicus,HALIAEETUS,オジロワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+362,オジロワシ,Haliaeetus albicilla,HALIAEETUS,オジロワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+362-1,オジロワシ,Haliaeetus albicilla albicilla,HALIAEETUS,オジロワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+363,ハクトウワシ,Haliaeetus leucocephalus,HALIAEETUS,オジロワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+363-1,ハクトウワシ,Haliaeetus leucocephalus washingtoniensis,HALIAEETUS,オジロワシ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+364,サシバ,Butastur indicus,BUTASTUR,サシバ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+365,ケアシノスリ,Buteo lagopus,BUTEO,ノスリ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+365-1,ケアシノスリ,Buteo lagopus menzbieri,BUTEO,ノスリ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+366,オオノスリ,Buteo hemilasius,BUTEO,ノスリ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+367,ノスリ,Buteo japonicus,BUTEO,ノスリ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,種
+367-1,カラノスリ,Buteo japonicus burmanicus,BUTEO,ノスリ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+367-2,ノスリ,Buteo japonicus japonicus,BUTEO,ノスリ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+367-3,オガサワラノスリ,Buteo japonicus toyoshimai,BUTEO,ノスリ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+367-4,ダイトウノスリ,Buteo japonicus oshiroi,BUTEO,ノスリ属,ACCIPITRIDAE,タカ科,ACCIPITRIFORMES,タカ目,亜種
+368,アオバズク,Ninox japonica,NINOX,アオバズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+368-1,アオバズク,Ninox japonica japonica,NINOX,アオバズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+368-2,リュウキュウアオバズク,Ninox japonica totogo,NINOX,アオバズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+369,キンメフクロウ,Aegolius funereus,AEGOLIUS,キンメフクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+369-1,キンメフクロウ,Aegolius funereus sibiricus,AEGOLIUS,キンメフクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+370,コノハズク,Otus sunia,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+370-1,コノハズク,Otus sunia japonicus,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+371,リュウキュウコノハズク,Otus elegans,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+371-1,ダイトウコノハズク,Otus elegans interpositus,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+371-2,リュウキュウコノハズク,Otus elegans elegans,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+372,オオコノハズク,Otus semitorques,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+372-1,サメイロオオコノハズク,Otus semitorques ussuriensis,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+372-2,オオコノハズク,Otus semitorques semitorques,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+372-3,リュウキュウオオコノハズク,Otus semitorques pryeri,OTUS,コノハズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+373,トラフズク,Asio otus,ASIO,トラフズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+373-1,トラフズク,Asio otus otus,ASIO,トラフズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+374,コミミズク,Asio flammeus,ASIO,トラフズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+374-1,コミミズク,Asio flammeus flammeus,ASIO,トラフズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+375,シロフクロウ,Bubo scandiacus,BUBO,ワシミミズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+376,ワシミミズク,Bubo bubo,BUBO,ワシミミズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+376-1,タイリクワシミミズク,Bubo bubo kiautschensis,BUBO,ワシミミズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+376-2,ワシミミズク,Bubo bubo borissowi,BUBO,ワシミミズク属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+377,シマフクロウ,Ketupa blakistoni,KETUPA,シマフクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+377-1,シマフクロウ,Ketupa blakistoni blakistoni,KETUPA,シマフクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+378,フクロウ,Strix uralensis,STRIX,フクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,種
+378-1,エゾフクロウ,Strix uralensis japonica,STRIX,フクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+378-2,フクロウ,Strix uralensis hondoensis,STRIX,フクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+378-3,モミヤマフクロウ,Strix uralensis momiyamae,STRIX,フクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+378-4,キュウシュウフクロウ,Strix uralensis fuscescens,STRIX,フクロウ属,STRIGIDAE,フクロウ科,STRIGIFORMES,フクロウ目,亜種
+379,ヤツガシラ,Upupa epops,UPUPA,ヤツガシラ属,UPUPIDAE,ヤツガシラ科,BUCEROTIFORMES,サイチョウ目,種
+379-1,ヤツガシラ,Upupa epops saturata,UPUPA,ヤツガシラ属,UPUPIDAE,ヤツガシラ科,BUCEROTIFORMES,サイチョウ目,亜種
+380,ブッポウソウ,Eurystomus orientalis,EURYSTOMUS,ブッポウソウ属,CORACIIDAE,ブッポウソウ科,CORACIIFORMES,ブッポウソウ目,種
+380-1,ブッポウソウ,Eurystomus orientalis calonyx,EURYSTOMUS,ブッポウソウ属,CORACIIDAE,ブッポウソウ科,CORACIIFORMES,ブッポウソウ目,亜種
+381,アカショウビン,Halcyon coromanda,HALCYON,アカショウビン属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,種
+381-1,アカショウビン,Halcyon coromanda major,HALCYON,アカショウビン属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,亜種
+381-2,リュウキュウアカショウビン,Halcyon coromanda bangsi,HALCYON,アカショウビン属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,亜種
+382,ヤマショウビン,Halcyon pileata,HALCYON,アカショウビン属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,種
+383,ナンヨウショウビン,Todiramphus chloris,TODIRAMPHUS,ナンヨウショウビン属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,種
+383-1,ナンヨウショウビン,Todiramphus chloris collaris,TODIRAMPHUS,ナンヨウショウビン属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,亜種
+384,ミヤコショウビン,Todiramphus miyakoensis,TODIRAMPHUS,ナンヨウショウビン属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,種
+385,カワセミ,Alcedo atthis,ALCEDO,カワセミ属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,種
+385-1,カワセミ,Alcedo atthis bengalensis,ALCEDO,カワセミ属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,亜種
+386,ミツユビカワセミ,Ceyx erithaca,CEYX,ミツユビカワセミ属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,種
+386-1,ミツユビカワセミ,Ceyx erithaca erithaca,CEYX,ミツユビカワセミ属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,亜種
+387,ヤマセミ,Megaceryle lugubris,MEGACERYLE,ヤマセミ属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,種
+387-1,エゾヤマセミ,Megaceryle lugubris pallida,MEGACERYLE,ヤマセミ属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,亜種
+387-2,ヤマセミ,Megaceryle lugubris lugubris,MEGACERYLE,ヤマセミ属,ALCEDINIDAE,カワセミ科,CORACIIFORMES,ブッポウソウ目,亜種
+388,ルリオハチクイ,Merops philippinus,MEROPS,ハチクイ属,MEROPIDAE,ハチクイ科,CORACIIFORMES,ブッポウソウ目,種
+389,ハチクイ,Merops ornatus,MEROPS,ハチクイ属,MEROPIDAE,ハチクイ科,CORACIIFORMES,ブッポウソウ目,種
+390,アリスイ,Jynx torquilla,JYNX,アリスイ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+390-1,シベリアアリスイ,Jynx torquilla chinensis,JYNX,アリスイ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+390-2,アリスイ,Jynx torquilla japonica,JYNX,アリスイ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391,コゲラ,Yungipicus kizuki,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+391-1,エゾコゲラ,Yungipicus kizuki seebohmi,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391-2,コゲラ,Yungipicus kizuki nippon,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391-3,ミヤケコゲラ,Yungipicus kizuki matsudairai,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391-4,シコクコゲラ,Yungipicus kizuki shikokuensis,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391-5,ツシマコゲラ,Yungipicus kizuki kotataki,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391-6,キュウシュウコゲラ,Yungipicus kizuki kizuki,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391-7,アマミコゲラ,Yungipicus kizuki amamii,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391-8,リュウキュウコゲラ,Yungipicus kizuki nigrescens,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+391-9,オリイコゲラ,Yungipicus kizuki orii,YUNGIPICUS,コゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+392,ミユビゲラ,Picoides tridactylus,PICOIDES,ミユビゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+392-1,ミユビゲラ,Picoides tridactylus inouyei,PICOIDES,ミユビゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+393,コアカゲラ,Dryobates minor,DRYOBATES,コアカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+393-1,コアカゲラ,Dryobates minor amurensis,DRYOBATES,コアカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+394,チャバラアカゲラ,Dendrocopos hyperythrus,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+394-1,チャバラアカゲラ,Dendrocopos hyperythrus subrufinus,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+395,アカゲラ,Dendrocopos major,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+395-1,ハシブトアカゲラ,Dendrocopos major brevirostris,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+395-2,エゾアカゲラ,Dendrocopos major japonicus,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+395-3,アカゲラ,Dendrocopos major hondoensis,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+396,ノグチゲラ,Dendrocopos noguchii,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+397,オオアカゲラ,Dendrocopos leucotos,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+397-1,エゾオオアカゲラ,Dendrocopos leucotos subcirris,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+397-2,オオアカゲラ,Dendrocopos leucotos stejnegeri,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+397-3,ナミエオオアカゲラ,Dendrocopos leucotos namiyei,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+397-4,オーストンオオアカゲラ,Dendrocopos leucotos owstoni,DENDROCOPOS,アカゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+398,キタタキ,Dryocopus javensis,DRYOCOPUS,クマゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+398-1,キタタキ,Dryocopus javensis richardsi,DRYOCOPUS,クマゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+399,クマゲラ,Dryocopus martius,DRYOCOPUS,クマゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+399-1,クマゲラ,Dryocopus martius martius,DRYOCOPUS,クマゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+400,アオゲラ,Picus awokera,PICUS,アオゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+400-1,アオゲラ,Picus awokera awokera,PICUS,アオゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+400-2,カゴシマアオゲラ,Picus awokera horii,PICUS,アオゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+400-3,タネアオゲラ,Picus awokera takatsukasae,PICUS,アオゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+401,ヤマゲラ,Picus canus,PICUS,アオゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,種
+401-1,ヤマゲラ,Picus canus jessoensis,PICUS,アオゲラ属,PICIDAE,キツツキ科,PICIFORMES,キツツキ目,亜種
+402,ヒメチョウゲンボウ,Falco naumanni,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,種
+403,チョウゲンボウ,Falco tinnunculus,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,種
+403-1,チョウゲンボウ,Falco tinnunculus interstinctus,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+403-2,チョウセンチョウゲンボウ,Falco tinnunculus tinnunculus,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+404,アカアシチョウゲンボウ,Falco amurensis,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,種
+405,コチョウゲンボウ,Falco columbarius,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,種
+405-1,コチョウゲンボウ,Falco columbarius insignis,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+405-2,ヒガシコチョウゲンボウ,Falco columbarius pacificus,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+406,チゴハヤブサ,Falco subbuteo,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,種
+406-1,チゴハヤブサ,Falco subbuteo subbuteo,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+407,シロハヤブサ,Falco rusticolus,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,種
+408,ハヤブサ,Falco peregrinus,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,種
+408-1,ハヤブサ,Falco peregrinus japonensis,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+408-2,オオハヤブサ,Falco peregrinus pealei,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+408-3,シマハヤブサ,Falco peregrinus furuitii,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+408-4,アメリカハヤブサ,Falco peregrinus anatum,FALCO,ハヤブサ属,FALCONIDAE,ハヤブサ科,FALCONIFORMES,ハヤブサ目,亜種
+409,ズグロヤイロチョウ,Pitta sordida,PITTA,ヤイロチョウ属,PITTIDAE,ヤイロチョウ科,PASSERIFORMES,スズメ目,種
+409-1,ズグロヤイロチョウ,Pitta sordida cucullata,PITTA,ヤイロチョウ属,PITTIDAE,ヤイロチョウ科,PASSERIFORMES,スズメ目,亜種
+410,ヤイロチョウ,Pitta nympha,PITTA,ヤイロチョウ属,PITTIDAE,ヤイロチョウ科,PASSERIFORMES,スズメ目,種
+411,モリツバメ,Artamus leucorynchus,ARTAMUS,モリツバメ属,ARTAMIDAE,モリツバメ科,PASSERIFORMES,スズメ目,種
+411-1,モリツバメ,Artamus leucorynchus leucorynchus,ARTAMUS,モリツバメ属,ARTAMIDAE,モリツバメ科,PASSERIFORMES,スズメ目,亜種
+412,サンショウクイ,Pericrocotus divaricatus,PERICROCOTUS,サンショウクイ属,CAMPEPHAGIDAE,サンショウクイ科,PASSERIFORMES,スズメ目,種
+413,リュウキュウサンショウクイ,Pericrocotus tegimae,PERICROCOTUS,サンショウクイ属,CAMPEPHAGIDAE,サンショウクイ科,PASSERIFORMES,スズメ目,種
+414,アサクラサンショウクイ,Lalage melaschistos,LALAGE,アサクラサンショウクイ属,CAMPEPHAGIDAE,サンショウクイ科,PASSERIFORMES,スズメ目,種
+414-1,アサクラサンショウクイ,Lalage melaschistos intermedia,LALAGE,アサクラサンショウクイ属,CAMPEPHAGIDAE,サンショウクイ科,PASSERIFORMES,スズメ目,亜種
+415,コウライウグイス,Oriolus chinensis,ORIOLUS,コウライウグイス属,ORIOLIDAE,コウライウグイス科,PASSERIFORMES,スズメ目,種
+415-1,コウライウグイス,Oriolus chinensis diffusus,ORIOLUS,コウライウグイス属,ORIOLIDAE,コウライウグイス科,PASSERIFORMES,スズメ目,亜種
+416,カンムリオウチュウ,Dicrurus hottentottus,DICRURUS,オウチュウ属,DICRURIDAE,オウチュウ科,PASSERIFORMES,スズメ目,種
+416-1,カンムリオウチュウ,Dicrurus hottentottus brevirostris,DICRURUS,オウチュウ属,DICRURIDAE,オウチュウ科,PASSERIFORMES,スズメ目,亜種
+417,ハイイロオウチュウ,Dicrurus leucophaeus,DICRURUS,オウチュウ属,DICRURIDAE,オウチュウ科,PASSERIFORMES,スズメ目,種
+417-1,ハイイロオウチュウ,Dicrurus leucophaeus leucogenis,DICRURUS,オウチュウ属,DICRURIDAE,オウチュウ科,PASSERIFORMES,スズメ目,亜種
+418,オウチュウ,Dicrurus macrocercus,DICRURUS,オウチュウ属,DICRURIDAE,オウチュウ科,PASSERIFORMES,スズメ目,種
+419,クロエリヒタキ,Hypothymis azurea,HYPOTHYMIS,クロエリヒタキ属,MONARCHIDAE,カササギヒタキ科,PASSERIFORMES,スズメ目,種
+420,サンコウチョウ,Terpsiphone atrocaudata,TERPSIPHONE,サンコウチョウ属,MONARCHIDAE,カササギヒタキ科,PASSERIFORMES,スズメ目,種
+420-1,サンコウチョウ,Terpsiphone atrocaudata atrocaudata,TERPSIPHONE,サンコウチョウ属,MONARCHIDAE,カササギヒタキ科,PASSERIFORMES,スズメ目,亜種
+420-2,リュウキュウサンコウチョウ,Terpsiphone atrocaudata illex,TERPSIPHONE,サンコウチョウ属,MONARCHIDAE,カササギヒタキ科,PASSERIFORMES,スズメ目,亜種
+421,オオカラモズ,Lanius sphenocercus,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,種
+422,オオモズ,Lanius borealis,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,種
+422-1,シベリアオオモズ,Lanius borealis mollis,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,亜種
+422-2,オオモズ,Lanius borealis bianchii,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,亜種
+423,チゴモズ,Lanius tigrinus,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,種
+424,セアカモズ,Lanius collurio,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,種
+425,アカモズ,Lanius cristatus,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,種
+425-1,シマアカモズ,Lanius cristatus lucionensis,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,亜種
+425-2,アカモズ,Lanius cristatus superciliosus,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,亜種
+426,モズ,Lanius bucephalus,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,種
+426-1,モズ,Lanius bucephalus bucephalus,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,亜種
+427,タカサゴモズ,Lanius schach,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,種
+427-1,タカサゴモズ,Lanius schach schach,LANIUS,モズ属,LANIIDAE,モズ科,PASSERIFORMES,スズメ目,亜種
+428,カケス,Garrulus glandarius,GARRULUS,カケス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+428-1,ミヤマカケス,Garrulus glandarius brandtii,GARRULUS,カケス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+428-2,カケス,Garrulus glandarius japonicus,GARRULUS,カケス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+428-3,サドカケス,Garrulus glandarius tokugawae,GARRULUS,カケス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+428-4,ヤクシマカケス,Garrulus glandarius orii,GARRULUS,カケス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+429,ルリカケス,Garrulus lidthi,GARRULUS,カケス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+430,オナガ,Cyanopica cyanus,CYANOPICA,オナガ属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+430-1,オナガ,Cyanopica cyanus japonica,CYANOPICA,オナガ属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+431,カササギ,Pica serica,PICA,カササギ属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+432,ホシガラス,Nucifraga caryocatactes,NUCIFRAGA,ホシガラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+432-1,ハシナガホシガラス,Nucifraga caryocatactes macrorhynchos,NUCIFRAGA,ホシガラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+432-2,ホシガラス,Nucifraga caryocatactes japonica,NUCIFRAGA,ホシガラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+433,ニシコクマルガラス,Corvus monedula,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+434,コクマルガラス,Corvus dauuricus,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+435,ミヤマガラス,Corvus frugilegus,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+435-1,ミヤマガラス,Corvus frugilegus pastinator,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+436,ハシボソガラス,Corvus corone,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+436-1,ハシボソガラス,Corvus corone orientalis,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+436-2,ズキンガラス,Corvus corone sharpii,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+437,ハシブトガラス,Corvus macrorhynchos,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+437-1,チョウセンハシブトガラス,Corvus macrorhynchos mandshuricus,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+437-2,ハシブトガラス,Corvus macrorhynchos japonensis,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+437-3,リュウキュウハシブトガラス,Corvus macrorhynchos connectens,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+437-4,オサハシブトガラス,Corvus macrorhynchos osai,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+438,ワタリガラス,Corvus corax,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+438-1,ワタリガラス,Corvus corax kamtschaticus,CORVUS,カラス属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,亜種
+439,キレンジャク,Bombycilla garrulus,BOMBYCILLA,レンジャク属,BOMBYCILLIDAE,レンジャク科,PASSERIFORMES,スズメ目,種
+439-1,キレンジャク,Bombycilla garrulus centralasiae,BOMBYCILLA,レンジャク属,BOMBYCILLIDAE,レンジャク科,PASSERIFORMES,スズメ目,亜種
+440,ヒレンジャク,Bombycilla japonica,BOMBYCILLA,レンジャク属,BOMBYCILLIDAE,レンジャク科,PASSERIFORMES,スズメ目,種
+441,ヒガラ,Periparus ater,PERIPARUS,ヒガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,種
+441-1,ヒガラ,Periparus ater insularis,PERIPARUS,ヒガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+442,キバラガラ,Pardaliparus venustulus,PARDALIPARUS,キバラガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,種
+443,ヤマガラ,Sittiparus varius,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,種
+443-1,ヤマガラ,Sittiparus varius varius,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+443-2,ナミエヤマガラ,Sittiparus varius namiyei,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+443-3,オーストンヤマガラ,Sittiparus varius owstoni,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+443-4,ダイトウヤマガラ,Sittiparus varius orii,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+443-5,タネヤマガラ,Sittiparus varius sunsunpi,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+443-6,ヤクシマヤマガラ,Sittiparus varius yakushimensis,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+443-7,アマミヤマガラ,Sittiparus varius amamii,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+444,オリイヤマガラ,Sittiparus olivaceus,SITTIPARUS,ヤマガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,種
+445,ハシブトガラ,Poecile palustris,POECILE,コガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,種
+445-1,ハシブトガラ,Poecile palustris hensoni,POECILE,コガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+446,コガラ,Poecile montanus,POECILE,コガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,種
+446-1,カラフトコガラ,Poecile montanus sachalinensis,POECILE,コガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+446-2,コガラ,Poecile montanus restrictus,POECILE,コガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+447,ルリガラ,Cyanistes cyanus,CYANISTES,ルリガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,種
+447-1,ルリガラ,Cyanistes cyanus tianschanicus,CYANISTES,ルリガラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+448,シジュウカラ,Parus cinereus,PARUS,シジュウカラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,種
+448-1,シジュウカラ,Parus cinereus minor,PARUS,シジュウカラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+448-2,アマミシジュウカラ,Parus cinereus amamiensis,PARUS,シジュウカラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+448-3,オキナワシジュウカラ,Parus cinereus okinawae,PARUS,シジュウカラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+448-4,イシガキシジュウカラ,Parus cinereus nigriloris,PARUS,シジュウカラ属,PARIDAE,シジュウカラ科,PASSERIFORMES,スズメ目,亜種
+449,ツリスガラ,Remiz consobrinus,REMIZ,ツリスガラ属,REMIZIDAE,ツリスガラ科,PASSERIFORMES,スズメ目,種
+450,ヒゲガラ,Panurus biarmicus,PANURUS,ヒゲガラ属,PANURIDAE,ヒゲガラ科,PASSERIFORMES,スズメ目,種
+450-1,ヒゲガラ,Panurus biarmicus russicus,PANURUS,ヒゲガラ属,PANURIDAE,ヒゲガラ科,PASSERIFORMES,スズメ目,亜種
+451,ヒバリ,Alauda arvensis,ALAUDA,ヒバリ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,種
+451-1,オオヒバリ,Alauda arvensis pekinensis,ALAUDA,ヒバリ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,亜種
+451-2,カラフトチュウヒバリ,Alauda arvensis lonnbergi,ALAUDA,ヒバリ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,亜種
+451-3,ヒバリ,Alauda arvensis japonica,ALAUDA,ヒバリ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,亜種
+452,ハマヒバリ,Eremophila alpestris,EREMOPHILA,ハマヒバリ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,種
+452-1,ハマヒバリ,Eremophila alpestris flava,EREMOPHILA,ハマヒバリ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,亜種
+453,ヒメコウテンシ,Calandrella brachydactyla,CALANDRELLA,ヒメコウテンシ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,種
+453-1,ヒメコウテンシ,Calandrella brachydactyla longipennis,CALANDRELLA,ヒメコウテンシ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,亜種
+454,クビワコウテンシ,Melanocorypha bimaculata,MELANOCORYPHA,コウテンシ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,種
+454-1,クビワコウテンシ,Melanocorypha bimaculata torquata,MELANOCORYPHA,コウテンシ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,亜種
+455,コウテンシ,Melanocorypha mongolica,MELANOCORYPHA,コウテンシ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,種
+456,コヒバリ,Alaudala cheleensis,ALAUDALA,コヒバリ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,種
+456-1,コヒバリ,Alaudala cheleensis cheleensis,ALAUDALA,コヒバリ属,ALAUDIDAE,ヒバリ科,PASSERIFORMES,スズメ目,亜種
+457,ヒヨドリ,Hypsipetes amaurotis,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,種
+457-1,ヒヨドリ,Hypsipetes amaurotis amaurotis,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+457-2,オガサワラヒヨドリ,Hypsipetes amaurotis squamiceps,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+457-3,ハシブトヒヨドリ,Hypsipetes amaurotis magnirostris,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+457-4,ダイトウヒヨドリ,Hypsipetes amaurotis borodinonis,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+457-5,アマミヒヨドリ,Hypsipetes amaurotis ogawae,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+457-6,リュウキュウヒヨドリ,Hypsipetes amaurotis pryeri,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+457-7,イシガキヒヨドリ,Hypsipetes amaurotis stejnegeri,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+457-8,タイワンヒヨドリ,Hypsipetes amaurotis nagamichii,HYPSIPETES,ヒヨドリ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+458,シロガシラ,Pycnonotus sinensis,PYCNONOTUS,シロガシラ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,種
+458-1,シロガシラ,Pycnonotus sinensis sinensis,PYCNONOTUS,シロガシラ属,PYCNONOTIDAE,ヒヨドリ科,PASSERIFORMES,スズメ目,亜種
+459,ショウドウツバメ,Riparia riparia,RIPARIA,ショウドウツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,種
+459-1,ショウドウツバメ,Riparia riparia ijimae,RIPARIA,ショウドウツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,亜種
+460,タイワンショウドウツバメ,Riparia paludicola,RIPARIA,ショウドウツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,種
+460-1,タイワンショウドウツバメ,Riparia paludicola chinensis,RIPARIA,ショウドウツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,亜種
+461,リュウキュウツバメ,Hirundo tahitica,HIRUNDO,ツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,種
+461-1,リュウキュウツバメ,Hirundo tahitica namiyei,HIRUNDO,ツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,亜種
+462,ツバメ,Hirundo rustica,HIRUNDO,ツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,種
+462-1,アカハラツバメ,Hirundo rustica saturata,HIRUNDO,ツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,亜種
+462-2,ツバメ,Hirundo rustica gutturalis,HIRUNDO,ツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,亜種
+463,イワツバメ,Delichon dasypus,DELICHON,イワツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,種
+463-1,イワツバメ,Delichon dasypus dasypus,DELICHON,イワツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,亜種
+464,コシアカツバメ,Cecropis daurica,CECROPIS,コシアカツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,種
+464-1,コシアカツバメ,Cecropis daurica japonica,CECROPIS,コシアカツバメ属,HIRUNDINIDAE,ツバメ科,PASSERIFORMES,スズメ目,亜種
+465,ウグイス,Horornis diphone,HORORNIS,ウグイス属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,種
+465-1,カラフトウグイス,Horornis diphone sakhalinensis,HORORNIS,ウグイス属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,亜種
+465-2,ウグイス,Horornis diphone cantans,HORORNIS,ウグイス属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,亜種
+465-3,ハシナガウグイス,Horornis diphone diphone,HORORNIS,ウグイス属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,亜種
+465-4,ダイトウウグイス,Horornis diphone restricta,HORORNIS,ウグイス属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,亜種
+465-5,リュウキュウウグイス,Horornis diphone riukiuensis,HORORNIS,ウグイス属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,亜種
+466,チョウセンウグイス,Horornis canturians,HORORNIS,ウグイス属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,種
+466-1,チョウセンウグイス,Horornis canturians borealis,HORORNIS,ウグイス属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,亜種
+467,ヤブサメ,Urosphena squameiceps,UROSPHENA,ヤブサメ属,CETTIIDAE,ウグイス科,PASSERIFORMES,スズメ目,種
+468,エナガ,Aegithalos caudatus,AEGITHALOS,エナガ属,AEGITHALIDAE,エナガ科,PASSERIFORMES,スズメ目,種
+468-1,シマエナガ,Aegithalos caudatus japonicus,AEGITHALOS,エナガ属,AEGITHALIDAE,エナガ科,PASSERIFORMES,スズメ目,亜種
+468-2,チョウセンエナガ,Aegithalos caudatus magnus,AEGITHALOS,エナガ属,AEGITHALIDAE,エナガ科,PASSERIFORMES,スズメ目,亜種
+468-3,エナガ,Aegithalos caudatus trivirgatus,AEGITHALOS,エナガ属,AEGITHALIDAE,エナガ科,PASSERIFORMES,スズメ目,亜種
+468-4,キュウシュウエナガ,Aegithalos caudatus kiusiuensis,AEGITHALOS,エナガ属,AEGITHALIDAE,エナガ科,PASSERIFORMES,スズメ目,亜種
+469,モリムシクイ,Phylloscopus sibilatrix,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+470,キマユムシクイ,Phylloscopus inornatus,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+471,シセンムシクイ,Phylloscopus yunnanensis,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+472,カラフトムシクイ,Phylloscopus proregulus,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+473,カラフトムジセッカ,Phylloscopus schwarzi,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+474,ムジセッカ,Phylloscopus fuscatus,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+474-1,ムジセッカ,Phylloscopus fuscatus fuscatus,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,亜種
+475,キタヤナギムシクイ,Phylloscopus trochilus,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+475-1,キタヤナギムシクイ,Phylloscopus trochilus yakutensis,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,亜種
+476,チフチャフ,Phylloscopus collybita,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+476-1,チフチャフ,Phylloscopus collybita tristis,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,亜種
+477,センダイムシクイ,Phylloscopus coronatus,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+478,イイジマムシクイ,Phylloscopus ijimae,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+479,ヤナギムシクイ,Phylloscopus plumbeitarsus,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+480,エゾムシクイ,Phylloscopus borealoides,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+481,アムールムシクイ,Phylloscopus tenellipes,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+482,メボソムシクイ,Phylloscopus xanthodryas,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+483,オオムシクイ,Phylloscopus examinandus,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+484,コムシクイ,Phylloscopus borealis,PHYLLOSCOPUS,ムシクイ属,PHYLLOSCOPIDAE,ムシクイ科,PASSERIFORMES,スズメ目,種
+485,オオヨシキリ,Acrocephalus orientalis,ACROCEPHALUS,ヨシキリ属,ACROCEPHALIDAE,ヨシキリ科,PASSERIFORMES,スズメ目,種
+486,コヨシキリ,Acrocephalus bistrigiceps,ACROCEPHALUS,ヨシキリ属,ACROCEPHALIDAE,ヨシキリ科,PASSERIFORMES,スズメ目,種
+487,スゲヨシキリ,Acrocephalus schoenobaenus,ACROCEPHALUS,ヨシキリ属,ACROCEPHALIDAE,ヨシキリ科,PASSERIFORMES,スズメ目,種
+488,マンシュウイナダヨシキリ,Acrocephalus tangorum,ACROCEPHALUS,ヨシキリ属,ACROCEPHALIDAE,ヨシキリ科,PASSERIFORMES,スズメ目,種
+489,ヤブヨシキリ,Acrocephalus dumetorum,ACROCEPHALUS,ヨシキリ属,ACROCEPHALIDAE,ヨシキリ科,PASSERIFORMES,スズメ目,種
+490,ハシブトオオヨシキリ,Arundinax aedon,ARUNDINAX,ハシブトオオヨシキリ属,ACROCEPHALIDAE,ヨシキリ科,PASSERIFORMES,スズメ目,種
+490-1,ハシブトオオヨシキリ,Arundinax aedon rufescens,ARUNDINAX,ハシブトオオヨシキリ属,ACROCEPHALIDAE,ヨシキリ科,PASSERIFORMES,スズメ目,亜種
+491,ヒメウタイムシクイ,Iduna caligata,IDUNA,ヒメウタイムシクイ属,ACROCEPHALIDAE,ヨシキリ科,PASSERIFORMES,スズメ目,種
+492,エゾセンニュウ,Locustella amnicola,LOCUSTELLA,センニュウ属,LOCUSTELLIDAE,センニュウ科,PASSERIFORMES,スズメ目,種
+493,オオセッカ,Locustella pryeri,LOCUSTELLA,センニュウ属,LOCUSTELLIDAE,センニュウ科,PASSERIFORMES,スズメ目,種
+493-1,オオセッカ,Locustella pryeri pryeri,LOCUSTELLA,センニュウ属,LOCUSTELLIDAE,センニュウ科,PASSERIFORMES,スズメ目,亜種
+494,シベリアセンニュウ,Locustella certhiola,LOCUSTELLA,センニュウ属,LOCUSTELLIDAE,センニュウ科,PASSERIFORMES,スズメ目,種
+494-1,シベリアセンニュウ,Locustella certhiola rubescens,LOCUSTELLA,センニュウ属,LOCUSTELLIDAE,センニュウ科,PASSERIFORMES,スズメ目,亜種
+495,シマセンニュウ,Locustella ochotensis,LOCUSTELLA,センニュウ属,LOCUSTELLIDAE,センニュウ科,PASSERIFORMES,スズメ目,種
+496,ウチヤマセンニュウ,Locustella pleskei,LOCUSTELLA,センニュウ属,LOCUSTELLIDAE,センニュウ科,PASSERIFORMES,スズメ目,種
+497,マキノセンニュウ,Locustella lanceolata,LOCUSTELLA,センニュウ属,LOCUSTELLIDAE,センニュウ科,PASSERIFORMES,スズメ目,種
+498,セッカ,Cisticola juncidis,CISTICOLA,セッカ属,CISTICOLIDAE,セッカ科,PASSERIFORMES,スズメ目,種
+498-1,セッカ,Cisticola juncidis brunniceps,CISTICOLA,セッカ属,CISTICOLIDAE,セッカ科,PASSERIFORMES,スズメ目,亜種
+499,コノドジロムシクイ,Curruca curruca,CURRUCA,ノドジロムシクイ属,SYLVIIDAE,ズグロムシクイ科,PASSERIFORMES,スズメ目,種
+500,メグロ,Apalopteron familiare,APALOPTERON,メグロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,種
+500-1,ムコジマメグロ,Apalopteron familiare familiare,APALOPTERON,メグロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+500-2,ハハジマメグロ,Apalopteron familiare hahasima,APALOPTERON,メグロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+501,チョウセンメジロ,Zosterops erythropleurus,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,種
+502,メジロ,Zosterops japonicus,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,種
+502-1,メジロ,Zosterops japonicus japonicus,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+502-2,シチトウメジロ,Zosterops japonicus stejnegeri,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+502-3,イオウトウメジロ,Zosterops japonicus alani,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+502-4,ダイトウメジロ,Zosterops japonicus daitoensis,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+502-5,シマメジロ,Zosterops japonicus insularis,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+502-6,リュウキュウメジロ,Zosterops japonicus loochooensis,ZOSTEROPS,メジロ属,ZOSTEROPIDAE,メジロ科,PASSERIFORMES,スズメ目,亜種
+503,キクイタダキ,Regulus regulus,REGULUS,キクイタダキ属,REGULIDAE,キクイタダキ科,PASSERIFORMES,スズメ目,種
+503-1,キクイタダキ,Regulus regulus japonensis,REGULUS,キクイタダキ属,REGULIDAE,キクイタダキ科,PASSERIFORMES,スズメ目,亜種
+504,ミソサザイ,Troglodytes troglodytes,TROGLODYTES,ミソサザイ属,TROGLODYTIDAE,ミソサザイ科,PASSERIFORMES,スズメ目,種
+504-1,ミソサザイ,Troglodytes troglodytes fumigatus,TROGLODYTES,ミソサザイ属,TROGLODYTIDAE,ミソサザイ科,PASSERIFORMES,スズメ目,亜種
+504-2,モスケミソサザイ,Troglodytes troglodytes mosukei,TROGLODYTES,ミソサザイ属,TROGLODYTIDAE,ミソサザイ科,PASSERIFORMES,スズメ目,亜種
+504-3,ダイトウミソサザイ,Troglodytes troglodytes orii,TROGLODYTES,ミソサザイ属,TROGLODYTIDAE,ミソサザイ科,PASSERIFORMES,スズメ目,亜種
+504-4,オガワミソサザイ,Troglodytes troglodytes ogawae,TROGLODYTES,ミソサザイ属,TROGLODYTIDAE,ミソサザイ科,PASSERIFORMES,スズメ目,亜種
+505,ゴジュウカラ,Sitta europaea,SITTA,ゴジュウカラ属,SITTIDAE,ゴジュウカラ科,PASSERIFORMES,スズメ目,種
+505-1,シロハラゴジュウカラ,Sitta europaea asiatica,SITTA,ゴジュウカラ属,SITTIDAE,ゴジュウカラ科,PASSERIFORMES,スズメ目,亜種
+505-2,ゴジュウカラ,Sitta europaea amurensis,SITTA,ゴジュウカラ属,SITTIDAE,ゴジュウカラ科,PASSERIFORMES,スズメ目,亜種
+505-3,キュウシュウゴジュウカラ,Sitta europaea roseilia,SITTA,ゴジュウカラ属,SITTIDAE,ゴジュウカラ科,PASSERIFORMES,スズメ目,亜種
+506,キバシリ,Certhia familiaris,CERTHIA,キバシリ属,CERTHIIDAE,キバシリ科,PASSERIFORMES,スズメ目,種
+506-1,キタキバシリ,Certhia familiaris daurica,CERTHIA,キバシリ属,CERTHIIDAE,キバシリ科,PASSERIFORMES,スズメ目,亜種
+506-2,キバシリ,Certhia familiaris japonica,CERTHIA,キバシリ属,CERTHIIDAE,キバシリ科,PASSERIFORMES,スズメ目,亜種
+507,ギンムクドリ,Spodiopsar sericeus,SPODIOPSAR,ムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+508,ムクドリ,Spodiopsar cineraceus,SPODIOPSAR,ムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+509,シベリアムクドリ,Agropsar sturninus,AGROPSAR,コムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+510,コムクドリ,Agropsar philippensis,AGROPSAR,コムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+511,カラムクドリ,Sturnia sinensis,STURNIA,カラムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+512,バライロムクドリ,Pastor roseus,PASTOR,バライロムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+513,ホシムクドリ,Sturnus vulgaris,STURNUS,ホシムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+513-1,ホシムクドリ,Sturnus vulgaris poltaratskyi,STURNUS,ホシムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,亜種
+514,ハイイロチャツグミ,Catharus minimus,CATHARUS,チャツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+514-1,ハイイロチャツグミ,Catharus minimus aliciae,CATHARUS,チャツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,亜種
+515,トラツグミ,Zoothera aurea,ZOOTHERA,トラツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+516,ミナミトラツグミ（和名新称）,Zoothera dauma,ZOOTHERA,トラツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+516-1,オオトラツグミ,Zoothera dauma major,ZOOTHERA,トラツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,亜種
+516-2,コトラツグミ,Zoothera dauma iriomotensis,ZOOTHERA,トラツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,亜種
+517,オガサワラガビチョウ,Cichlopasser terrestris,CICHLOPASSER,オガサワラガビチョウ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+518,マミジロ,Geokichla sibirica,GEOKICHLA,マミジロ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+518-1,マミジロ,Geokichla sibirica davisoni,GEOKICHLA,マミジロ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,亜種
+519,オレンジジツグミ,Geokichla citrina,GEOKICHLA,マミジロ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+520,ウタツグミ,Turdus philomelos,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+521,ヤドリギツグミ,Turdus viscivorus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+522,クロウタドリ（和名検討中）,Turdus mandarinus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+522-1,クロウタドリ（和名検討中）,Turdus mandarinus mandarinus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,亜種
+523,ワキアカツグミ,Turdus iliacus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+523-1,ワキアカツグミ,Turdus iliacus iliacus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,亜種
+524,クロツグミ,Turdus cardis,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+525,カラアカハラ,Turdus hortulorum,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+526,マミチャジナイ,Turdus obscurus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+527,シロハラ,Turdus pallidus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+528,アカハラ,Turdus chrysolaus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+528-1,オオアカハラ,Turdus chrysolaus orii,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,亜種
+528-2,アカハラ,Turdus chrysolaus chrysolaus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,亜種
+529,アカコッコ,Turdus celaenops,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+530,ノハラツグミ,Turdus pilaris,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+531,ノドグロツグミ,Turdus atrogularis,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+532,ツグミ,Turdus eunomus,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+533,ハチジョウツグミ,Turdus naumanni,TURDUS,ツグミ属,TURDIDAE,ツグミ科,PASSERIFORMES,スズメ目,種
+534,エゾビタキ,Muscicapa griseisticta,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+535,サメビタキ,Muscicapa sibirica,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+535-1,サメビタキ,Muscicapa sibirica sibirica,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+536,ミヤマヒタキ,Muscicapa ferruginea,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+537,チャムネサメビタキ,Muscicapa muttui,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+538,コサメビタキ,Muscicapa dauurica,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+538-1,コサメビタキ,Muscicapa dauurica dauurica,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+539,ムナフヒタキ,Muscicapa striata,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+539-1,ムナフヒタキ,Muscicapa striata mongola,MUSCICAPA,サメビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+540,オオルリ,Cyanoptila cyanomelana,CYANOPTILA,オオルリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+540-1,チョウセンオオルリ,Cyanoptila cyanomelana intermedia,CYANOPTILA,オオルリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+540-2,オオルリ,Cyanoptila cyanomelana cyanomelana,CYANOPTILA,オオルリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+541,ロクショウヒタキ,Eumyias thalassinus,EUMYIAS,アイイロヒタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+542,ヨーロッパコマドリ,Erithacus rubecula,ERITHACUS,ヨーロッパコマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+543,オガワコマドリ,Luscinia svecica,LUSCINIA,オガワコマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+543-1,オガワコマドリ,Luscinia svecica svecica,LUSCINIA,オガワコマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+544,ノゴマ,Calliope calliope,CALLIOPE,ノゴマ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+545,コルリ,Larvivora cyane,LARVIVORA,コマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+545-1,コルリ,Larvivora cyane nechaevi,LARVIVORA,コマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+546,コマドリ,Larvivora akahige,LARVIVORA,コマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+546-1,コマドリ,Larvivora akahige akahige,LARVIVORA,コマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+546-2,タネコマドリ,Larvivora akahige tanensis,LARVIVORA,コマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+547,アカヒゲ,Larvivora komadori,LARVIVORA,コマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+548,ホントウアカヒゲ,Larvivora namiyei,LARVIVORA,コマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+549,シマゴマ,Larvivora sibilans,LARVIVORA,コマドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+550,マミジロキビタキ,Ficedula zanthopygia,FICEDULA,キビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+551,キビタキ,Ficedula narcissina,FICEDULA,キビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+552,リュウキュウキビタキ,Ficedula owstoni,FICEDULA,キビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+553,ムギマキ,Ficedula mugimaki,FICEDULA,キビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+554,ニシオジロビタキ,Ficedula parva,FICEDULA,キビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+555,オジロビタキ,Ficedula albicilla,FICEDULA,キビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+556,マダラヒタキ,Ficedula hypoleuca,FICEDULA,キビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+556-1,マダラヒタキ,Ficedula hypoleuca sibirica,FICEDULA,キビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+557,ルリビタキ,Tarsiger cyanurus,TARSIGER,ルリビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+558,セアカジョウビタキ,Phoenicurus erythronotus,PHOENICURUS,ジョウビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+559,カワビタキ,Phoenicurus fuliginosus,PHOENICURUS,ジョウビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+560,クロジョウビタキ,Phoenicurus ochruros,PHOENICURUS,ジョウビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+560-1,クロジョウビタキ,Phoenicurus ochruros rufiventris,PHOENICURUS,ジョウビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+561,シロビタイジョウビタキ,Phoenicurus phoenicurus,PHOENICURUS,ジョウビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+561-1,シロビタイジョウビタキ,Phoenicurus phoenicurus phoenicurus,PHOENICURUS,ジョウビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+562,ジョウビタキ,Phoenicurus auroreus,PHOENICURUS,ジョウビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+562-1,ジョウビタキ,Phoenicurus auroreus auroreus,PHOENICURUS,ジョウビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+563,ヒメイソヒヨ,Monticola gularis,MONTICOLA,イソヒヨドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+564,コシジロイソヒヨドリ,Monticola saxatilis,MONTICOLA,イソヒヨドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+565,イソヒヨドリ,Monticola solitarius,MONTICOLA,イソヒヨドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+565-1,アオハライソヒヨドリ,Monticola solitarius pandoo,MONTICOLA,イソヒヨドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+565-2,イソヒヨドリ,Monticola solitarius philippensis,MONTICOLA,イソヒヨドリ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+566,ヤマザキヒタキ,Saxicola ferreus,SAXICOLA,ノビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+567,マミジロノビタキ,Saxicola rubetra,SAXICOLA,ノビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+568,クロノビタキ,Saxicola caprata,SAXICOLA,ノビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+569,ノビタキ,Saxicola stejnegeri,SAXICOLA,ノビタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+570,ハシグロヒタキ,Oenanthe oenanthe,OENANTHE,サバクヒタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+570-1,ハシグロヒタキ,Oenanthe oenanthe oenanthe,OENANTHE,サバクヒタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+571,イナバヒタキ,Oenanthe isabellina,OENANTHE,サバクヒタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+572,サバクヒタキ,Oenanthe deserti,OENANTHE,サバクヒタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+572-1,サバクヒタキ,Oenanthe deserti oreophila,OENANTHE,サバクヒタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,亜種
+573,セグロサバクヒタキ,Oenanthe pleschanka,OENANTHE,サバクヒタキ属,MUSCICAPIDAE,ヒタキ科,PASSERIFORMES,スズメ目,種
+574,カワガラス,Cinclus pallasii,CINCLUS,カワガラス属,CINCLIDAE,カワガラス科,PASSERIFORMES,スズメ目,種
+574-1,カワガラス,Cinclus pallasii pallasii,CINCLUS,カワガラス属,CINCLIDAE,カワガラス科,PASSERIFORMES,スズメ目,亜種
+575,ニュウナイスズメ,Passer cinnamomeus,PASSER,スズメ属,PASSERIDAE,スズメ科,PASSERIFORMES,スズメ目,種
+575-1,ニュウナイスズメ,Passer cinnamomeus rutilans,PASSER,スズメ属,PASSERIDAE,スズメ科,PASSERIFORMES,スズメ目,亜種
+576,スズメ,Passer montanus,PASSER,スズメ属,PASSERIDAE,スズメ科,PASSERIFORMES,スズメ目,種
+576-1,スズメ,Passer montanus saturatus,PASSER,スズメ属,PASSERIDAE,スズメ科,PASSERIFORMES,スズメ目,亜種
+577,イエスズメ,Passer domesticus,PASSER,スズメ属,PASSERIDAE,スズメ科,PASSERIFORMES,スズメ目,種
+577-1,イエスズメ,Passer domesticus domesticus,PASSER,スズメ属,PASSERIDAE,スズメ科,PASSERIFORMES,スズメ目,亜種
+578,イワヒバリ,Prunella collaris,PRUNELLA,カヤクグリ属,PRUNELLIDAE,イワヒバリ科,PASSERIFORMES,スズメ目,種
+578-1,イワヒバリ,Prunella collaris erythropygia,PRUNELLA,カヤクグリ属,PRUNELLIDAE,イワヒバリ科,PASSERIFORMES,スズメ目,亜種
+579,ヤマヒバリ,Prunella montanella,PRUNELLA,カヤクグリ属,PRUNELLIDAE,イワヒバリ科,PASSERIFORMES,スズメ目,種
+580,カヤクグリ,Prunella rubida,PRUNELLA,カヤクグリ属,PRUNELLIDAE,イワヒバリ科,PASSERIFORMES,スズメ目,種
+581,イワミセキレイ,Dendronanthus indicus,DENDRONANTHUS,イワミセキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+582,ニシツメナガセキレイ,Motacilla flava,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+582-1,ニシツメナガセキレイ（和名検討中）,Motacilla flava beema,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+583,ツメナガセキレイ,Motacilla tschutschensis,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+583-1,キタツメナガセキレイ,Motacilla tschutschensis macronyx,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+583-2,マミジロツメナガセキレイ,Motacilla tschutschensis tschutschensis,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+583-3,ツメナガセキレイ,Motacilla tschutschensis taivana,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+584,キガシラセキレイ,Motacilla citreola,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+584-1,キガシラセキレイ,Motacilla citreola citreola,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+584-2,セグロキガシラセキレイ,Motacilla citreola calcarata,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+585,キセキレイ,Motacilla cinerea,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+585-1,キセキレイ,Motacilla cinerea cinerea,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+586,ハクセキレイ,Motacilla alba,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+586-1,ヨーロッパハクセキレイ,Motacilla alba alba,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+586-2,タイワンハクセキレイ,Motacilla alba ocularis,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+586-3,ハクセキレイ,Motacilla alba lugens,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+586-4,ホオジロハクセキレイ,Motacilla alba leucopsis,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+586-5,ネパールハクセキレイ,Motacilla alba alboides,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+587,セグロセキレイ,Motacilla grandis,MOTACILLA,セキレイ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+588,マミジロタヒバリ,Anthus richardi,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+588-1,マミジロタヒバリ,Anthus richardi richardi,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+589,コマミジロタヒバリ,Anthus godlewskii,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+590,マキバタヒバリ,Anthus pratensis,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+591,ヨーロッパビンズイ,Anthus trivialis,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+591-1,ヨーロッパビンズイ,Anthus trivialis trivialis,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+592,ビンズイ,Anthus hodgsoni,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+592-1,カラフトビンズイ,Anthus hodgsoni yunnanensis,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+592-2,ビンズイ,Anthus hodgsoni hodgsoni,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+593,セジロタヒバリ,Anthus gustavi,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+593-1,セジロタヒバリ,Anthus gustavi gustavi,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+594,ウスベニタヒバリ,Anthus roseatus,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+595,ムネアカタヒバリ,Anthus cervinus,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+596,タヒバリ,Anthus rubescens,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,種
+596-1,タヒバリ,Anthus rubescens japonicus,ANTHUS,タヒバリ属,MOTACILLIDAE,セキレイ科,PASSERIFORMES,スズメ目,亜種
+597,ズアオアトリ,Fringilla coelebs,FRINGILLA,アトリ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+597-1,ズアオアトリ,Fringilla coelebs coelebs,FRINGILLA,アトリ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+598,アトリ,Fringilla montifringilla,FRINGILLA,アトリ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+599,シメ,Coccothraustes coccothraustes,COCCOTHRAUSTES,シメ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+599-1,シベリアシメ,Coccothraustes coccothraustes coccothraustes,COCCOTHRAUSTES,シメ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+599-2,シメ,Coccothraustes coccothraustes japonicus,COCCOTHRAUSTES,シメ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+600,コイカル,Eophona migratoria,EOPHONA,イカル属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+600-1,コイカル,Eophona migratoria migratoria,EOPHONA,イカル属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+601,イカル,Eophona personata,EOPHONA,イカル属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+601-1,イカル,Eophona personata personata,EOPHONA,イカル属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+602,ギンザンマシコ,Pinicola enucleator,PINICOLA,ギンザンマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+602-1,コバシギンザンマシコ,Pinicola enucleator kamtschatkensis,PINICOLA,ギンザンマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+602-2,ギンザンマシコ,Pinicola enucleator sakhalinensis,PINICOLA,ギンザンマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+603,ウソ,Pyrrhula pyrrhula,PYRRHULA,ウソ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+603-1,ハイイロウソ,Pyrrhula pyrrhula cineracea,PYRRHULA,ウソ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+603-2,ベニバラウソ,Pyrrhula pyrrhula cassinii,PYRRHULA,ウソ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+603-3,アカウソ,Pyrrhula pyrrhula rosacea,PYRRHULA,ウソ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+603-4,ウソ,Pyrrhula pyrrhula griseiventris,PYRRHULA,ウソ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+604,ハギマシコ,Leucosticte arctoa,LEUCOSTICTE,ハギマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+604-1,ハギマシコ,Leucosticte arctoa brunneonucha,LEUCOSTICTE,ハギマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+605,アカマシコ,Carpodacus erythrinus,CARPODACUS,オオマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+605-1,アカマシコ,Carpodacus erythrinus grebnitskii,CARPODACUS,オオマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+606,オガサワラマシコ,Carpodacus ferreorostris,CARPODACUS,オオマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+607,ベニマシコ,Carpodacus sibiricus,CARPODACUS,オオマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+607-1,ベニマシコ,Carpodacus sibiricus sanguinolentus,CARPODACUS,オオマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+608,オオマシコ,Carpodacus roseus,CARPODACUS,オオマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+608-1,オオマシコ,Carpodacus roseus portenkoi,CARPODACUS,オオマシコ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+609,カワラヒワ,Chloris sinica,CHLORIS,カワラヒワ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+609-1,オオカワラヒワ,Chloris sinica kawarahiba,CHLORIS,カワラヒワ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+609-2,カワラヒワ,Chloris sinica minor,CHLORIS,カワラヒワ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+610,オガサワラカワラヒワ,Chloris kittlitzi,CHLORIS,カワラヒワ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+611,ベニヒワ,Acanthis flammea,ACANTHIS,ベニヒワ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+611-1,ベニヒワ,Acanthis flammea flammea,ACANTHIS,ベニヒワ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+611-2,コベニヒワ,Acanthis flammea exilipes,ACANTHIS,ベニヒワ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+612,イスカ,Loxia curvirostra,LOXIA,イスカ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+612-1,イスカ,Loxia curvirostra japonica,LOXIA,イスカ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+613,ナキイスカ,Loxia leucoptera,LOXIA,イスカ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+613-1,ナキイスカ,Loxia leucoptera bifasciata,LOXIA,イスカ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,亜種
+614,マヒワ,Spinus spinus,SPINUS,マヒワ属,FRINGILLIDAE,アトリ科,PASSERIFORMES,スズメ目,種
+615,ツメナガホオジロ,Calcarius lapponicus,CALCARIUS,ツメナガホオジロ属,CALCARIIDAE,ツメナガホオジロ科,PASSERIFORMES,スズメ目,種
+615-1,ツメナガホオジロ,Calcarius lapponicus coloratus,CALCARIUS,ツメナガホオジロ属,CALCARIIDAE,ツメナガホオジロ科,PASSERIFORMES,スズメ目,亜種
+616,ユキホオジロ,Plectrophenax nivalis,PLECTROPHENAX,ユキホオジロ属,CALCARIIDAE,ツメナガホオジロ科,PASSERIFORMES,スズメ目,種
+616-1,ユキホオジロ,Plectrophenax nivalis vlasowae,PLECTROPHENAX,ユキホオジロ属,CALCARIIDAE,ツメナガホオジロ科,PASSERIFORMES,スズメ目,亜種
+616-2,オオユキホオジロ,Plectrophenax nivalis townsendi,PLECTROPHENAX,ユキホオジロ属,CALCARIIDAE,ツメナガホオジロ科,PASSERIFORMES,スズメ目,亜種
+617,キアオジ,Emberiza citrinella,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+617-1,キアオジ,Emberiza citrinella erythrogenys,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+618,シラガホオジロ,Emberiza leucocephalos,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+618-1,シラガホオジロ,Emberiza leucocephalos leucocephalos,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+619,ホオジロ,Emberiza cioides,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+619-1,ホオジロ,Emberiza cioides ciopsis,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+620,イワバホオジロ,Emberiza buchanani,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+621,ズアオホオジロ,Emberiza hortulana,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+622,シロハラホオジロ,Emberiza tristrami,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+623,ホオアカ,Emberiza fucata,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+623-1,ホオアカ,Emberiza fucata fucata,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+624,コホオアカ,Emberiza pusilla,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+625,キマユホオジロ,Emberiza chrysophrys,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+626,カシラダカ,Emberiza rustica,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+626-1,カシラダカ,Emberiza rustica latifascia,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+627,ミヤマホオジロ,Emberiza elegans,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+627-1,ミヤマホオジロ,Emberiza elegans elegans,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+628,シマアオジ,Emberiza aureola,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+628-1,シマアオジ,Emberiza aureola ornata,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+629,シマノジコ,Emberiza rutila,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+630,ズグロチャキンチョウ,Emberiza melanocephala,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+631,チャキンチョウ,Emberiza bruniceps,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+632,ノジコ,Emberiza sulphurata,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+633,シベリアアオジ,Emberiza spodocephala,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+633-1,シベリアアオジ,Emberiza spodocephala spodocephala,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+634,アオジ,Emberiza personata,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+635,クロジ,Emberiza variabilis,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+636,シベリアジュリン,Emberiza pallasi,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+636-1,シベリアジュリン,Emberiza pallasi polaris,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+636-2,オオシベリアジュリン,Emberiza pallasi pallasi,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+637,コジュリン,Emberiza yessoensis,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+637-1,コジュリン,Emberiza yessoensis yessoensis,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+638,オオジュリン,Emberiza schoeniclus,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,種
+638-1,オオジュリン,Emberiza schoeniclus pyrrhulina,EMBERIZA,ホオジロ属,EMBERIZIDAE,ホオジロ科,PASSERIFORMES,スズメ目,亜種
+639,ゴマフスズメ,Passerella iliaca,PASSERELLA,ゴマフスズメ属,PASSERELLIDAE,ゴマフスズメ科（和名検討中）,PASSERIFORMES,スズメ目,種
+639-1,ゴマフスズメ,Passerella iliaca unalaschcensis,PASSERELLA,ゴマフスズメ属,PASSERELLIDAE,ゴマフスズメ科（和名検討中）,PASSERIFORMES,スズメ目,亜種
+640,ミヤマシトド,Zonotrichia leucophrys,ZONOTRICHIA,ミヤマシトド属,PASSERELLIDAE,ゴマフスズメ科（和名検討中）,PASSERIFORMES,スズメ目,種
+640-1,ミヤマシトド,Zonotrichia leucophrys gambelii,ZONOTRICHIA,ミヤマシトド属,PASSERELLIDAE,ゴマフスズメ科（和名検討中）,PASSERIFORMES,スズメ目,亜種
+641,キガシラシトド,Zonotrichia atricapilla,ZONOTRICHIA,ミヤマシトド属,PASSERELLIDAE,ゴマフスズメ科（和名検討中）,PASSERIFORMES,スズメ目,種
+642,サバンナシトド,Passerculus sandwichensis,PASSERCULUS,サバンナシトド属,PASSERELLIDAE,ゴマフスズメ科（和名検討中）,PASSERIFORMES,スズメ目,種
+642-1,サバンナシトド,Passerculus sandwichensis sandwichensis,PASSERCULUS,サバンナシトド属,PASSERELLIDAE,ゴマフスズメ科（和名検討中）,PASSERIFORMES,スズメ目,亜種
+643,ウタスズメ,Melospiza melodia,MELOSPIZA,ウタスズメ属,PASSERELLIDAE,ゴマフスズメ科（和名検討中）,PASSERIFORMES,スズメ目,種
+644,カオグロアメリカムシクイ,Geothlypis trichas,GEOTHLYPIS,カオグロアメリカムシクイ属,PARULIDAE,アメリカムシクイ科,PASSERIFORMES,スズメ目,種
+644-1,カオグロアメリカムシクイ,Geothlypis trichas campicola,GEOTHLYPIS,カオグロアメリカムシクイ属,PARULIDAE,アメリカムシクイ科,PASSERIFORMES,スズメ目,亜種
+645,キヅタアメリカムシクイ,Setophaga coronata,SETOPHAGA,ハゴロモムシクイ属,PARULIDAE,アメリカムシクイ科,PASSERIFORMES,スズメ目,種
+645-1,キヅタアメリカムシクイ,Setophaga coronata coronata,SETOPHAGA,ハゴロモムシクイ属,PARULIDAE,アメリカムシクイ科,PASSERIFORMES,スズメ目,亜種
