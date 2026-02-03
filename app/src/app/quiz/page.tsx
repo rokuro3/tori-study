@@ -104,7 +104,12 @@ function QuizContent() {
     // ユーザーがログインしている場合、種ごとの回答を保存
     if (user) {
       try {
-        await saveSpeciesAnswer(user.id, currentQuestion.correctAnswer, correct)
+        await saveSpeciesAnswer(
+          user.id,
+          currentQuestion.correctAnswer,
+          currentQuestion.audioFile.id,
+          correct
+        )
       } catch (err) {
         console.error('Failed to save species answer:', err)
       }
