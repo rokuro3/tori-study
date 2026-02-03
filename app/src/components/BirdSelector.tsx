@@ -71,13 +71,38 @@ export default function BirdSelector({
       return
     }
 
-    const query = searchText.toLowerCase()
-    const filtered = birds.filter(bird => 
-      bird.japanese_name.toLowerCase().includes(query) ||
-      bird.scientific_name.toLowerCase().includes(query) ||
-      bird.family_jp.includes(query) ||
-      bird.order_jp.includes(query)
-    ).slice(0, 50) // 最大50件表示
+    const query = searchText.trim().toLowerCase()
+    const scored = birds.map(bird => {
+      const jp = bird.japanese_name
+      const jpLower = jp.toLowerCase()
+      const sciLower = bird.scientific_name.toLowerCase()
+
+      let score: number | null = null
+      if (jpLower === query) {
+        score = 0
+      } else if (jpLower.startsWith(query)) {
+        score = 1
+      } else if (jpLower.includes(query)) {
+        score = 2
+      } else if (sciLower.includes(query)) {
+        score = 3
+      } else if (bird.family_jp.includes(query)) {
+        score = 4
+      } else if (bird.order_jp.includes(query)) {
+        score = 5
+      }
+
+      if (score === null) {
+        return null
+      }
+
+      return { bird, score }
+    }).filter((item): item is { bird: BirdData; score: number } => item !== null)
+
+    const filtered = scored
+      .sort((a, b) => a.score - b.score || a.bird.japanese_name.localeCompare(b.bird.japanese_name, 'ja'))
+      .map(item => item.bird)
+      .slice(0, 50) // 最大50件表示
 
     setFilteredBirds(filtered)
     setHighlightedIndex(-1)
