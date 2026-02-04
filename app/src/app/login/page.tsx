@@ -3,11 +3,11 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { signIn } from '@/lib/supabase/auth'
+import { signInWithIdentifier } from '@/lib/supabase/auth'
 
 export default function LoginPage() {
   const router = useRouter()
-  const [email, setEmail] = useState('')
+  const [identifier, setIdentifier] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
@@ -17,10 +17,11 @@ export default function LoginPage() {
     setError(null)
     setLoading(true)
 
-    const { error } = await signIn(email, password)
+    // メールアドレスまたはユーザー名でログイン（統一して使用）
+    const result = await signInWithIdentifier(identifier, password)
 
-    if (error) {
-      setError(error.message)
+    if (result.error) {
+      setError(result.error.message || 'ログインに失敗しました')
       setLoading(false)
       return
     }
@@ -55,20 +56,23 @@ export default function LoginPage() {
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label 
-                htmlFor="email" 
+                htmlFor="identifier" 
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
               >
-                メールアドレス
+                メールアドレス またはユーザー名
               </label>
               <input
-                id="email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                id="identifier"
+                type="text"
+                value={identifier}
+                onChange={(e) => setIdentifier(e.target.value)}
                 required
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors"
-                placeholder="example@email.com"
+                placeholder="example@email.com または username"
               />
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                メールアドレスまたはユーザー名を入力してください
+              </p>
             </div>
 
             <div>
@@ -87,6 +91,14 @@ export default function LoginPage() {
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors"
                 placeholder="••••••••"
               />
+              <div className="text-right mt-1">
+                <Link 
+                  href="/forgot-password" 
+                  className="text-sm text-green-600 hover:text-green-700"
+                >
+                  パスワードを忘れた方
+                </Link>
+              </div>
             </div>
 
             <button

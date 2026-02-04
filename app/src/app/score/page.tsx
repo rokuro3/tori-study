@@ -22,7 +22,7 @@ type PageMode = 'main' | 'species-detail'
 
 export default function ScorePage() {
   const router = useRouter()
-  const { user, loading: authLoading } = useAuth()
+  const { user, profile, loading: authLoading } = useAuth()
   const [stats, setStats] = useState<UserStats | null>(null)
   const [questionSetStats, setQuestionSetStats] = useState<QuestionSetStats[]>([])
   const [loading, setLoading] = useState(true)
@@ -117,6 +117,13 @@ export default function ScorePage() {
             📊 スコア・バッジ
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
+            {profile?.username && (
+              <span className="font-medium">{profile.username}</span>
+            )}
+            {profile?.username && user?.email && ' • '}
+            {user?.email && <span className="text-gray-500 dark:text-gray-500">{user.email}</span>}
+          </p>
+          <p className="text-gray-600 dark:text-gray-400 mt-1">
             あなたの学習成果を確認しましょう
           </p>
         </div>

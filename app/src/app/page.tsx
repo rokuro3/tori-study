@@ -8,7 +8,7 @@ import { isAdmin } from '@/lib/supabase/admin'
 import { useRouter } from 'next/navigation'
 
 export default function HomePage() {
-  const { user, loading } = useAuth()
+  const { user, profile, loading } = useAuth()
   const router = useRouter()
   const [isAdminUser, setIsAdminUser] = useState(false)
 
@@ -46,9 +46,15 @@ export default function HomePage() {
                     管理画面
                   </Link>
                 )}
-                <span className="text-sm text-gray-600 dark:text-gray-400">
-                  {user.email}
-                </span>
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  {profile?.username && (
+                    <span className="font-medium">{profile.username}</span>
+                  )}
+                  {profile?.username && user.email && (
+                    <span className="mx-1">•</span>
+                  )}
+                  <span className="text-gray-500 dark:text-gray-500">{user.email}</span>
+                </div>
                 <button
                   onClick={handleSignOut}
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
