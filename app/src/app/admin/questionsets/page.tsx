@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { useAuth } from '@/contexts/AuthContext'
+import Toast from '@/components/Toast'
 import {
   QuestionSet,
   QuestionSetWithItems,
@@ -19,6 +20,7 @@ import {
 } from '@/lib/supabase/admin'
 
 type ViewMode = 'list' | 'edit'
+type ToastType = 'success' | 'error' | 'info'
 
 export default function QuestionSetsPage() {
   const { user, loading } = useAuth()
@@ -34,6 +36,7 @@ export default function QuestionSetsPage() {
   const [availableAudioFiles, setAvailableAudioFiles] = useState<AudioFile[]>([])
   const [searchTerm, setSearchTerm] = useState('')
   const [playingId, setPlayingId] = useState<string | null>(null)
+  const [toast, setToast] = useState<{ message: string; type: ToastType } | null>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   // フォーム状態
@@ -74,7 +77,7 @@ export default function QuestionSetsPage() {
 
   async function handleCreate() {
     if (!formData.name) {
-      alert('問題集名を入力してください')
+      setToast({ message: '問題集名を入力してください', type: 'error' })
       return
     }
 
@@ -95,7 +98,7 @@ export default function QuestionSetsPage() {
       })
       loadQuestionSets()
     } else {
-      alert('作成に失敗しました')
+      setToast({ message: '作成に失敗しました', type: 'error' })
     }
   }
 
@@ -107,8 +110,46 @@ export default function QuestionSetsPage() {
     const result = await deleteQuestionSet(set.id)
     if (result) {
       loadQuestionSets()
+      setToast({ message: '問題集を削除しました', type: 'success' })
     } else {
-      alert('削除に失敗しました')
+      setToast({ message: '削除に失敗しました', type: 'error' })
+    }
+  }
+
+  async function handleTogglePublic(set: QuestionSet) {
+    const result = await updateQuestionSet(set.id, {
+      is_public: !set.is_public
+    })
+
+    if (result) {
+      setQuestionSets((prev) =>
+        prev.map((item) =>
+          item.id === set.id ? { ...item, is_public: result.is_public } : item
+        )
+      )
+      setToast({ message: `「${set.name}」を${result.is_public ? '公開' : '非公開'}にしました`, type: 'success' })
+    } else {
+      setToast({ message: '公開設定の更新に失敗しました', type: 'error' })
+    }
+  }
+
+  async function handleTogglePublicInEditMode() {
+    if (!editingSet) return
+
+    const result = await updateQuestionSet(editingSet.id, {
+      is_public: !editingSet.is_public
+    })
+
+    if (result) {
+      setEditingSet((prev) => (prev ? { ...prev, is_public: result.is_public } : prev))
+      setQuestionSets((prev) =>
+        prev.map((item) =>
+          item.id === editingSet.id ? { ...item, is_public: result.is_public } : item
+        )
+      )
+      setToast({ message: `「${editingSet.name}」を${result.is_public ? '公開' : '非公開'}にしました`, type: 'success' })
+    } else {
+      setToast({ message: '公開設定の更新に失敗しました', type: 'error' })
     }
   }
 
@@ -125,7 +166,7 @@ export default function QuestionSetsPage() {
       setAvailableAudioFiles(audioFiles)
       setViewMode('edit')
     } else {
-      alert('問題集の読み込みに失敗しました')
+      setToast({ message: '問題集の読み込みに失敗しました', type: 'error' })
     }
     
     setLoadingData(false)
@@ -137,7 +178,7 @@ export default function QuestionSetsPage() {
     // 既に追加済みか確認
     const exists = editingSet.items.some(item => item.audio_file_id === audioFile.id)
     if (exists) {
-      alert('この音声は既に追加されています')
+      setToast({ message: 'この音声は既に追加されています', type: 'info' })
       return
     }
 
@@ -152,9 +193,10 @@ export default function QuestionSetsPage() {
       const updated = await getQuestionSetWithItems(editingSet.id)
       if (updated) {
         setEditingSet(updated)
+        setToast({ message: '音声を追加しました', type: 'success' })
       }
     } else {
-      alert('追加に失敗しました')
+      setToast({ message: '追加に失敗しました', type: 'error' })
     }
   }
 
@@ -168,9 +210,10 @@ export default function QuestionSetsPage() {
       const updated = await getQuestionSetWithItems(editingSet.id)
       if (updated) {
         setEditingSet(updated)
+        setToast({ message: '音声を削除しました', type: 'success' })
       }
     } else {
-      alert('削除に失敗しました')
+      setToast({ message: '削除に失敗しました', type: 'error' })
     }
   }
 
@@ -199,9 +242,9 @@ export default function QuestionSetsPage() {
 
     if (result) {
       loadQuestionSets()
-      alert('更新しました')
+      setToast({ message: '更新しました', type: 'success' })
     } else {
-      alert('更新に失敗しました')
+      setToast({ message: '更新に失敗しました', type: 'error' })
     }
   }
 
@@ -210,7 +253,7 @@ export default function QuestionSetsPage() {
 
     const items = editingSet.items || []
     if (items.length === 0) {
-      alert('ダウンロードできる音声データがありません')
+      setToast({ message: 'ダウンロードできる音声データがありません', type: 'info' })
       return
     }
 
@@ -246,7 +289,7 @@ export default function QuestionSetsPage() {
 
   async function handleDownloadCSV() {
     if (questionSets.length === 0) {
-      alert('ダウンロードする問題集がありません')
+      setToast({ message: 'ダウンロードする問題集がありません', type: 'info' })
       return
     }
 
@@ -274,7 +317,7 @@ export default function QuestionSetsPage() {
     ).flat()
 
     if (rows.length === 0) {
-      alert('ダウンロードできる音声データがありません')
+      setToast({ message: 'ダウンロードできる音声データがありません', type: 'info' })
       return
     }
 
@@ -341,6 +384,14 @@ export default function QuestionSetsPage() {
   if (viewMode === 'edit' && editingSet) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100 dark:from-gray-900 dark:to-gray-800">
+        {toast && (
+          <Toast
+            message={toast.message}
+            type={toast.type}
+            onClose={() => setToast(null)}
+          />
+        )}
+
         {/* ヘッダー */}
         <header className="p-4 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
@@ -358,13 +409,33 @@ export default function QuestionSetsPage() {
                 問題集編集: {editingSet.name}
               </h1>
             </div>
-            <button
-              onClick={handleDownloadSetCSV}
-              className="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg"
-              title="この問題集の音声一覧をCSVでダウンロード"
-            >
-              ⬇️ CSV
-            </button>
+            <div className="flex items-center gap-2">
+              <span className={`px-2 py-1 text-xs rounded-full ${
+                editingSet.is_public
+                  ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
+                  : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200'
+              }`}>
+                {editingSet.is_public ? '公開' : '非公開'}
+              </span>
+              <button
+                onClick={handleTogglePublicInEditMode}
+                className={`py-2 px-4 rounded-lg ${
+                  editingSet.is_public
+                    ? 'text-gray-700 bg-gray-100 hover:bg-gray-200 dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600'
+                    : 'text-green-700 bg-green-100 hover:bg-green-200 dark:text-green-200 dark:bg-green-900 dark:hover:bg-green-800'
+                }`}
+                title={editingSet.is_public ? '非公開にする' : '公開にする'}
+              >
+                {editingSet.is_public ? '非公開にする' : '公開する'}
+              </button>
+              <button
+                onClick={handleDownloadSetCSV}
+                className="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg"
+                title="この問題集の音声一覧をCSVでダウンロード"
+              >
+                ⬇️ CSV
+              </button>
+            </div>
           </div>
         </header>
 
@@ -495,6 +566,14 @@ export default function QuestionSetsPage() {
   // リストモード
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100 dark:from-gray-900 dark:to-gray-800">
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onClose={() => setToast(null)}
+        />
+      )}
+
       {/* ヘッダー */}
       <header className="p-4 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
@@ -579,6 +658,17 @@ export default function QuestionSetsPage() {
                 </div>
 
                 <div className="flex gap-2">
+                  <button
+                    onClick={() => handleTogglePublic(set)}
+                    className={`py-2 px-4 rounded-lg ${
+                      set.is_public
+                        ? 'text-gray-700 bg-gray-100 hover:bg-gray-200 dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600'
+                        : 'text-green-700 bg-green-100 hover:bg-green-200 dark:text-green-200 dark:bg-green-900 dark:hover:bg-green-800'
+                    }`}
+                    title={set.is_public ? '非公開にする' : '公開にする'}
+                  >
+                    {set.is_public ? '非公開にする' : '公開する'}
+                  </button>
                   <button
                     onClick={() => openEditMode(set)}
                     className="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg"
