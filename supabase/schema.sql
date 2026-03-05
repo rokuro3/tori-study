@@ -243,7 +243,8 @@ CREATE POLICY "Users can check if they are admin" ON admin_users
     FOR SELECT USING (user_id = auth.uid());
 
 -- 種ごとの正答率を計算するビュー
-CREATE OR REPLACE VIEW species_accuracy AS
+-- SECURITY DEFINER 警告を避けるため、呼び出しユーザー権限で実行
+CREATE OR REPLACE VIEW species_accuracy WITH (security_invoker = true) AS
 SELECT 
     user_id,
     species_name,
