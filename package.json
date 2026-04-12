@@ -1,0 +1,13 @@
+{
+  "name": "tori-study-root",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Root manifest for Vercel detection. Frontend app is in ./app",
+  "scripts": {
+    "build": "cd app && npm run build",
+    "dev": "cd app && npm run dev"
+  },
+  "dependencies": {
+    "next": "16.1.2"
+  }
+}
