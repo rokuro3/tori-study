@@ -100,15 +100,28 @@ npm run dev
 
 ## ライセンス
 
-MIT License
+Copyright 2026 rokuro3
 
-## 貢献
+Apache License 2.0 — 詳細は [LICENSE](LICENSE) を参照してください。
 
-プルリクエストを歓迎します。大きな変更の場合は、まずissueを開いて変更内容を議論してください。
+### サードパーティライブラリ
 
-## サポート
+本プロジェクトは以下のサードパーティライブラリを使用しています:
 
-問題が発生した場合は、このリポジトリの Issues で報告してください。
+| ライブラリ | ライセンス | 備考 |
+|-----------|-----------|------|
+| Next.js, React, Supabase | MIT | |
+| Tailwind CSS | MIT | |
+| TypeScript, ESLint 関連 | Apache-2.0 | ビルド・開発ツール |
+| sharp-libvips | LGPL-3.0-or-later | Next.js の画像最適化に内部使用（動的リンク） |
+| lightningcss | MPL-2.0 | Tailwind CSS のビルドツールに内部使用 |
+| Geist Font (via next/font) | SIL Open Font License 1.0 | |
+
+### 音声データ
+
+音声ファイルは [Xeno-Canto](https://xeno-canto.org) の録音者がアップロードしたものを使用しています。
+各録音のライセンス（CC BY、CC BY-NC 等）は Xeno-Canto の各録音ページをご確認ください。
+
 ## 貢献
 
 プルリクエストを歓迎します。大きな変更の場合は、まずissueを開いて変更内容を議論してください。
@@ -117,6 +130,4 @@ MIT License
 
 問題が発生した場合は、[Issues](https://github.com/rokuro3/tori-study/issues)で報告してください。
 
----
 
-**Bird sounds from [xeno-canto.org](https://xeno-canto.org)**
