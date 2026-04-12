@@ -2,12 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { useAuth } from '@/contexts/AuthContext'
 import { isAdmin } from '@/lib/supabase/admin'
 
 export default function AdminPage() {
-  const router = useRouter()
   const { user, loading } = useAuth()
   const [isAdminUser, setIsAdminUser] = useState(false)
   const [checking, setChecking] = useState(true)
@@ -146,16 +144,18 @@ export default function AdminPage() {
             </p>
           </div>
 
-          {/* 統計カード（将来的に） */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 opacity-50 cursor-not-allowed">
-            <div className="text-5xl mb-4">📊</div>
-            <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-              統計情報
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400">
-              （準備中）クイズの統計データ閲覧
-            </p>
-          </div>
+          {/* 統計カード */}
+          <Link href="/admin/stats" className="block">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+              <div className="text-5xl mb-4">📊</div>
+              <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                統計情報
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400">
+                全ユーザーの正答率ランキングと誤答傾向を確認
+              </p>
+            </div>
+          </Link>
         </div>
       </main>
     </div>

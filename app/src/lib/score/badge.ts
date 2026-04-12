@@ -104,7 +104,8 @@ export async function saveSpeciesAnswer(
   userId: string,
   speciesName: string,
   audioFileId: string,
-  isCorrect: boolean
+  isCorrect: boolean,
+  selectedSpeciesName?: string
 ) {
   const supabase = createClient()
   
@@ -112,6 +113,7 @@ export async function saveSpeciesAnswer(
     user_id: userId,
     species_name: speciesName,
     audio_file_id: audioFileId,
+    selected_species_name: selectedSpeciesName ?? null,
     is_correct: isCorrect,
   })
   

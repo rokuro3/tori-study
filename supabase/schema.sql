@@ -108,6 +108,7 @@ CREATE TABLE IF NOT EXISTS species_answers (
     user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
     species_name TEXT NOT NULL,
     audio_file_id UUID REFERENCES audio_files(id) ON DELETE CASCADE,
+    selected_species_name TEXT,
     is_correct BOOLEAN NOT NULL,
     answered_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
@@ -127,6 +128,7 @@ CREATE INDEX IF NOT EXISTS idx_scores_user_id ON scores(user_id);
 CREATE INDEX IF NOT EXISTS idx_species_answers_user_id ON species_answers(user_id);
 CREATE INDEX IF NOT EXISTS idx_species_answers_species ON species_answers(species_name);
 CREATE INDEX IF NOT EXISTS idx_species_answers_audio_file ON species_answers(audio_file_id);
+CREATE INDEX IF NOT EXISTS idx_species_answers_selected_species ON species_answers(selected_species_name);
 CREATE INDEX IF NOT EXISTS idx_user_badges_user_id ON user_badges(user_id);
 
 -- RLS（Row Level Security）ポリシーの設定
@@ -147,6 +149,11 @@ CREATE POLICY "Users can view their own species answers" ON species_answers
 
 CREATE POLICY "Users can insert their own species answers" ON species_answers
     FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Admins can view all species answers" ON species_answers
+    FOR SELECT USING (
+        EXISTS (SELECT 1 FROM admin_users WHERE user_id = auth.uid())
+    );
 
 -- user_badges テーブルのポリシー
 CREATE POLICY "Users can view their own badges" ON user_badges
@@ -256,6 +263,10 @@ SELECT
     ) as accuracy_percent
 FROM species_answers
 GROUP BY user_id, species_name;
+
+-- 既存環境向け: 誤答時の選択肢保存カラム
+ALTER TABLE species_answers
+ADD COLUMN IF NOT EXISTS selected_species_name TEXT;
 
 -- =============================================
 -- 鳥の種類一覧を取得するビュー

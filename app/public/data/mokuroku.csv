@@ -1085,3 +1085,43 @@
 644-1,カオグロアメリカムシクイ,Geothlypis trichas campicola,GEOTHLYPIS,カオグロアメリカムシクイ属,PARULIDAE,アメリカムシクイ科,PASSERIFORMES,スズメ目,亜種
 645,キヅタアメリカムシクイ,Setophaga coronata,SETOPHAGA,ハゴロモムシクイ属,PARULIDAE,アメリカムシクイ科,PASSERIFORMES,スズメ目,種
 645-1,キヅタアメリカムシクイ,Setophaga coronata coronata,SETOPHAGA,ハゴロモムシクイ属,PARULIDAE,アメリカムシクイ科,PASSERIFORMES,スズメ目,亜種
+1002,コクチョウ,Cygnus atratus,CYGNUS,ハクチョウ属,ANATIDAE,カモ科,ANSERIFORMES,カモ目,種
+1004,コリンウズラ,Colinus virginianus,COLINUS,コリンウズラ属,ODONTOPHORIDAE,コリンウズラ科（和名検討中）,GALLIFORMES,キジ目,種
+1006,タイリクキジ（和名検討中）,Phasianus colchicus,PHASIANUS,キジ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+1008,インドクジャク,Pavo cristatus,PAVO,クジャク属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+1009,コジュケイ,Bambusicola thoracicus,BAMBUSICOLA,コジュケイ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+1010,テッケイ,Bambusicola sonorivox,BAMBUSICOLA,コジュケイ属,PHASIANIDAE,キジ科,GALLIFORMES,キジ目,種
+1011,カワラバト（ドバト）,Columba livia,COLUMBA,カワラバト属,COLUMBIDAE,ハト科,COLUMBIFORMES,ハト目,種
+1013,クロエリセイタカシギ,Himantopus mexicanus,HIMANTOPUS,セイタカシギ属,RECURVIROSTRIDAE,セイタカシギ科,CHARADRIIFORMES,チドリ目,種
+1016,オキナインコ,Myiopsitta monachus,MYIOPSITTA,オキナインコ属,PSITTACIDAE,ヨウム科（和名検討中）,PSITTACIFORMES,インコ目,種
+1017,ダルマインコ,Psittacula alexandri,PSITTACULA,ダルマインコ属,PSITTACULIDAE,インコ科（和名検討中）,PSITTACIFORMES,インコ目,種
+1018,オオホンセイインコ,Psittacula eupatria,PSITTACULA,ダルマインコ属,PSITTACULIDAE,インコ科（和名検討中）,PSITTACIFORMES,インコ目,種
+1019,ホンセイインコ,Psittacula krameri,PSITTACULA,ダルマインコ属,PSITTACULIDAE,インコ科（和名検討中）,PSITTACIFORMES,インコ目,種
+1020,セキセイインコ,Melopsittacus undulatus,MELOPSITTACUS,セキセイインコ属,PSITTACULIDAE,インコ科（和名検討中）,PSITTACIFORMES,インコ目,種
+1021,ヤマムスメ,Urocissa caerulea,UROCISSA,サンジャク属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+1022,サンジャク,Urocissa erythroryncha,UROCISSA,サンジャク属,CORVIDAE,カラス科,PASSERIFORMES,スズメ目,種
+1025,ソウシチョウ,Leiothrix lutea,LEIOTHRIX,ソウシチョウ属,LEIOTHRICHIDAE,ガビチョウ科（和名検討中）,PASSERIFORMES,スズメ目,種
+1026,ガビチョウ,Garrulax canorus,GARRULAX,ガビチョウ属,LEIOTHRICHIDAE,ガビチョウ科（和名検討中）,PASSERIFORMES,スズメ目,種
+1027,ヒゲガビチョウ,Ianthocincla cineracea,IANTHOCINCLA,ヒゲガビチョウ属（和名検討中）,LEIOTHRICHIDAE,ガビチョウ科（和名検討中）,PASSERIFORMES,スズメ目,種
+1027-1,ヒゲガビチョウ,Ianthocincla cineracea cinereiceps,IANTHOCINCLA,ヒゲガビチョウ属（和名検討中）,LEIOTHRICHIDAE,ガビチョウ科（和名検討中）,PASSERIFORMES,スズメ目,亜種
+1028,カオジロガビチョウ,Pterorhinus sannio,PTERORHINUS,カオジロガビチョウ属（和名検討中）,LEIOTHRICHIDAE,ガビチョウ科（和名検討中）,PASSERIFORMES,スズメ目,種
+1029,カオグロガビチョウ,Pterorhinus perspicillatus,PTERORHINUS,カオジロガビチョウ属（和名検討中）,LEIOTHRICHIDAE,ガビチョウ科（和名検討中）,PASSERIFORMES,スズメ目,種
+1030,ハッカチョウ,Acridotheres cristatellus,ACRIDOTHERES,ハッカチョウ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+1031,ジャワハッカ,Acridotheres javanicus,ACRIDOTHERES,ハッカチョウ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+1032,ハイイロハッカ,Acridotheres ginginianus,ACRIDOTHERES,ハッカチョウ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+1033,インドハッカ,Acridotheres tristis,ACRIDOTHERES,ハッカチョウ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+1033-1,インドハッカ,Acridotheres tristis tristis,ACRIDOTHERES,ハッカチョウ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,亜種
+1034,ホオジロムクドリ,Gracupica contra,GRACUPICA,クビワムクドリ属,STURNIDAE,ムクドリ科,PASSERIFORMES,スズメ目,種
+1035,メンハタオリドリ,Ploceus intermedius,PLOCEUS,キハタオリ属,PLOCEIDAE,ハタオリドリ科,PASSERIFORMES,スズメ目,種
+1036,オオキンランチョウ,Euplectes orix,EUPLECTES,キンランチョウ属,PLOCEIDAE,ハタオリドリ科,PASSERIFORMES,スズメ目,種
+1037,ブンチョウ,Padda oryzivora,PADDA,ブンチョウ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1038,シマキンパラ,Lonchura punctulata,LONCHURA,キンパラ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1039,コシジロキンパラ,Lonchura striata,LONCHURA,キンパラ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1040,ギンパラ,Lonchura malacca,LONCHURA,キンパラ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1041,キンパラ,Lonchura atricapilla,LONCHURA,キンパラ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1042,ヘキチョウ,Lonchura maja,LONCHURA,キンパラ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1043,ホオアカカエデチョウ,Estrilda melpoda,ESTRILDA,カエデチョウ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1044,カエデチョウ,Estrilda troglodytes,ESTRILDA,カエデチョウ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1045,ベニスズメ,Amandava amandava,AMANDAVA,ベニスズメ属,ESTRILDIDAE,カエデチョウ科,PASSERIFORMES,スズメ目,種
+1046,ホウオウジャク,Vidua paradisaea,VIDUA,テンニンチョウ属,VIDUIDAE,テンニンチョウ科,PASSERIFORMES,スズメ目,種
+1047,コウカンチョウ,Paroaria coronata,PAROARIA,コウカンチョウ属,THRAUPIDAE,フウキンチョウ科,PASSERIFORMES,スズメ目,種

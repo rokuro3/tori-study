@@ -108,7 +108,8 @@ function QuizContent() {
           user.id,
           currentQuestion.correctAnswer,
           currentQuestion.audioFile.id,
-          correct
+          correct,
+          answer
         )
       } catch (err) {
         console.error('Failed to save species answer:', err)
