@@ -39,6 +39,13 @@ export default function AudioManagementPage() {
   const [selectedBird, setSelectedBird] = useState<BirdData | null>(null)
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
 
+  async function loadAudioFiles() {
+    setLoadingFiles(true)
+    const files = await getAudioFiles()
+    setAudioFiles(files)
+    setLoadingFiles(false)
+  }
+
   useEffect(() => {
     async function checkAdmin() {
       if (!user) {
@@ -59,13 +66,6 @@ export default function AudioManagementPage() {
       checkAdmin()
     }
   }, [user, loading])
-
-  async function loadAudioFiles() {
-    setLoadingFiles(true)
-    const files = await getAudioFiles()
-    setAudioFiles(files)
-    setLoadingFiles(false)
-  }
 
   function handlePlayAudio(file: AudioFile) {
     if (audioRef.current) {

@@ -1,5 +1,6 @@
 'use client'
 
+import type { User } from '@supabase/supabase-js'
 import { createClient } from './client'
 
 export async function signUp(email: string, password: string, username?: string) {
@@ -106,7 +107,7 @@ export async function signInWithIdentifier(identifier: string, password: string)
 }
 
 // ユーザープロフィール自動作成関数
-async function ensureUserProfile(user: any) {
+async function ensureUserProfile(user: User) {
   const supabase = createClient()
   
   console.log('Checking profile for user:', user.id, user.email)

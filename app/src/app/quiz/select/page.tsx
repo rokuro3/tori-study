@@ -16,15 +16,19 @@ export default function QuizSelectPage() {
   const [loadingData, setLoadingData] = useState(true)
 
   useEffect(() => {
-    loadQuestionSets()
-  }, [])
+    let cancelled = false
 
-  async function loadQuestionSets() {
-    setLoadingData(true)
-    const sets = await getPublicQuestionSets()
-    setQuestionSets(sets)
-    setLoadingData(false)
-  }
+    getPublicQuestionSets().then((sets) => {
+      if (cancelled) return
+
+      setQuestionSets(sets)
+      setLoadingData(false)
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   function startQuiz(setId: string | null, setName?: string) {
     if (setId) {

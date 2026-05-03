@@ -47,6 +47,13 @@ export default function QuestionSetsPage() {
     is_public: true
   })
 
+  async function loadQuestionSets() {
+    setLoadingData(true)
+    const sets = await getQuestionSets()
+    setQuestionSets(sets)
+    setLoadingData(false)
+  }
+
   useEffect(() => {
     async function checkAdmin() {
       if (!user) {
@@ -67,13 +74,6 @@ export default function QuestionSetsPage() {
       checkAdmin()
     }
   }, [user, loading])
-
-  async function loadQuestionSets() {
-    setLoadingData(true)
-    const sets = await getQuestionSets()
-    setQuestionSets(sets)
-    setLoadingData(false)
-  }
 
   async function handleCreate() {
     if (!formData.name) {

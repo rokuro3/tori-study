@@ -1,8 +1,7 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import Link from 'next/link'
-import { useAuth } from '@/contexts/AuthContext'
 import {
   QuestionSet,
   QuestionSetWithItems,
@@ -21,25 +20,71 @@ interface BirdWithAudio {
   audioFiles: AudioFile[]
 }
 
+interface PublicAudioSearchEntry {
+  questionSetId: string
+  questionSetName: string
+  difficultyLevel: number
+  audio: AudioFile
+}
+
 export default function LearnPage() {
-  const { user, loading } = useAuth()
   const [viewMode, setViewMode] = useState<ViewMode>('select')
   const [questionSets, setQuestionSets] = useState<QuestionSet[]>([])
   const [selectedSet, setSelectedSet] = useState<QuestionSetWithItems | null>(null)
+  const [audioSearchText, setAudioSearchText] = useState('')
+  const [publicAudioEntries, setPublicAudioEntries] = useState<PublicAudioSearchEntry[]>([])
+  const [loadingAudioIndex, setLoadingAudioIndex] = useState(false)
   const [loadingData, setLoadingData] = useState(true)
   const [playingId, setPlayingId] = useState<string | null>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
 
-  useEffect(() => {
-    loadQuestionSets()
-  }, [])
+  async function loadPublicAudioEntries(sets: QuestionSet[]) {
+    setLoadingAudioIndex(true)
+    const detailedSets = await Promise.all(sets.map((set) => getQuestionSetWithItems(set.id)))
 
-  async function loadQuestionSets() {
-    setLoadingData(true)
-    const sets = await getPublicQuestionSets()
-    setQuestionSets(sets)
-    setLoadingData(false)
+    const entries = detailedSets.flatMap((setWithItems) => {
+      if (!setWithItems) return []
+
+      return setWithItems.items
+        .filter((item) => !!item.audio_file && item.audio_file.is_active)
+        .map((item) => ({
+          questionSetId: setWithItems.id,
+          questionSetName: setWithItems.name,
+          difficultyLevel: setWithItems.difficulty_level,
+          audio: item.audio_file as AudioFile
+        }))
+    })
+
+    setPublicAudioEntries(entries)
+    setLoadingAudioIndex(false)
   }
+
+  useEffect(() => {
+    let cancelled = false
+
+    getPublicQuestionSets().then(async (sets) => {
+      if (cancelled) return
+
+      setQuestionSets(sets)
+
+      if (sets.length === 0) {
+        setPublicAudioEntries([])
+        setLoadingAudioIndex(false)
+        setLoadingData(false)
+        return
+      }
+
+      await loadPublicAudioEntries(sets)
+
+      if (!cancelled) {
+        setLoadingData(false)
+      }
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   async function selectQuestionSet(set: QuestionSet) {
     setLoadingData(true)
@@ -65,6 +110,36 @@ export default function LearnPage() {
       }
     }
   }
+
+  const filteredAudioEntries = useMemo(() => {
+    const text = audioSearchText.trim().toLowerCase()
+    if (!text) return []
+
+    const tokens = text.split(/\s+/).filter(Boolean)
+
+    return publicAudioEntries
+      .filter((entry) => {
+        const target = [
+          entry.audio.bird_name,
+          entry.audio.scientific_name,
+          entry.audio.family_jp,
+          entry.audio.original_filename,
+          entry.audio.description,
+          entry.questionSetName
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .toLowerCase()
+
+        return tokens.every((token) => target.includes(token))
+      })
+      .sort((a, b) => {
+        if (a.audio.bird_name !== b.audio.bird_name) {
+          return a.audio.bird_name.localeCompare(b.audio.bird_name, 'ja')
+        }
+        return a.questionSetName.localeCompare(b.questionSetName, 'ja')
+      })
+  }, [audioSearchText, publicAudioEntries])
 
   // 鳥ごとにグループ化
   function getBirdsFromItems(): BirdWithAudio[] {
@@ -233,6 +308,13 @@ export default function LearnPage() {
         </div>
       </header>
 
+      {/* 音声プレイヤー（非表示） */}
+      <audio
+        ref={audioRef}
+        onEnded={() => setPlayingId(null)}
+        className="hidden"
+      />
+
       {/* メインコンテンツ */}
       <main className="flex flex-col items-center justify-center px-4 py-12">
         <div className="text-center max-w-2xl w-full">
@@ -243,6 +325,89 @@ export default function LearnPage() {
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
             問題集を選んで、鳥の鳴き声を学びましょう
           </p>
+
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-5 mb-6 text-left">
+            <label
+              htmlFor="public-audio-search"
+              className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2"
+            >
+              公開問題集の音声を検索
+            </label>
+            <input
+              id="public-audio-search"
+              type="text"
+              value={audioSearchText}
+              onChange={(e) => setAudioSearchText(e.target.value)}
+              placeholder="鳥名・学名・科名・ファイル名・説明で検索"
+              className="w-full rounded-xl border border-gray-300 dark:border-gray-600 px-4 py-3 text-sm bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            {loadingAudioIndex ? (
+              <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">検索インデックスを作成中...</p>
+            ) : audioSearchText.trim() === '' ? (
+              <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">キーワードを入力すると音声を絞り込めます。</p>
+            ) : filteredAudioEntries.length === 0 ? (
+              <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">一致する音声が見つかりませんでした。</p>
+            ) : (
+              <div className="mt-4 space-y-3 max-h-80 overflow-y-auto pr-1">
+                {filteredAudioEntries.slice(0, 30).map((entry) => (
+                  <div
+                    key={`${entry.questionSetId}-${entry.audio.id}`}
+                    className="border border-gray-200 dark:border-gray-700 rounded-xl p-3"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div>
+                        <p className="font-semibold text-gray-800 dark:text-gray-100">{entry.audio.bird_name}</p>
+                        {(entry.audio.scientific_name || entry.audio.family_jp) && (
+                          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                            {entry.audio.scientific_name || ''}
+                            {entry.audio.scientific_name && entry.audio.family_jp ? ' | ' : ''}
+                            {entry.audio.family_jp || ''}
+                          </p>
+                        )}
+                        {entry.audio.original_filename && (
+                          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                            ファイル名: {entry.audio.original_filename}
+                          </p>
+                        )}
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 line-clamp-2">
+                          説明: {entry.audio.description || '無し'}
+                        </p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                          問題集: {entry.questionSetName}
+                        </p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                          {'★'.repeat(entry.difficultyLevel)}{'☆'.repeat(3 - entry.difficultyLevel)}&nbsp;
+                          {entry.difficultyLevel === 1 ? '初級' : entry.difficultyLevel === 2 ? '中級' : '上級'}
+                        </p>
+                      </div>
+                      <button
+                        onClick={() => handlePlayAudio(entry.audio)}
+                        className={`shrink-0 px-3 py-2 rounded-lg text-sm text-white ${
+                          playingId === entry.audio.id ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-500 hover:bg-blue-600'
+                        }`}
+                      >
+                        {playingId === entry.audio.id ? '停止' : '再生'}
+                      </button>
+                    </div>
+                    <div className="mt-3">
+                      <button
+                        onClick={() => {
+                          const set = questionSets.find((item) => item.id === entry.questionSetId)
+                          if (set) {
+                            void selectQuestionSet(set)
+                          }
+                        }}
+                        className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                      >
+                        この問題集を開く
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
 
           {/* 問題集一覧 */}
           {loadingData ? (
