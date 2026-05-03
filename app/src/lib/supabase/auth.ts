@@ -132,7 +132,7 @@ async function ensureUserProfile(user: User) {
   console.log('Profile does not exist, creating...')
   
   // ユーザーメタデータからユーザー名を取得、なければメールアドレスの前半
-  let username = user.user_metadata?.username || user.email.split('@')[0]
+  let username = user.user_metadata?.username || (user.email ?? '').split('@')[0]
   console.log('Using username from metadata:', username)
   
   // ユーザー名が既に存在するか確認
