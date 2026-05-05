@@ -34,6 +34,12 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto flex justify-between items-center">
           <div className="text-2xl">🐦</div>
           <nav className="flex gap-4 items-center">
+            <Link
+              href="/updates"
+              className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
+            >
+              更新履歴
+            </Link>
             {loading ? (
               <span className="text-gray-400">...</span>
             ) : user ? (

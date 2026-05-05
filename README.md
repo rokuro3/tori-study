@@ -24,6 +24,7 @@
 - **学習モード** (`/learn`): 音声学習
 - **ログイン** (`/login`): ユーザー認証
 - **スコア表示** (`/score`): スコアとバッジ表示
+- **更新履歴** (`/updates`): 機能追加の履歴
 - **管理画面** (`/admin`): 管理者用ページ
 
 ## 技術スタック
@@ -90,9 +91,24 @@ npm run dev
 
 詳細な情報については、以下のドキュメントを参照してください:
 
+- [ローカル音声管理ツール仕様](docs/local-audio-manager.md) - 認証なし音声管理ツールの仕様
 - [ローカル開発セットアップガイド](docs/local-setup-guide.md) - ローカル環境でのセットアップ手順
 - [インフラ構成](docs/infrastructure.md) - 本番環境の構成
 - [Railway デプロイガイド](docs/railway-deploy-guide.md) - Railway へのデプロイ手順
+
+運用ルール: 機能追加を行った場合は、更新履歴ページ (`/updates`) に日付と内容を追記してください。
+
+## ローカル専用ツール
+
+Supabase 連携なしで音声管理だけを行いたい場合は、`local-audio-manager/` を使用してください。
+
+```bash
+docker compose -f local-audio-manager/compose.yaml up --build
+```
+
+ブラウザで `http://localhost:3000` を開いてください。
+
+詳細は `local-audio-manager/README.md` を参照してください。
 
 ## 開発ログ
 
