@@ -2,7 +2,8 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 
 const VOICEVOX_URL = process.env.VOICEVOX_URL || "http://127.0.0.1:50021";
-const speaker = Number(process.env.VOICEVOX_SPEAKER || "1");
+const rawSpeaker = process.env.VOICEVOX_SPEAKER || "1";
+const speaker = Number(rawSpeaker);
 const birdName = process.argv[2];
 const outputPath =
   process.argv[3] ||
@@ -13,7 +14,7 @@ if (!birdName) {
   process.exit(1);
 }
 
-if (!Number.isFinite(speaker)) {
+if (!Number.isFinite(speaker) || Number.isNaN(speaker)) {
   console.error("VOICEVOX_SPEAKER には数値を指定してください");
   process.exit(1);
 }
@@ -27,7 +28,7 @@ async function postToVoicevox(url, options) {
     return await fetch(url, options);
   } catch (error) {
     throw new Error(
-      `VOICEVOX Engine に接続できませんでした。VOICEVOX_URL (${VOICEVOX_URL}) を確認してください。`
+      `VOICEVOX Engine に接続できませんでした。VOICEVOX_URL (${VOICEVOX_URL}) を確認してください。詳細: ${error.message}`
     );
   }
 }
