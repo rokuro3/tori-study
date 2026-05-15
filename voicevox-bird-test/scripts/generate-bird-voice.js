@@ -13,12 +13,27 @@ if (!birdName) {
   process.exit(1);
 }
 
+if (!Number.isFinite(speaker)) {
+  console.error("VOICEVOX_SPEAKER には数値を指定してください");
+  process.exit(1);
+}
+
 async function ensureDirectory(filePath) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
 }
 
-async function callVoiceVox(text) {
-  const queryRes = await fetch(
+async function postToVoicevox(url, options) {
+  try {
+    return await fetch(url, options);
+  } catch (error) {
+    throw new Error(
+      `VOICEVOX Engine に接続できませんでした。VOICEVOX_URL (${VOICEVOX_URL}) を確認してください。`
+    );
+  }
+}
+
+async function callVoicevox(text) {
+  const queryRes = await postToVoicevox(
     `${VOICEVOX_URL}/audio_query?text=${encodeURIComponent(text)}&speaker=${speaker}`,
     { method: "POST" }
   );
@@ -31,7 +46,7 @@ async function callVoiceVox(text) {
 
   const audioQuery = await queryRes.json();
 
-  const synthRes = await fetch(
+  const synthRes = await postToVoicevox(
     `${VOICEVOX_URL}/synthesis?speaker=${speaker}`,
     {
       method: "POST",
@@ -50,7 +65,7 @@ async function callVoiceVox(text) {
 }
 
 async function main() {
-  const wav = await callVoiceVox(birdName);
+  const wav = await callVoicevox(birdName);
   await ensureDirectory(outputPath);
   await fs.writeFile(outputPath, wav);
   console.log(`音声を書き出しました: ${outputPath}`);
