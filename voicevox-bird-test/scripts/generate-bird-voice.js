@@ -4,6 +4,7 @@ const path = require("node:path");
 const VOICEVOX_URL = process.env.VOICEVOX_URL || "http://127.0.0.1:50021";
 const rawSpeaker = process.env.VOICEVOX_SPEAKER || "1";
 const speaker = Number(rawSpeaker);
+const speakerParam = encodeURIComponent(String(speaker));
 const birdName = process.argv[2];
 const outputPath =
   process.argv[3] ||
@@ -35,7 +36,7 @@ async function postToVoicevox(url, options) {
 
 async function callVoicevox(text) {
   const queryRes = await postToVoicevox(
-    `${VOICEVOX_URL}/audio_query?text=${encodeURIComponent(text)}&speaker=${speaker}`,
+    `${VOICEVOX_URL}/audio_query?text=${encodeURIComponent(text)}&speaker=${speakerParam}`,
     { method: "POST" }
   );
 
@@ -48,7 +49,7 @@ async function callVoicevox(text) {
   const audioQuery = await queryRes.json();
 
   const synthRes = await postToVoicevox(
-    `${VOICEVOX_URL}/synthesis?speaker=${speaker}`,
+    `${VOICEVOX_URL}/synthesis?speaker=${speakerParam}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
