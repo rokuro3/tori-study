@@ -14,7 +14,7 @@ if (!birdName) {
   process.exit(1);
 }
 
-if (!Number.isFinite(speaker) || Number.isNaN(speaker)) {
+if (!Number.isFinite(speaker)) {
   console.error("VOICEVOX_SPEAKER には数値を指定してください");
   process.exit(1);
 }
@@ -70,7 +70,6 @@ async function main() {
   await ensureDirectory(outputPath);
   await fs.writeFile(outputPath, wav);
   console.log(`音声を書き出しました: ${outputPath}`);
-  console.log(`VOICEVOX_URL=${VOICEVOX_URL}, speaker=${speaker}, text=${birdName}`);
 }
 
 main().catch((error) => {
