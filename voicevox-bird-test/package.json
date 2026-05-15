@@ -1,0 +1,16 @@
+{
+  "name": "voicevox-bird-test",
+  "version": "1.0.0",
+  "description": "VOICEVOXで鳥名音声を出力するテストプロジェクト",
+  "main": "scripts/generate-bird-voice.js",
+  "scripts": {
+    "speak": "node scripts/generate-bird-voice.js"
+  },
+  "keywords": [
+    "voicevox",
+    "bird"
+  ],
+  "author": "",
+  "license": "ISC",
+  "private": true
+}

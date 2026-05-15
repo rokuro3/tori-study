@@ -110,6 +110,14 @@ docker compose -f local-audio-manager/compose.yaml up --build
 
 詳細は `local-audio-manager/README.md` を参照してください。
 
+VOICEVOX で鳥名の音声出力を試す場合は、`voicevox-bird-test/` を使用してください。
+
+```bash
+cd voicevox-bird-test
+npm install
+npm run speak -- メジロ
+```
+
 ## 開発ログ
 
 プロジェクトの開発過程は `logs/` ディレクトリに記録されています。
@@ -145,5 +153,4 @@ Apache License 2.0 — 詳細は [LICENSE](LICENSE) を参照してください�
 ## サポート
 
 問題が発生した場合は、[Issues](https://github.com/rokuro3/tori-study/issues)で報告してください。
-
 
