@@ -4,7 +4,7 @@
 
 ## 概要
 
-「とりスタディ」は、鳥の識別能力を楽しく学習できるクイズアプリです。Xeno-Cantoから日本国内で録音された本物の鳥の鳴き声を使用し、実践的な学習体験を提供します。
+「とりスタディ」は、鳥の識別能力を楽しく学習できるクイズアプリです。鳥の鳴き声を使った問題で、実践的な学習体験を提供します。
 
 ## 主な機能
 
@@ -141,11 +141,6 @@ Apache License 2.0 — 詳細は [LICENSE](LICENSE) を参照してください�
 | lightningcss | MPL-2.0 | Tailwind CSS のビルドツールに内部使用 |
 | Geist Font (via next/font) | SIL Open Font License 1.0 | |
 
-### 音声データ
-
-音声ファイルは [Xeno-Canto](https://xeno-canto.org) の録音者がアップロードしたものを使用しています。
-各録音のライセンス（CC BY、CC BY-NC 等）は Xeno-Canto の各録音ページをご確認ください。
-
 ## 貢献
 
 プルリクエストを歓迎します。大きな変更の場合は、まずissueを開いて変更内容を議論してください。
@@ -153,4 +148,3 @@ Apache License 2.0 — 詳細は [LICENSE](LICENSE) を参照してください�
 ## サポート
 
 問題が発生した場合は、[Issues](https://github.com/rokuro3/tori-study/issues)で報告してください。
-
